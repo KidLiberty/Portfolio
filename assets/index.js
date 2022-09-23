@@ -8,7 +8,6 @@ import JavaLogo from './java.png'
 import JavaScriptLogo from './javascript.png'
 import LeftArrow from './leftArrow.png'
 import MetaMaskLogo from './metamask.png'
-import MongoDB from './mongodb.png'
 import NextJSLogo from './nextjs.png'
 import NodeJSLogo from './nodejs.png'
 import OpenSeaLogo from './opensea.png'
@@ -34,7 +33,6 @@ export {
   JavaScriptLogo,
   LeftArrow,
   MetaMaskLogo,
-  MongoDB,
   NextJSLogo,
   NodeJSLogo,
   OpenSeaLogo,
