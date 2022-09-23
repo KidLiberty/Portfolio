@@ -1,6 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { HakiNFT, ReactLogo } from '../assets'
 
 type Props = {
   jobTitle: string
@@ -30,14 +28,10 @@ const ExperienceCard = ({
             {company}
           </p>
           <div className='flex space-x-2 my-2 xs:ml-3'>
-            {stack.map((logo, i) => {
+            {stack.map((logo: any, i: number) => {
               return (
-                <div className='rounded-full'>
-                  <img
-                    key={`logo-${i}`}
-                    src={logo.src}
-                    className='w-11 h-11 object-cover'
-                  />
+                <div key={`logo-${i}`} className='rounded-full'>
+                  <img src={logo.src} className='w-11 h-11 object-cover' />
                 </div>
               )
             })}
@@ -47,7 +41,7 @@ const ExperienceCard = ({
           </p>
 
           <ul className='list-disc space-y-4 ml-5 text-lg w-[300px]'>
-            {summaryPoints.map((summaryPoint, i) => {
+            {summaryPoints.map((summaryPoint: string, i: number) => {
               return <li key={`summaryPoint-${i}`}>{summaryPoint}</li>
             })}
           </ul>

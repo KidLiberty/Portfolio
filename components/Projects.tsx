@@ -27,6 +27,7 @@ const Projects: NextPage = ({}: Props) => {
       <div className='relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20 '>
         {projects.map((project: any, i: number) => (
           <motion.div
+            key={i}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5 }}
