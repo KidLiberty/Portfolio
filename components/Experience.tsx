@@ -34,7 +34,10 @@ const Experience: NextPage = ({}: Props) => {
       stack: [JavaScriptLogo, ReactLogo, NextJSLogo, PythonLogo, OpenSeaLogo],
       startTime: 'July 2022',
       endTime: 'Present',
-      summaryPoints: ['Founding UX Engineer of a ']
+      summaryPoints: [
+        'Founding UX Engineer of a ',
+        'Building early stage institutional grade investment tooling for a Web3 digital asset fund'
+      ]
     },
     {
       jobTitle: 'Software Engineer',

@@ -5,12 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
+    extend: {},
     fontFamily: {
       poppins: ['Poppins', 'sans-serif']
+    },
+    screens: {
+      xs: { max: '400px' }
     }
   },
-  theme: {
-    extend: {}
-  },
-  plugins: [require('tailwind-scrollbar')]
+
+  plugins: [require('tailwind-scrollbar'), require('tailwind-scrollbar-hide')]
 }

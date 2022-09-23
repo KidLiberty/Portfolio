@@ -34,28 +34,28 @@ const Hero: NextPage = ({}: Props) => {
         />
       </div>
       <div className='relative top-16 z-20'>
-        <h1 className='font-poppins text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
+        <h1 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
           Front End Engineer
         </h1>
-        <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10'>
+        <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10 xs:h-[75px]'>
           <span className='text-4xl mr-3'>{text}</span>
           <span className='relative right-3'>
             <Cursor cursorColor='#f7ab0a' />
           </span>
         </h1>
 
-        <div className='pt-5'>
+        <div className='pt-5 xs:flex xs:flex-col'>
           <Link href='#about'>
-            <button className='heroButton'>About</button>
+            <button className='heroButton xs:text-xl'>About</button>
           </Link>
           <Link href='#experience'>
-            <button className='heroButton'>Experience</button>
+            <button className='heroButton xs:text-xl'>Experience</button>
           </Link>
           <Link href='#skills'>
-            <button className='heroButton'>Skills</button>
+            <button className='heroButton xs:text-xl'>Skills</button>
           </Link>
           <Link href='#projects'>
-            <button className='heroButton'>Projects</button>
+            <button className='heroButton xs:text-xl'>Projects</button>
           </Link>
         </div>
       </div>

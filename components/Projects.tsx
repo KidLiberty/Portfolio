@@ -30,6 +30,7 @@ const Projects: NextPage = ({}: Props) => {
               transition={{ duration: 1.5 }}
               viewport={{ once: true }}
               src={ReactLogo.src}
+              className='w-72 h-72 object-contain'
               alt='Project_Image'
             />
 
@@ -40,7 +41,7 @@ const Projects: NextPage = ({}: Props) => {
                 </span>
               </h4>
 
-              <p className='text-lg text-center md:text-left'>
+              <p className='text-lg xs:text-[1rem] leading-5 text-center md:text-left '>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae

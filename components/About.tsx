@@ -1,6 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
+import { HakiNFT } from '../assets'
 
 type Props = {}
 
@@ -23,15 +24,15 @@ const About: NextPage = ({}: Props) => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        src={require('../assets/haki.png')}
+        src={HakiNFT.src}
         alt='About_Pic'
       />
 
       <div className='space-y-10 px-0 md:px-10'>
-        <h4 className='text-4xl font-semibold'>
+        <h4 className='text-4xl font-semibold xs:text-2xl'>
           Here is a <i>little</i> background
         </h4>
-        <p className='text-justify'>
+        <p className='text-justify xs:text-sm'>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore veritatis et quasi architecto beatae vitae dicta

@@ -34,8 +34,8 @@ const ContactMe: NextPage = ({}: Props) => {
           </h3>
         </div>
 
-        <div className='space-y-10'>
-          <div className='flex items-center space-x-5 '>
+        <div className='xs:flex xs:flex-col xs:items-center space-y-10'>
+          <div className='flex items-center space-x-5'>
             <PhoneIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
             <p className='text-2xl text-gray-500'>+1 978 855 5511</p>
           </div>
@@ -51,9 +51,9 @@ const ContactMe: NextPage = ({}: Props) => {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className='flex flex-col space-y-2 w-fit mx-auto'
+          className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px]'
         >
-          <div className='flex space-x-2'>
+          <div className='flex xs:flex-col xs:w-full space-x-2 xs:space-x-0 xs:justify-center'>
             <input
               {...register('name')}
               className='contactInput'
@@ -62,7 +62,7 @@ const ContactMe: NextPage = ({}: Props) => {
             />
             <input
               {...register('email')}
-              className='contactInput'
+              className='contactInput xs:mt-2'
               placeholder='Email'
               type='email'
             />
