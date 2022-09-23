@@ -54,7 +54,7 @@ const Projects: NextPage = ({}: Props) => {
         ))}
       </div>
 
-      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[400px] -skew-y-12' />
+      <div className='w-full absolute top-[30%] bg-[#477ad2]/10 left-0 h-[400px] -skew-y-12' />
     </div>
   )
 }

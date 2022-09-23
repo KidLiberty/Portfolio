@@ -25,22 +25,27 @@ const ContactMe: NextPage = ({}: Props) => {
       </h3>
 
       <div className='flex flex-col space-y-10'>
-        <h4 className='mt-32 text-4xl font-semibold text-center'>
-          Ultimate DYS
-        </h4>
+        <div className='flex flex-col items-center'>
+          <h4 className='mt-32 text-4xl font-normal text-center text-gray-500'>
+            Feel free to reach out!
+          </h4>
+          <h3 className='text-lg  text-[#58765e]'>
+            {"(Let's build something)"}
+          </h3>
+        </div>
 
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 '>
-            <PhoneIcon className='text-[#438535] w-7 h-7 animate-pulse' />
-            <p className='text-2xl'>+1 978 855 5511</p>
+            <PhoneIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
+            <p className='text-2xl text-gray-500'>+1 978 855 5511</p>
           </div>
           <div className='flex items-center space-x-5 '>
-            <EnvelopeIcon className='text-[#438535] w-7 h-7 animate-pulse' />
-            <p className='text-2xl'>brandonrstone@gmail.com</p>
+            <EnvelopeIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
+            <p className='text-2xl text-gray-500'>brandonrstone@gmail.com</p>
           </div>
           <div className='flex items-center space-x-5 '>
-            <MapPinIcon className='text-[#438535] w-7 h-7 animate-pulse' />
-            <p className='text-2xl'>Worcester, MA</p>
+            <MapPinIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
+            <p className='text-2xl text-gray-500'>Worcester, MA</p>
           </div>
         </div>
 
@@ -73,7 +78,7 @@ const ContactMe: NextPage = ({}: Props) => {
             placeholder='Message...'
           />
           <button
-            className='bg-[#f7ab0a] p-4 rounded-mg text-black text-lg font-bold'
+            className='bg-transparent border-2 border-[#4290a1] p-4 rounded-[7px] text-[#4290a1] text-lg font-bold hover:bg-[#4290a1] hover:border-black hover:text-gray-800 transition-all duration-200'
             type='submit'
           >
             Submit

@@ -3,12 +3,15 @@ import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
 import { ReactLogo } from '../assets'
+import { StaticImageData } from 'next/image'
 
 type Props = {
   directionLeft?: boolean
+  logo: StaticImageData
+  skill: string
 }
 
-const Skill: NextPage = ({ directionLeft }: Props) => {
+const Skill = ({ directionLeft, logo, skill }: Props) => {
   return (
     <div className='group relative flex cursor-pointer'>
       <motion.img
@@ -16,13 +19,13 @@ const Skill: NextPage = ({ directionLeft }: Props) => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        src={ReactLogo.src}
+        src={logo.src}
         className='rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
       />
 
-      <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 rounded-full md:w-28 md:h-28 xl:w-32 xl:w-32 z-0'>
+      <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 rounded-full md:w-28 md:h-28 xl:w-32 xl:h-32 z-0'>
         <div className='flex items-center justify-center transition duration-300 ease-in-out h-full'>
-          <p className='text-3xl font-bold text-black opacity-100'>Test</p>
+          <p className='text-xl font-bold text-black opacity-100'>{skill}</p>
         </div>
       </div>
     </div>

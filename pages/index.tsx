@@ -15,7 +15,7 @@ import About from '../components/About'
 const Home: NextPage = () => {
   return (
     <div
-      className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll 
+      className='bg-[rgb(28,29,29)] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll 
     overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-500'
     >
       <Head>
