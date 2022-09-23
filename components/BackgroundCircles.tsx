@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 type Props = {}
 
-const BackgroundCircles: NextPage = (props: Props) => {
+const BackgroundCircles: NextPage = ({}: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}

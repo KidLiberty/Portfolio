@@ -9,15 +9,16 @@ import Link from 'next/link'
 
 type Props = {}
 
-const Hero: NextPage = (props: Props) => {
+const Hero: NextPage = ({}: Props) => {
   const [text, count] = useTypewriter({
     words: [
       "Hi there, I'm Brandon!",
+      'JavaScript nerd :^)',
       '<Web3 Developer />',
       '...turned aspiring Blockchain Engineer.'
     ],
     loop: true,
-    delaySpeed: 2000
+    delaySpeed: 1500
   })
   return (
     <div className='relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>

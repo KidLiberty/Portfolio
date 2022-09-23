@@ -6,6 +6,7 @@ import ExperienceCard from './ExperienceCard'
 import Skills from './Skills'
 import Skill from './Skill'
 import Projects from './Projects'
+import ContactMe from './ContactMe'
 
 export {
   Header,
@@ -15,5 +16,6 @@ export {
   ExperienceCard,
   Skills,
   Skill,
-  Projects
+  Projects,
+  ContactMe
 }

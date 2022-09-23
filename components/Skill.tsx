@@ -21,7 +21,7 @@ const Skill: NextPage = ({ directionLeft }: Props) => {
       />
 
       <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 rounded-full md:w-28 md:h-28 xl:w-32 xl:w-32 z-0'>
-        <div className='flex items-center justify-center h-full'>
+        <div className='flex items-center justify-center transition duration-300 ease-in-out h-full'>
           <p className='text-3xl font-bold text-black opacity-100'>Test</p>
         </div>
       </div>
