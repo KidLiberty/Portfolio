@@ -33,15 +33,17 @@ const About: NextPage = ({}: Props) => {
           Here is a <i>little</i> background
         </h4>
         <p className='text-justify xs:text-sm'>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem.
+          I'm a developer from the the Northeast. I've been fascinated with the
+          web and the language that builds it since 2014. My endeavors have
+          brought me to the world of Web3; building enterprise React
+          applications alongside blockchain networks like Ethereum to create
+          some pretty cool decentralized applications. I'm particularly
+          interested in bridging the gap between the web, crypto wallets and
+          smart contracts to get my applications decentralized. My recent
+          interests in Solidity have enabled me to begin building my own smart
+          contracts that I've deployed to bring my visions to life. One day, I
+          hope to have my hand in building something critical in the world of
+          decentralization.
         </p>
       </div>
     </motion.div>
