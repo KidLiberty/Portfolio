@@ -24,10 +24,10 @@ const Projects: NextPage = ({}: Props) => {
         Projects
       </h3>
 
-      <div className='relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20'>
+      <div className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20'>
         {projects.map((project: any, i: number) => (
-          <div className='w-screen flex flex-col flex-shrink-0 snap-center space-y-5 items-center justify-center p-20 md:p-44 h-full mt-14 xs:mt-5'>
-            <div className='mt-20 w-[95%] h-[95%] max-w-[1100px] max-[1100px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
+          <div className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'>
+            <div className='mt-20 w-[95%] h-[95%] max-w-[750px] max-h-[750px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
               <motion.img
                 initial={{ y: -300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -39,13 +39,13 @@ const Projects: NextPage = ({}: Props) => {
               />
             </div>
 
-            <div className='space-y-10 px-0 md:px-10 w-max-6xl xs:w-[360px]'>
+            <div className='space-y-8 px-10 md:px-10 w-max-6xl xs:w-[360px]'>
               <h4 className='text-2xl font-semibold text-center'>
                 Current work {i + 1} of project {projects.length}:{' '}
                 {project.title}
               </h4>
 
-              <div className='xs:h-[300px] overflow-scroll'>
+              <div className='xs:h-[300px] overflow-scroll pb-4'>
                 <p className='text-md xs:text-[1.25rem] leading-6 md:text-left text-center'>
                   {project.description}
                 </p>
