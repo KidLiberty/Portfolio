@@ -1,21 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
-import { ReactLogo } from '../assets/index'
+import { NFTMarketplace, ReactLogo } from '../assets/index'
 
 type Props = {}
 
 const Projects: NextPage = ({}: Props) => {
   const projects: Array<Object> = [
     {
-      picture: '',
+      picture: NFTMarketplace,
       title: 'NFT Marketplace',
       description:
         'A full-fledged Web3 NFT Marketplace application that allows the interactivity of MetaMask through the implementation of ethers.js. I used the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
     },
-    { picture: '', title: '', description: '<More to come>' },
-    { picture: '', title: '', description: '<More to come>' }
+    { picture: ReactLogo, title: '', description: '<More to come>' },
+    { picture: ReactLogo, title: '', description: '<More to come>' }
   ]
 
   return (
@@ -24,31 +24,24 @@ const Projects: NextPage = ({}: Props) => {
         Projects
       </h3>
 
-      <div className='relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20 h-screen'>
+      <div className='relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20'>
         {projects.map((project: any, i: number) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: true }}
-            className='w-screen flex flex-col flex-shrink-0 snap-center space-y-5 items-center justify-center p-20 md:p-44 h-full mt-14 xs:mt-5'
-          >
-            <motion.img
-              initial={{ y: -300, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              viewport={{ once: true }}
-              src={ReactLogo.src}
-              className='w-72 h-72 object-contain'
-              alt='Project_Image'
-            />
+          <div className='w-screen flex flex-col flex-shrink-0 snap-center space-y-5 items-center justify-center p-20 md:p-44 h-full mt-14 xs:mt-5'>
+            <div className='mt-20 w-[95%] h-[95%] max-w-[1100px] max-[1100px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
+              <motion.img
+                initial={{ y: -300, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: true }}
+                src={project.picture.src}
+                className='object-contain '
+                alt='Project_Image'
+              />
+            </div>
 
             <div className='space-y-10 px-0 md:px-10 w-max-6xl xs:w-[360px]'>
               <h4 className='text-2xl font-semibold text-center'>
-                <span className='underline'>
-                  Current work {i + 1} of project {projects.length}:
-                </span>{' '}
+                Current work {i + 1} of project {projects.length}:{' '}
                 {project.title}
               </h4>
 
@@ -58,7 +51,7 @@ const Projects: NextPage = ({}: Props) => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 

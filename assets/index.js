@@ -9,6 +9,7 @@ import JavaScriptLogo from './javascript.png'
 import LeftArrow from './leftArrow.png'
 import MetaMaskLogo from './metamask.png'
 import NextJSLogo from './nextjs.png'
+import NFTMarketplace from './nftmarketplace.png'
 import NodeJSLogo from './nodejs.png'
 import OpenSeaLogo from './opensea.png'
 import PythonLogo from './python.png'
@@ -34,6 +35,7 @@ export {
   LeftArrow,
   MetaMaskLogo,
   NextJSLogo,
+  NFTMarketplace,
   NodeJSLogo,
   OpenSeaLogo,
   PythonLogo,
