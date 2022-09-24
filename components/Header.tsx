@@ -29,13 +29,15 @@ const Header: NextPage = ({}: Props) => {
       </div>
 
       <div className='flex flex-row items-center text-gray-300 cursor-pointer'>
-        <SocialIcon
-          className='cursor-pointer'
-          network='email'
-          fgColor='grey'
-          bgColor='transparent'
-        />
-        <p className='uppercase hidden md:inline-flex trext-sm text-gray-400'>
+        <Link href='#contact'>
+          <SocialIcon
+            className='cursor-pointer'
+            network='email'
+            fgColor='grey'
+            bgColor='transparent'
+          />
+        </Link>
+        <p className='uppercase xs:hidden md:inline-flex trext-sm text-gray-400'>
           <Link href='#contact'> Get in touch</Link>
         </p>
       </div>

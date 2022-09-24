@@ -20,12 +20,12 @@ const ContactMe: NextPage = ({}: Props) => {
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:hidden'>
         Contact
       </h3>
 
       <div className='flex flex-col space-y-10'>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center xs:h'>
           <h4 className='mt-32 text-4xl font-normal text-center text-gray-500'>
             Feel free to reach out!
           </h4>
@@ -34,7 +34,7 @@ const ContactMe: NextPage = ({}: Props) => {
           </h3>
         </div>
 
-        <div className='xs:flex xs:flex-col xs:items-center space-y-10'>
+        <div className='xs:flex xs:flex-col xs:justify-center xs:items-center space-y-10 xs:pr-10'>
           <div className='flex items-center space-x-5'>
             <PhoneIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
             <p className='text-2xl text-gray-500'>+1 978 855 5511</p>
@@ -51,7 +51,7 @@ const ContactMe: NextPage = ({}: Props) => {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px] xs:pb-12'
+          className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px] xs:pb-32 '
         >
           <div className='flex xs:flex-col xs:w-full space-x-2 xs:space-x-0 xs:justify-center'>
             <input
@@ -78,7 +78,7 @@ const ContactMe: NextPage = ({}: Props) => {
             placeholder='Message...'
           />
           <button
-            className='bg-transparent border-2 border-[#4290a1] p-4 rounded-[7px] text-[#4290a1] text-lg font-bold hover:bg-[#4290a1] hover:border-black hover:text-gray-800 transition-all duration-200'
+            className='bg-transparent border-2 border-[#4290a1] p-4 rounded-[7px] text-[#4290a1] text-lg font-bold hover:bg-[#4290a1] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2'
             type='submit'
           >
             Submit
