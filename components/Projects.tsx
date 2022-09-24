@@ -12,7 +12,7 @@ const Projects: NextPage = ({}: Props) => {
       picture: '',
       title: 'NFT Marketplace',
       description:
-        "Web3 is quickly growing in the development space, and one of the microcosms to the craze of Cryptocurrencies is the NFT trading platform OpenSea. I've always been intrigued by the nature of blockchain transactions, and set out to learn the heuristics of successfully implementing these trades for myself. Using ethers.js in harmony with Hard Hat & MetaMask, I was able to learn the methodology to implementing on-chain user interactions through JavaScript and Solidity Smart Contracts."
+        'A full-fledged Web3 NFT Marketplace application that allows the interactivity of MetaMask through the implementation of ethers.js. I used the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
     },
     { picture: '', title: '', description: '<More to come>' },
     { picture: '', title: '', description: '<More to come>' }
