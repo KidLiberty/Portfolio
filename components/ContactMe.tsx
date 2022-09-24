@@ -51,7 +51,7 @@ const ContactMe: NextPage = ({}: Props) => {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px]'
+          className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px] xs:pb-12'
         >
           <div className='flex xs:flex-col xs:w-full space-x-2 xs:space-x-0 xs:justify-center'>
             <input

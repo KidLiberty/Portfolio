@@ -12,7 +12,7 @@ const Projects: NextPage = ({}: Props) => {
       picture: '',
       title: 'NFT Marketplace',
       description:
-        "Web3 is quickly growing in the development space, and one of the microcosms to the craze of Cryptocurrencies is the NFT trading platform OpenSea. I've always been intrigued by the nature of blockchain transactions, and set out to learn the heuristics of successfully implementing these trades for myself. Using ethers.js in harmony with Hard Hat & MetaMask, I was able to learn the methodology to implementing on-chain user interactions through JavaScript and Solidity Smart Contracts. Buzzwords aside, I'm fascinated by this tech and I look forward to using this technology in the future when working on the Ethereum Blockchain and decentralized Web Applications."
+        "Web3 is quickly growing in the development space, and one of the microcosms to the craze of Cryptocurrencies is the NFT trading platform OpenSea. I've always been intrigued by the nature of blockchain transactions, and set out to learn the heuristics of successfully implementing these trades for myself. Using ethers.js in harmony with Hard Hat & MetaMask, I was able to learn the methodology to implementing on-chain user interactions through JavaScript and Solidity Smart Contracts."
     },
     { picture: '', title: '', description: '<More to come>' },
     { picture: '', title: '', description: '<More to come>' }
@@ -24,7 +24,7 @@ const Projects: NextPage = ({}: Props) => {
         Projects
       </h3>
 
-      <div className='relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20 '>
+      <div className='relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20 h-screen'>
         {projects.map((project: any, i: number) => (
           <motion.div
             key={i}
