@@ -35,11 +35,11 @@ const About: NextPage = ({}: Props) => {
         <p className='text-justify xs:text-sm'>
           I'm a developer from the the Northeast. I've been fascinated with the
           web and the language that builds it since 2014. Recently, my passions
-          have led me to the world of Web3; building enterprise React
-          applications in harmony with the Ethereum blockchain to create some
+          have led me to the world of Web3; building enterprise applications
+          with React in harmony with the Ethereum blockchain to create some
           pretty cool decentralized applications. I'm particularly interested in
           bridging the gap between the web, crypto wallets and smart contracts
-          to get my applications decentralized. My recent interests in Solidity
+          to get my creations decentralized. My recent explorations in Solidity
           have enabled me to begin building my own smart contracts that I've
           deployed to bring my visions to life. One day, I hope to have my hand
           in building something critical in the world of decentralization.
