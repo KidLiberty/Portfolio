@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.11",
+    "@metamask/providers": "^9.1.0",
     "babel-plugin-styled-components": "^2.0.7",
     "framer-motion": "^7.3.6",
     "next": "12.3.1",

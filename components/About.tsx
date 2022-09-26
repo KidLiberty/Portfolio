@@ -28,21 +28,30 @@ const About: NextPage = ({}: Props) => {
         alt='About_Pic'
       />
 
-      <div className='space-y-10 px-0 md:px-10'>
-        <h4 className='text-4xl font-semibold xs:text-2xl'>
-          Here is a <i>little</i> background
+      <div className='relative flex flex-col items-center space-y-10 px-0 md:px-10'>
+        <h4 className='text-[28px] font-semibold xs:text-2xl'>
+          <span className='inset-0 top-0.75 text-[#daa1f4]'>
+            Here is a <i>little</i> background
+          </span>
+          <span className='absolute inset-0 top-0.5 left-0.5 text-[#343236]'>
+            Here is a <i>little</i> background
+          </span>
+          <span className='absolute inset-0 top-1 left-1.5 text-[#74e1a9]'>
+            Here is a <i>little</i> background
+          </span>
         </h4>
-        <p className='text-justify xs:text-sm'>
+        <p className='text-justify w-[75%] xs:text-sm'>
           I'm a developer from the the Northeast. I've been fascinated with the
           web and the language that builds it since 2014. Recently, my passions
-          have led me to the world of Web3; building enterprise applications
-          with React in harmony with the Ethereum blockchain to create some
+          have led me to the world of Web3; building UX applications with
+          React/Next.js in harmony with the Ethereum blockchain to create some
           pretty cool decentralized applications. I'm particularly interested in
           bridging the gap between the web, crypto wallets and smart contracts
-          to get my creations decentralized. My recent explorations in Solidity
-          have enabled me to begin building my own smart contracts that I've
-          deployed to bring my visions to life. One day, I hope to have my hand
-          in building something critical in the world of decentralization.
+          to get my creations to a wider array of people. My recent explorations
+          in Solidity have enabled me to begin building my own smart contracts
+          that I've deployed to bring my visions to life. One day, I hope to
+          have my hand in building something critical in the world of
+          decentralization.
         </p>
       </div>
     </motion.div>

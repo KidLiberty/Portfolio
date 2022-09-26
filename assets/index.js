@@ -1,5 +1,6 @@
 import AWSLogo from './aws.png'
 import CSS3Logo from './css3.png'
+import Diablo2StatChecker from './diablo2statchecker.gif'
 import EthersJSLogo from './ethersjs.png'
 import GanacheLogo from './ganache.png'
 import HTML5Logo from './html5.png'
@@ -26,6 +27,7 @@ import Web3JSLogo from './web3js.png'
 export {
   AWSLogo,
   CSS3Logo,
+  Diablo2StatChecker,
   EthersJSLogo,
   GanacheLogo,
   HTML5Logo,

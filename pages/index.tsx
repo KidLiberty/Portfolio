@@ -11,6 +11,7 @@ import {
   ContactMe
 } from '../components'
 import About from '../components/About'
+import NFTDisplay from '../components/NFTDisplay'
 
 const Home: NextPage = () => {
   return (

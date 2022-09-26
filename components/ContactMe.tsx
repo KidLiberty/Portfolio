@@ -26,10 +26,10 @@ const ContactMe: NextPage = ({}: Props) => {
 
       <div className='flex flex-col space-y-10'>
         <div className='flex flex-col items-center xs:h'>
-          <h4 className='mt-32 text-4xl font-normal text-center text-gray-500'>
+          <h4 className='mt-32 tracking-[2px] text-3xl font-normal text-center text-gray-500'>
             Feel free to reach out!
           </h4>
-          <h3 className='text-lg  text-[#58765e]'>
+          <h3 className='text-lg tracking-[4px] text-[#58765e]'>
             {"(Let's build something)"}
           </h3>
         </div>

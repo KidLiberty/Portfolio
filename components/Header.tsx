@@ -1,7 +1,6 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { SocialIcon } from 'react-social-icons'
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 type Props = {}
@@ -14,33 +13,24 @@ const Header: NextPage = ({}: Props) => {
           url='https://github.com/KidLiberty'
           fgColor='grey'
           bgColor='transparent'
-        />
-        <SocialIcon
-          url='https://discord.com/Kid Liberty#3430'
-          fgColor='transparent'
-          bgColor='grey'
-          className='scale-50'
+          className='hover:opacity-40 transition-all duration-200'
         />
         <SocialIcon
           url='https://www.linkedin.com/in/brandon-stone-8a319b163/'
           fgColor='grey'
           bgColor='transparent'
+          className='hover:opacity-40 transition-all duration-200'
         />
       </div>
 
-      <div className='flex flex-row items-center text-gray-300 cursor-pointer'>
-        <Link href='#contact'>
-          <SocialIcon
-            className='cursor-pointer'
-            network='email'
-            fgColor='grey'
-            bgColor='transparent'
-          />
-        </Link>
-        <p className='uppercase xs:hidden md:inline-flex trext-sm text-gray-400'>
-          <Link href='#contact'> Get in touch</Link>
-        </p>
-      </div>
+      <Link href='#contact'>
+        <div className='flex flex-row items-center text-gray-300 cursor-pointer hover:opacity-40 transition-all duration-200'>
+          <SocialIcon network='email' fgColor='grey' bgColor='transparent' />
+          <p className='uppercase xs:hidden md:inline-flex trext-sm text-gray-400'>
+            Get in touch
+          </p>
+        </div>
+      </Link>
     </header>
   )
 }
