@@ -11,12 +11,14 @@ const Header: NextPage = ({}: Props) => {
       <div className='flex flex-row items-center'>
         <SocialIcon
           url='https://github.com/KidLiberty'
+          target='_blank'
           fgColor='grey'
           bgColor='transparent'
           className='hover:opacity-40 transition-all duration-200'
         />
         <SocialIcon
           url='https://www.linkedin.com/in/brandon-stone-8a319b163/'
+          target='_blank'
           fgColor='grey'
           bgColor='transparent'
           className='hover:opacity-40 transition-all duration-200'
