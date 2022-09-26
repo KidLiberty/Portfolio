@@ -29,7 +29,7 @@ const Projects: NextPage = ({}: Props) => {
         Projects
       </h3>
 
-      <div className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20'>
+      <div className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none'>
         {projects.map((project: any, i: number) => (
           <div
             key={i}
@@ -52,7 +52,7 @@ const Projects: NextPage = ({}: Props) => {
                 Current project {i + 1} of {projects.length}: {project.title}
               </h4>
 
-              <div className='xs:h-[300px] overflow-scroll pb-4'>
+              <div className='xs:h-[300px] overflow-scroll pb-4 scrollbar-none'>
                 <p className='text-md xs:text-[1.25rem] leading-6 md:text-left text-center'>
                   {project.description}
                 </p>

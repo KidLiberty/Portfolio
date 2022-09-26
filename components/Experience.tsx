@@ -116,7 +116,7 @@ const Experience: NextPage = ({}: Props) => {
       </div>
 
       <div
-        className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory'
+        className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none'
         ref={scrollRef}
       >
         {experienceCardData.map((experienceData: any, i: number) => {
