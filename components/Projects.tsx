@@ -18,9 +18,9 @@ const Projects: NextPage = ({}: Props) => {
       picture: Diablo2StatChecker,
       title: 'Diablo 2 Stat Check',
       description:
-        'This simple single-page application built with Typescript allows a quick and efficient search of the items in the PC game Diablo II. It features a full JSON database of in-game items.'
+        'This single-page application built with Typescript that allows for quick and efficient searching of individual statistics and their percentages on items in the PC game Diablo II.'
     },
-    { picture: ReactLogo, title: '', description: '<More to come>' }
+    { picture: ReactLogo, title: '', description: '<More to come... />' }
   ]
 
   return (
@@ -35,14 +35,16 @@ const Projects: NextPage = ({}: Props) => {
             key={i}
             className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'
           >
-            <div className='flex flex-col items-center mt-20 w-[97%] h-[97%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
+            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-40 '>
               <motion.img
                 initial={{ y: -300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
                 src={project.picture.src}
-                className='object-contain rounded-[5px]'
+                className={`object-contain rounded-[5px] ${
+                  project.picture === ReactLogo && 'rotateIcon'
+                }`}
                 alt='Project_Image'
               />
             </div>

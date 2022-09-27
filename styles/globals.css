@@ -30,4 +30,30 @@
       opacity: 0;
     }
   }
+
+  .rotateIcon {
+    animation: rotateIcon 2s infinite;
+  }
+
+  @keyframes rotateIcon {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(90deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    75% {
+      transform: rotate(270deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
