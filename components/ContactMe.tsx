@@ -29,7 +29,7 @@ const ContactMe: NextPage = ({}: Props) => {
           <h4 className='mt-32 tracking-[2px] text-3xl font-normal text-center text-gray-500'>
             Feel free to reach out!
           </h4>
-          <h3 className='text-lg tracking-[4px] text-[#58765e]'>
+          <h3 className='text-lg tracking-[4px] text-[#5fddb3]'>
             {"(Let's build something)"}
           </h3>
         </div>
@@ -78,7 +78,7 @@ const ContactMe: NextPage = ({}: Props) => {
             placeholder='Message...'
           />
           <button
-            className='bg-transparent border-2 border-[#4290a1] p-4 rounded-[7px] text-[#4290a1] text-lg font-bold hover:bg-[#4290a1] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2'
+            className='bg-transparent border-2 border-[#5fddb3] p-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2'
             type='submit'
           >
             Submit

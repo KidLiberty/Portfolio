@@ -16,7 +16,7 @@ import NFTDisplay from '../components/NFTDisplay'
 const Home: NextPage = () => {
   return (
     <div
-      className='bg-[rgb(28,29,29)] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll 
+      className='bg-[#141920] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll 
     overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-500 scrollbar-hide'
     >
       <Head>

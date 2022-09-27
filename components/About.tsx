@@ -42,7 +42,7 @@ const About: NextPage = ({}: Props) => {
         </h4>
         <p className='text-justify w-[75%] xs:text-sm'>
           I'm a developer from the the Northeast. I've been fascinated with what
-          I see on the web and the language that builds it since 2014. This
+          I've seen on the web and the language that builds it since 2014. This
           curiosity has led me to the world of Web3; building UI's with
           React/Next.js in harmony with the Ethereum blockchain to create some
           pretty cool decentralized applications. I'm particularly interested in
