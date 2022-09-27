@@ -35,7 +35,7 @@ const Projects: NextPage = ({}: Props) => {
             key={i}
             className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'
           >
-            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[750px] max-h-[750px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
+            <div className='flex flex-col items-center mt-20 w-[97%] h-[97%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
               <motion.img
                 initial={{ y: -300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
