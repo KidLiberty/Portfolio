@@ -12,7 +12,7 @@ const Projects: NextPage = ({}: Props) => {
       picture: NFTMarketplace,
       title: 'NFT Marketplace',
       description:
-        'A full-fledged Web3 NFT Marketplace application that allows the interactivity of MetaMask through the implementation of ethers.js. I used the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
+        'A full-fledged Web3 NFT Marketplace application that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
     },
     {
       picture: Diablo2StatChecker,
@@ -35,7 +35,7 @@ const Projects: NextPage = ({}: Props) => {
             key={i}
             className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'
           >
-            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-40 '>
+            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
               <motion.img
                 initial={{ y: -300, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -49,12 +49,12 @@ const Projects: NextPage = ({}: Props) => {
               />
             </div>
 
-            <div className='space-y-8 px-10 md:px-10 w-max-6xl xs:w-[360px]'>
+            <div className='relative space-y-8 px-10 md:px-10 w-max-6xl xs:w-[360px] bottom-10'>
               <h4 className='text-2xl font-semibold text-center'>
                 Current project {i + 1} of {projects.length}: {project.title}
               </h4>
 
-              <div className='xs:h-[300px] overflow-scroll pb-4 scrollbar-none'>
+              <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
                 <p className='text-md xs:text-[1.25rem] leading-6 md:text-left text-center'>
                   {project.description}
                 </p>
