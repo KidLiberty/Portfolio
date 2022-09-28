@@ -1,3 +1,4 @@
+import Alchemy from './alchemy.png'
 import AWSLogo from './aws.png'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
@@ -25,6 +26,7 @@ import TypeScriptLogo from './typescript.png'
 import Web3JSLogo from './web3js.png'
 
 export {
+  Alchemy,
   AWSLogo,
   CSS3Logo,
   Diablo2StatChecker,
