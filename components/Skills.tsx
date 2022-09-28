@@ -9,6 +9,7 @@ import {
   CSS3Logo,
   EthersJSLogo,
   GanacheLogo,
+  HardHat,
   HTML5Logo,
   JavaScriptLogo,
   MetaMaskLogo,
@@ -45,8 +46,9 @@ const Skills: NextPage = ({}: Props) => {
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
     { logo: SolidityLogo, skill: 'Solidity' },
-    { logo: GanacheLogo, skill: 'Ganache' },
-    { logo: Alchemy, skill: 'Alchemy' }
+    { logo: Alchemy, skill: 'Alchemy' },
+    { logo: HardHat, skill: 'HardHat' },
+    { logo: GanacheLogo, skill: 'Ganache' }
   ]
 
   return (

@@ -6,6 +6,7 @@ import EthersJSLogo from './ethersjs.png'
 import GanacheLogo from './ganache.png'
 import HTML5Logo from './html5.png'
 import HakiNFT from './haki.png'
+import HardHat from './hardhat.png'
 import JavaLogo from './java.png'
 import JavaScriptLogo from './javascript.png'
 import LeftArrow from './leftArrow.png'
@@ -34,6 +35,7 @@ export {
   GanacheLogo,
   HTML5Logo,
   HakiNFT,
+  HardHat,
   JavaLogo,
   JavaScriptLogo,
   LeftArrow,
