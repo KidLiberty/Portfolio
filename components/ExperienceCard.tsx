@@ -48,7 +48,7 @@ const ExperienceCard = ({
               return (
                 <li
                   key={`summaryPoint-${i}`}
-                  className='xs:text-[13px] leading-4'
+                  className='xs:text-[13px] leading-5 xs:leading-4'
                 >
                   {summaryPoint}
                 </li>
