@@ -18,12 +18,12 @@ const About: NextPage = ({}: Props) => {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
         src={HakiNFT.src}
-        className='mt-32 -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] overflow-hidden'
+        className='mt-32 -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 xs:w-40 xs:h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px] overflow-hidden'
         alt='About_Pic'
       />
 
       <div className='relative flex flex-col items-center space-y-10 px-0 md:px-10'>
-        <h4 className='text-[28px] font-semibold xs:text-2xl'>
+        <h4 className='text-[28px] font-semibold xs:text-xl'>
           <span className='inset-0 top-0.75 text-[#daa1f4]'>
             Here is a <i>little</i> background
           </span>
@@ -34,7 +34,7 @@ const About: NextPage = ({}: Props) => {
             Here is a <i>little</i> background
           </span>
         </h4>
-        <p className='text-justify w-[75%] xs:text-sm'>
+        <p className='text-justify w-[75%] xs:text-m xs:w-[97.5%] xs:pb-12'>
           I'm a developer from the the Northeast. I've been fascinated with what
           I've seen on the web and the language that builds it since 2014. This
           curiosity has led me to the world of Web3; building UIs with
