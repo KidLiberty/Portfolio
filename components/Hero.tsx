@@ -44,7 +44,7 @@ const Hero: NextPage = ({}: Props) => {
           </span>
         </h1>
 
-        <div className='pt-5 xs:flex xs:flex-col'>
+        <div className='pt-5 xs:grid xs:grid-rows-2 xs:grid-cols-2 gap-0'>
           <Link href='#about'>
             <button className='heroButton xs:text-xl'>About</button>
           </Link>
