@@ -31,13 +31,17 @@ const Projects: NextPage = ({}: Props) => {
     { picture: ReactLogo, title: '', description: '<More to come... />' }
   ]
 
-  const handleScroll = (direction: any) => {
+  const handleScroll = (direction: string | boolean) => {
     const { current } = scrollRef
 
-    if (direction === 'left') {
-      current.scrollLeft -= 500
-    } else {
-      current.scrollLeft += 500
+    if (direction === 'left' && window.innerWidth > 600) {
+      current.scrollLeft -= 1000
+    } else if (direction === 'right' && window.innerWidth > 600) {
+      current.scrollLeft += 1000
+    } else if (direction === 'left') {
+      current.scrollLeft -= 400
+    } else if (direction === 'right') {
+      current.scrollLeft += 400
     }
   }
 

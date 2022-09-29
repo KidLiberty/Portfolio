@@ -36,10 +36,10 @@ const About: NextPage = ({}: Props) => {
         </div>
         <p className='text-justify text-[18px] w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
           My name is Brandon, I'm a developer from the Northeast 🍂🌊 who has
-          worked in the world of financial technology for the past 3 years. I've
-          been fascinated with what I've seen on the web and the language that
-          builds it since 2014. This determination has led me to the world of{' '}
-          <b>Web3</b>; building UIs with React/Next.js in harmony with the
+          worked in the world of financial technology for the past 3 years, and
+          I've been fascinated with what I've seen on the web and the language
+          that builds it since 2014. This determination has led me to the world
+          of <b>Web3</b>; building UIs with React/Next.js in harmony with the
           Ethereum blockchain to create some pretty cool decentralized
           applications. My current ambitions hone on bridging the gap between
           the web, EOAs (through MetaMask 🦊), and on-chain protocols to get my
