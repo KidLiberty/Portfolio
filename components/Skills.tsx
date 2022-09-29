@@ -63,7 +63,7 @@ const Skills: NextPage = ({}: Props) => {
         Skills
       </h3>
 
-      <h3 className='absolute top-36 text-sm tracking-[3px] text-gray-500 mr-4'>
+      <h3 className='absolute top-36 text-md tracking-[3px] text-gray-500 mr-4 sm:text-[15px]'>
         What I work with; Always looking to expand
       </h3>
 

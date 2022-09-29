@@ -44,18 +44,26 @@ const Hero: NextPage = ({}: Props) => {
           </span>
         </h1>
 
-        <div className='pt-5 xs:grid xs:grid-rows-2 xs:grid-cols-2 gap-0'>
+        <div className='pt-5 xs:grid xs:grid-rows-2 xs:grid-cols-2 sm:pt-4'>
           <Link href='#about'>
-            <button className='heroButton xs:text-xl'>About</button>
+            <button className='relative heroButton xs:text-xl xs:left-5'>
+              About
+            </button>
           </Link>
           <Link href='#experience'>
-            <button className='heroButton xs:text-xl'>Experience</button>
+            <button className='relative heroButton xs:text-xl xs:right-5'>
+              Experience
+            </button>
           </Link>
           <Link href='#skills'>
-            <button className='heroButton xs:text-xl'>Skills</button>
+            <button className='relative heroButton xs:text-xl xs:left-5'>
+              Skills
+            </button>
           </Link>
           <Link href='#projects'>
-            <button className='heroButton xs:text-xl'>Projects</button>
+            <button className='relative heroButton xs:text-xl xs:right-9'>
+              Projects
+            </button>
           </Link>
         </div>
       </div>

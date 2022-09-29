@@ -23,7 +23,7 @@ const About: NextPage = ({}: Props) => {
       />
 
       <div className='relative flex flex-col items-center space-y-10 px-0 md:px-10'>
-        <h4 className='text-[28px] font-semibold xs:text-xl'>
+        <div className='text-[28px] font-semibold xs:text-xl sm:text-xl'>
           <span className='inset-0 top-0.75 text-[#daa1f4]'>
             Here is a <i>little</i> background
           </span>
@@ -33,19 +33,21 @@ const About: NextPage = ({}: Props) => {
           <span className='absolute inset-0 top-1 left-1.5 text-[#74e1a9]'>
             Here is a <i>little</i> background
           </span>
-        </h4>
-        <p className='text-justify w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12'>
-          I'm a developer from the the Northeast. I've been fascinated with what
-          I've seen on the web and the language that builds it since 2014. This
-          curiosity has led me to the world of Web3; building UIs with
-          React/Next.js in harmony with the Ethereum blockchain to create some
-          pretty cool decentralized applications. I'm particularly interested in
-          bridging the gap between the web, wallet software like MetaMask, and
-          smart contracts to get my creations to a wider array of people. Smart
-          Contract languages like Solidity have enabled me to begin building my
-          own protocols; deploying live to bring my visions to life. One day, I
-          hope to have my hand in building something critical in the world of
-          decentralization.
+        </div>
+        <p className='text-justify text-[18px] w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5'>
+          My name is Brandon, I'm a developer from the Northeast 🍂🌊 who has
+          worked in the world of financial technology for the past 3 years. I've
+          been fascinated with what I've seen on the web and the language that
+          builds it since 2014. This determination has led me to the world of{' '}
+          <b>Web3</b>; building UIs with React/Next.js in harmony with the
+          Ethereum blockchain to create some pretty cool decentralized
+          applications. My current ambitions hone on bridging the gap between
+          the web, EOAs (through MetaMask 🦊), and on-chain protocols to get my
+          creations to a wider array of people in the space. It's been a blast
+          using Solidity to create Smart Contracts, and with frameworks like
+          ethers.js the process could not be more harmonious. One day, the dream
+          is having a hand in building something narrative-shifting in the world
+          of decentralized finance.
         </p>
       </div>
     </div>

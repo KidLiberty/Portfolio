@@ -17,10 +17,10 @@ const Home: NextPage = () => {
   return (
     <div
       className='bg-[#141920] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll 
-    overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-500 scrollbar-hide'
+    overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-500 scrollbar-hide font-poppins'
     >
       <Head>
-        <title>Brandon&apos;s Portfolio</title>
+        <title>Brandon Stone.dev</title>
       </Head>
 
       <Header />
