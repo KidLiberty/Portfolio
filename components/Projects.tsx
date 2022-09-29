@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import { NextPage } from 'next'
-import { motion } from 'framer-motion'
 
 import {
   Diablo2StatChecker,
@@ -75,19 +74,15 @@ const Projects: NextPage = ({}: Props) => {
 
       <div
         ref={scrollRef}
-        className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none '
+        className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none'
       >
         {projects.map((project: any, i: number) => (
           <div
             key={i}
             className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'
           >
-            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-40'>
-              <motion.img
-                initial={{ y: -300, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.5 }}
-                viewport={{ once: true }}
+            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-[100px] overflow-hidden'>
+              <img
                 src={project.picture.src}
                 className={`object-contain rounded-[5px] ${
                   project.picture === ReactLogo && 'rotateIcon'

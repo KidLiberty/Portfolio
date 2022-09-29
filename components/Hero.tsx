@@ -23,7 +23,7 @@ const Hero: NextPage = ({}: Props) => {
   return (
     <div className='relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
-      <div className='relative top-20'>
+      <div className='relative top-20 overflow-hidden'>
         <Image
           src={HakiNFT}
           className='rounded-full mx-auto'

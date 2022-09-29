@@ -19,7 +19,7 @@ const BackgroundCircles: NextPage = ({}: Props) => {
       <div className='absolute border border-[#3d3f41] rounded-full h-[200px] w-[200px] mt-52 ping' />
       <div className='absolute border border-[#333333] rounded-full h-[300px] w-[300px] mt-52' />
       <div className='absolute border border-[#333333] rounded-full h-[500px] w-[500px] mt-52' />
-      <div className='absolute border border-[#ea7fc9] rounded-full h-[650px] w-[650px] mt-52 opactiy-20 animate-pulse' />
+      <div className='absolute border border-[#9270c9] rounded-full h-[650px] w-[650px] mt-52 opactiy-20 animate-pulse' />
       <div className='absolute border border-[#333333] rounded-full h-[800px] w-[800px] mt-52' />
     </motion.div>
   )

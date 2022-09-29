@@ -59,7 +59,7 @@ const Experience: NextPage = ({}: Props) => {
       ]
     },
     {
-      jobTitle: 'Software Engineer Intern',
+      jobTitle: 'Front-End Intern',
       company: 'Sensible United LLC',
       stack: [JavaScriptLogo, ReactLogo, ReactNativeLogo],
       startTime: 'August 2018',
@@ -116,7 +116,7 @@ const Experience: NextPage = ({}: Props) => {
       </div>
 
       <div
-        className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none'
+        className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden'
         ref={scrollRef}
       >
         {experienceCardData.map((experienceData: any, i: number) => {
