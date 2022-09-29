@@ -18,7 +18,7 @@ const ExperienceCard = ({
   summaryPoints
 }: Props) => {
   return (
-    <article className='flex rounded-[10px] flex-col items-center text-[#b8bcc8] xs:w-[300px] space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#2d3945] hover:opacity-100 transition-opacity duration-200 overflow-hidden shadow-sm shadow-[#5292a0]'>
+    <article className='flex rounded-[10px] flex-col items-center text-[#b8bcc8] xs:w-[300px] space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#2d3945] hover:opacity-100 transition-opacity duration-200 overflow-hidden shadow-sm shadow-[#5292a0] xs:h-[90%]'>
       <div className='px-0 md:px-10 pt-10 '>
         <div className='mb-20'>
           <h4 className='text-4xl xs:text-[1.75rem] font-light xs:text-md xs:text-center'>
