@@ -33,18 +33,18 @@ const Hero: NextPage = ({}: Props) => {
           alt='Portfolio Picture'
         />
       </div>
-      <div className='relative top-16 z-20'>
-        <h1 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
+      <div className='relative flex flex-col items-center justify-center text-center top-16 xs:top-14 z-20'>
+        <h1 className='text-sm uppercase text-gray-500 pb- tracking-[15px] text-center xs:tracking-[12px]'>
           Front End Engineer
         </h1>
         <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10 xs:h-[75px]'>
-          <span className='text-4xl mr-3'>{text}</span>
+          <span className='text-4xl mr-3 sm:text-3xl'>{text}</span>
           <span className='relative right-3'>
             <Cursor cursorColor='#f7ab0a' />
           </span>
         </h1>
 
-        <div className='pt-5 xs:grid xs:grid-rows-2 xs:grid-cols-2 sm:pt-4'>
+        <div className='pt-5 xs:grid xs:grid-rows-2 xs:grid-cols-2 sm:pt-4 xs:pb-10'>
           <Link href='#about'>
             <button className='relative heroButton xs:text-xl xs:left-5'>
               About

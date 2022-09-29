@@ -34,20 +34,20 @@ const About: NextPage = ({}: Props) => {
             Here is a <i>little</i> background
           </span>
         </div>
-        <p className='text-justify text-[18px] w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
-          My name is Brandon, I'm a developer from the Northeast 🍂🌊 who has
-          worked in the world of financial technology for the past 3 years, and
-          I've been fascinated with what I've seen on the web and the language
-          that builds it since 2014. This determination has led me to the world
-          of <b>Web3</b>; building UIs with React/Next.js in harmony with the
-          Ethereum blockchain to create some pretty cool decentralized
+        <p className='text-justify text-gray-300 text-[18px] w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
+          My name is Brandon. I'm a developer from the Northeast 🍂🌊 who has
+          worked in the world of financial technology for the past 3 years. I
+          have also had a fascination with what I've seen on the web and the
+          language that builds it since 2014. This determination has led me to
+          the world of <b>Web3</b>; building UIs with React/Next.js in harmony
+          with the Ethereum blockchain to create some pretty cool decentralized
           applications. My current ambitions hone on bridging the gap between
           the web, EOAs (through MetaMask 🦊), and on-chain protocols to get my
           creations to a wider array of people in the space. It's been a blast
           using Solidity to create Smart Contracts, and with frameworks like
-          ethers.js the process could not be more harmonious. One day, the dream
-          is having a hand in building something narrative-shifting in the world
-          of decentralized finance.
+          ethers.js the process could not be more harmonious. One day, my dream
+          is to have a hand in building a narrative-shifting project in the
+          world of decentralized finance.
         </p>
       </div>
     </div>

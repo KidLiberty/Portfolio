@@ -43,10 +43,13 @@ const ExperienceCard = ({
             {startTime} <i>-</i> {endTime}
           </p>
 
-          <ul className='list-disc space-y-4 ml-5 text-lg w-[300px] xs:px-4 xs:text-[13px]'>
+          <ul className='list-disc space-y-4 xs:space-y-2 ml-5 text-lg w-[300px] xs:px-4 xs:text-[13px]'>
             {summaryPoints.map((summaryPoint: string, i: number) => {
               return (
-                <li key={`summaryPoint-${i}`} className='xs:text-[13px]'>
+                <li
+                  key={`summaryPoint-${i}`}
+                  className='xs:text-[13px] leading-4'
+                >
                   {summaryPoint}
                 </li>
               )
