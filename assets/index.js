@@ -1,4 +1,4 @@
-import Alchemy from './alchemy.png'
+import AlchemyLogo from './alchemy.png'
 import AWSLogo from './aws.png'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
@@ -23,11 +23,12 @@ import SASSLogo from './sass.png'
 import SolidityLogo from './solidity.png'
 import SpringLogo from './spring.png'
 import TailwindCSSLogo from './tailwindcss.png'
+import ThirdwebLogo from './thirdweb.png'
 import TypeScriptLogo from './typescript.png'
 import Web3JSLogo from './web3js.png'
 
 export {
-  Alchemy,
+  AlchemyLogo,
   AWSLogo,
   CSS3Logo,
   Diablo2StatChecker,
@@ -52,6 +53,7 @@ export {
   SolidityLogo,
   SpringLogo,
   TailwindCSSLogo,
+  ThirdwebLogo,
   TypeScriptLogo,
   Web3JSLogo
 }

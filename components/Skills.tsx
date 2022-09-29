@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Skill from './Skill'
 
 import {
-  Alchemy,
+  AlchemyLogo,
   CSS3Logo,
   EthersJSLogo,
   GanacheLogo,
@@ -19,6 +19,7 @@ import {
   SASSLogo,
   SolidityLogo,
   TailwindCSSLogo,
+  ThirdwebLogo,
   TypeScriptLogo,
   Web3JSLogo
 } from '../assets'
@@ -47,8 +48,9 @@ const Skills: NextPage = ({}: Props) => {
     { logo: MetaMaskLogo, skill: 'MetaMask' },
     { logo: SolidityLogo, skill: 'Solidity' },
     { logo: HardHat, skill: 'HardHat' },
-    { logo: Alchemy, skill: 'Alchemy' },
-    { logo: GanacheLogo, skill: 'Ganache' }
+    { logo: AlchemyLogo, skill: 'Alchemy' },
+    { logo: GanacheLogo, skill: 'Ganache' },
+    { logo: ThirdwebLogo, skill: 'ThirdWeb' }
   ]
 
   return (
