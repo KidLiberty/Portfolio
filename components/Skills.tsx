@@ -46,8 +46,8 @@ const Skills: NextPage = ({}: Props) => {
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
     { logo: SolidityLogo, skill: 'Solidity' },
-    { logo: Alchemy, skill: 'Alchemy' },
     { logo: HardHat, skill: 'HardHat' },
+    { logo: Alchemy, skill: 'Alchemy' },
     { logo: GanacheLogo, skill: 'Ganache' }
   ]
 
