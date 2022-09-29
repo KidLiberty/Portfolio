@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import Image from 'next/image'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
-import { Diablo2StatChecker, NFTMarketplace, ReactLogo } from '../assets/index'
+import {
+  Diablo2StatChecker,
+  LeftArrow,
+  NFTMarketplace,
+  ReactLogo,
+  RightArrow
+} from '../assets/index'
 
 type Props = {}
 
 const Projects: NextPage = ({}: Props) => {
+  const scrollRef = useRef<any>(null)
+
   const projects: Array<Object> = [
     {
       picture: NFTMarketplace,
@@ -23,13 +32,51 @@ const Projects: NextPage = ({}: Props) => {
     { picture: ReactLogo, title: '', description: '<More to come... />' }
   ]
 
+  const handleScroll = (direction: any) => {
+    const { current } = scrollRef
+
+    if (direction === 'left') {
+      current.scrollLeft -= 500
+    } else {
+      current.scrollLeft += 500
+    }
+  }
+
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         Projects
       </h3>
 
-      <div className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none'>
+      <div
+        className='absolute top-100 left-[0] hover:cursor-pointer opacity-70 hover:opacity-40 z-30'
+        onClick={() => handleScroll('left')}
+      >
+        <Image
+          src={LeftArrow}
+          width={35}
+          height={35}
+          objectFit='cover'
+          alt='LeftArrow'
+        />
+      </div>
+      <div
+        className='absolute top-100 right-[0] hover:cursor-pointer opacity-70 hover:opacity-40 z-30'
+        onClick={() => handleScroll('right')}
+      >
+        <Image
+          src={RightArrow}
+          width={35}
+          height={35}
+          objectFit='cover'
+          alt='LeftArrow'
+        />
+      </div>
+
+      <div
+        ref={scrollRef}
+        className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none '
+      >
         {projects.map((project: any, i: number) => (
           <div
             key={i}
