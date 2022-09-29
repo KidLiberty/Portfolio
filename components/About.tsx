@@ -34,7 +34,7 @@ const About: NextPage = ({}: Props) => {
             Here is a <i>little</i> background
           </span>
         </div>
-        <p className='text-justify text-[18px] w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5'>
+        <p className='text-justify text-[18px] w-[75%] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
           My name is Brandon, I'm a developer from the Northeast 🍂🌊 who has
           worked in the world of financial technology for the past 3 years. I've
           been fascinated with what I've seen on the web and the language that
