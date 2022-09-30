@@ -59,9 +59,9 @@ const Skills: NextPage = ({}: Props) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
-      className='h-screen flex flex-col relative justify-center text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center p-100'
+      className='h-screen relative flex flex-col justify-center items-center text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto p-100'
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-28'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-6'>
         Skills
       </h3>
 

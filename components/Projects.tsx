@@ -47,7 +47,7 @@ const Projects: NextPage = ({}: Props) => {
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-16'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-5 xs:pl-4'>
         Projects
       </h3>
 

@@ -86,7 +86,7 @@ const Experience: NextPage = ({}: Props) => {
       className='h-screen flex relative overflow-hidden flex-col justify-evenly text-left md:flex-row max-w-full px-10 mx-auto items-center pt-32'
       ref={parentRef}
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-10'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-6'>
         Experience
       </h3>
 
