@@ -20,7 +20,7 @@ const ContactMe: NextPage = ({}: Props) => {
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-20 xs:top-36 '>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-20 xs:hidden'>
         Contact
       </h3>
 
