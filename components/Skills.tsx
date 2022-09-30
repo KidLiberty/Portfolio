@@ -61,11 +61,11 @@ const Skills: NextPage = ({}: Props) => {
       viewport={{ once: true }}
       className='h-screen flex flex-col relative justify-center text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center p-100'
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-28'>
         Skills
       </h3>
 
-      <h3 className='absolute top-36 text-md tracking-[3px] text-gray-500 mr-4 sm:text-[15px]'>
+      <h3 className='absolute top-36 text-md tracking-[3px] text-gray-500 mr-4 sm:text-[15px] xs:left-4'>
         What I work with; Always looking to expand
       </h3>
 

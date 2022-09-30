@@ -20,16 +20,16 @@ const ContactMe: NextPage = ({}: Props) => {
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:hidden'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-20 xs:top-36 '>
         Contact
       </h3>
 
       <div className='flex flex-col space-y-10'>
         <div className='flex flex-col items-center xs:h'>
-          <h4 className='mt-32 tracking-[2px] text-3xl font-normal text-center text-gray-500'>
+          <h4 className='mt-32 tracking-[2px] text-3xl font-normal text-center text-gray-500 xs:text-2xl'>
             Feel free to reach out!
           </h4>
-          <h3 className='text-lg tracking-[4px] text-[#5fddb3]'>
+          <h3 className='text-lg tracking-[4px] text-[#5fddb3] xs:text-md'>
             {"(Let's build something)"}
           </h3>
         </div>
