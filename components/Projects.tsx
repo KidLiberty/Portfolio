@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import { NextPage } from 'next'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
 import {
   CryptoLottery,
@@ -10,6 +11,7 @@ import {
   ReactLogo,
   RightArrow
 } from '../assets/index'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -21,19 +23,22 @@ const Projects: NextPage = ({}: Props) => {
       picture: NFTMarketplace,
       title: 'NFT Marketplace',
       description:
-        'A decentralized Web3 NFT Marketplace that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
+        'A decentralized Web3 NFT Marketplace that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.',
+      gitHubLink: 'https://github.com/KidLiberty/NFT-Marketplace-dApp'
     },
     {
       picture: CryptoLottery,
       title: 'Crypto Lottery',
       description:
-        "Found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network."
+        "Found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network.",
+      gitHubLink: 'https://github.com/KidLiberty/Crypto-Lottery-dApp'
     },
     {
       picture: Diablo2StatChecker,
       title: 'Diablo 2 Stat Check',
       description:
-        'Off the topic of Crypto, this single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.'
+        'Off the topic of Crypto, this single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.',
+      gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker'
     },
     { picture: ReactLogo, title: '', description: '<More to come... />' }
   ]
@@ -108,9 +113,23 @@ const Projects: NextPage = ({}: Props) => {
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
-                <p className='text-md leading-6 md:text-left text-center xs:text-[15px]'>
+                <p className='text-md leading-6 md:text-left text-center xs:text-[15px] text-justify'>
                   {project.description}
                 </p>
+                <a
+                  target='_blank'
+                  href={project.gitHubLink}
+                  rel='noopener noreferrer'
+                >
+                  <p className='flex items-center justify-center pt-2 text-[#56bcc1] hover:text-[#56bcc1]/70 transition-all duration-200'>
+                    GitHub Code
+                    <ArrowTopRightOnSquareIcon
+                      width={20}
+                      height={20}
+                      className='ml-2'
+                    />
+                  </p>
+                </a>
               </div>
             </div>
           </div>
