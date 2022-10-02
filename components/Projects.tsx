@@ -40,7 +40,12 @@ const Projects: NextPage = ({}: Props) => {
         'Off the topic of Crypto, this single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.',
       gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker'
     },
-    { picture: ReactLogo, title: '', description: '<More to come... />' }
+    {
+      picture: ReactLogo,
+      title: '',
+      description: '<More to come... />',
+      gitHubLink: 'https://github.com/KidLiberty/'
+    }
   ]
 
   const handleScroll = (direction: string | boolean) => {
@@ -97,7 +102,11 @@ const Projects: NextPage = ({}: Props) => {
             key={i}
             className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'
           >
-            <div className='flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-[100px] overflow-hidden'>
+            <div
+              className={`flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-[100px] overflow-hidden ${
+                project.picture === ReactLogo && 'xs:pb-[300px]'
+              }`}
+            >
               <img
                 src={project.picture.src}
                 className={`object-contain rounded-[5px] ${
@@ -113,16 +122,22 @@ const Projects: NextPage = ({}: Props) => {
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
-                <p className='text-md leading-6 md:text-left xs:text-[15px] text-justify xs:leading-5'>
+                <p
+                  className={`text-md leading-6 md:text-left xs:text-[15px] ${
+                    project.description === '<More to come... />'
+                      ? 'text-center'
+                      : 'text-justify'
+                  } xs:leading-5`}
+                >
                   {project.description}
                 </p>
                 <a
                   target='_blank'
-                  href={project.gitHubLink}
+                  href={project?.gitHubLink}
                   rel='noopener noreferrer'
                 >
                   <p className='flex items-center justify-center pt-2 text-[#56bcc1] hover:text-[#56bcc1]/70 transition-all duration-200'>
-                    GitHub Code
+                    {project.picture === ReactLogo ? 'GitHub' : 'Project Code'}
                     <ArrowTopRightOnSquareIcon
                       width={20}
                       height={20}
