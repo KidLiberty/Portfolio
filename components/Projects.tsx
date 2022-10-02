@@ -30,7 +30,7 @@ const Projects: NextPage = ({}: Props) => {
       picture: CryptoLottery,
       title: 'Crypto Lottery',
       description:
-        "Found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network.",
+        "I found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network.",
       gitHubLink: 'https://github.com/KidLiberty/Crypto-Lottery-dApp'
     },
     {
@@ -113,7 +113,7 @@ const Projects: NextPage = ({}: Props) => {
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
-                <p className='text-md leading-6 md:text-left text-center xs:text-[15px] text-justify'>
+                <p className='text-md leading-6 md:text-left xs:text-[15px] text-justify'>
                   {project.description}
                 </p>
                 <a
