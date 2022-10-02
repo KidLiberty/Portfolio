@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { NextPage } from 'next'
 
 import {
+  CryptoLottery,
   Diablo2StatChecker,
   LeftArrow,
   NFTMarketplace,
@@ -20,13 +21,19 @@ const Projects: NextPage = ({}: Props) => {
       picture: NFTMarketplace,
       title: 'NFT Marketplace',
       description:
-        'A full-fledged Web3 NFT Marketplace application that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
+        'A decentralized Web3 NFT Marketplace that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.'
+    },
+    {
+      picture: CryptoLottery,
+      title: 'Crypto Lottery',
+      description:
+        "Found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network."
     },
     {
       picture: Diablo2StatChecker,
       title: 'Diablo 2 Stat Check',
       description:
-        'This single-page application built with Typescript that allows for quick and efficient searching of individual statistics and their percentages on items in the PC game Diablo II.'
+        'Off the topic of Crypto, this single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.'
     },
     { picture: ReactLogo, title: '', description: '<More to come... />' }
   ]
@@ -96,8 +103,8 @@ const Projects: NextPage = ({}: Props) => {
             </div>
 
             <div className='relative space-y-8 px-10 md:px-10 w-max-6xl xs:w-[360px] bottom-10'>
-              <h4 className='text-2xl font-semibold text-center'>
-                Current project {i + 1} of {projects.length}: {project.title}
+              <h4 className='text-2xl font-semibold text-center sm:mt-2'>
+                Project {i + 1} of {projects.length}: {project.title}
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>

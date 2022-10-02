@@ -1,5 +1,6 @@
 import AlchemyLogo from './alchemy.png'
 import AWSLogo from './aws.png'
+import CryptoLottery from './cryptolottery.gif'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
 import EthersJSLogo from './ethersjs.png'
@@ -30,6 +31,7 @@ import Web3JSLogo from './web3js.png'
 export {
   AlchemyLogo,
   AWSLogo,
+  CryptoLottery,
   CSS3Logo,
   Diablo2StatChecker,
   EthersJSLogo,

@@ -6,7 +6,6 @@ import Skill from './Skill'
 
 import {
   AlchemyLogo,
-  CSS3Logo,
   EthersJSLogo,
   GanacheLogo,
   HardHat,
@@ -49,8 +48,8 @@ const Skills: NextPage = ({}: Props) => {
     { logo: SolidityLogo, skill: 'Solidity' },
     { logo: HardHat, skill: 'HardHat' },
     { logo: AlchemyLogo, skill: 'Alchemy' },
-    { logo: GanacheLogo, skill: 'Ganache' },
-    { logo: ThirdwebLogo, skill: 'ThirdWeb' }
+    { logo: ThirdwebLogo, skill: 'ThirdWeb' },
+    { logo: GanacheLogo, skill: 'Ganache' }
   ]
 
   return (
