@@ -34,7 +34,7 @@ const Projects: NextPage = ({}: Props) => {
     },
     {
       picture: Diablo2StatChecker,
-      title: 'Diablo 2 Stat Check',
+      title: 'Diablo II Stat Check',
       description:
         'Off the topic of Crypto, this single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.',
       gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker'
@@ -117,7 +117,9 @@ const Projects: NextPage = ({}: Props) => {
 
             <div className='relative space-y-8 px-10 md:px-10 w-max-6xl xs:w-[360px] bottom-10'>
               <h4 className='text-2xl font-semibold text-center sm:mt-2'>
-                Project {i + 1} of {projects.length}: {project.title}
+                {projects.indexOf(project) !== projects.length - 1
+                  ? `Project ${i + 1} of ${projects.length}: ${project.title}`
+                  : `Project ${i + 1} on the way!`}
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
