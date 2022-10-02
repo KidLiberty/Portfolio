@@ -113,7 +113,7 @@ const Projects: NextPage = ({}: Props) => {
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
-                <p className='text-md leading-6 md:text-left xs:text-[15px] text-justify'>
+                <p className='text-md leading-6 md:text-left xs:text-[15px] text-justify xs:leading-5'>
                   {project.description}
                 </p>
                 <a
