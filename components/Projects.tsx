@@ -11,9 +11,8 @@ import {
   ReactLogo,
   RightArrow
 } from '../assets/index'
-import Link from 'next/link'
 
-type Props = {}
+interface Props {}
 
 const Projects: NextPage = ({}: Props) => {
   const scrollRef = useRef<any>(null)

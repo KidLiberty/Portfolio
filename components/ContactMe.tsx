@@ -80,7 +80,7 @@ const ContactMe: NextPage = ({}: Props) => {
             placeholder='Message...'
           />
           <button
-            className='bg-transparent border-2 border-[#5fddb3] p-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2'
+            className='bg-transparent border-2 border-[#5fddb3] p-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2 active:bg-[#5fddb3]/70'
             type='submit'
           >
             Submit
