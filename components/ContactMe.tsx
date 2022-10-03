@@ -36,10 +36,6 @@ const ContactMe: NextPage = ({}: Props) => {
 
         <div className='xs:flex xs:flex-col xs:justify-center xs:items-center space-y-10 xs:space-y-3 xs:pr-10'>
           <div className='flex items-center space-x-5'>
-            <PhoneIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
-            <p className='text-2xl text-gray-500 xs:text-xl'>+1 978 855 5511</p>
-          </div>
-          <div className='flex items-center space-x-5'>
             <EnvelopeIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
             <p className='text-2xl text-gray-500 xs:text-xl'>
               brandonrstone@gmail.com
