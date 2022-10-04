@@ -7,10 +7,8 @@ import { BackgroundCircles } from '../components'
 import { HakiNFT } from '../assets'
 import Link from 'next/link'
 
-type Props = {}
-
-const Hero: NextPage = ({}: Props) => {
-  const [text, count] = useTypewriter({
+const Hero: NextPage = () => {
+  const [text] = useTypewriter({
     words: [
       "Hi there, I'm Brandon!",
       'JavaScript nerd :^)',

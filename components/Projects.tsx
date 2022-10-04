@@ -12,12 +12,10 @@ import {
   RightArrow
 } from '../assets/index'
 
-interface Props {}
+const Projects: NextPage = () => {
+  const scrollRef = useRef<HTMLInputElement | null>(null)
 
-const Projects: NextPage = ({}: Props) => {
-  const scrollRef = useRef<any>(null)
-
-  const projects: Array<Object> = [
+  const projects: Object[] = [
     {
       picture: NFTMarketplace,
       title: 'NFT Marketplace',
@@ -47,17 +45,17 @@ const Projects: NextPage = ({}: Props) => {
     }
   ]
 
-  const handleScroll = (direction: string | boolean) => {
+  const handleScroll = (direction: string) => {
     const { current } = scrollRef
 
     if (direction === 'left' && window.innerWidth > 600) {
-      current.scrollLeft -= 1000
+      current!.scrollLeft -= 1000
     } else if (direction === 'right' && window.innerWidth > 600) {
-      current.scrollLeft += 1000
+      current!.scrollLeft += 1000
     } else if (direction === 'left') {
-      current.scrollLeft -= 400
+      current!.scrollLeft -= 400
     } else if (direction === 'right') {
-      current.scrollLeft += 400
+      current!.scrollLeft += 400
     }
   }
 

@@ -1,16 +1,12 @@
 import React from 'react'
 
 interface Props {
-  i?: number
   nft?: any
 }
 
-const NFTCard = ({ i, nft }: Props) => {
+const NFTCard = ({ nft }: Props) => {
   return (
-    <div
-      key={`nftCard-${i}`}
-      className='lg:h-[600px] sm:h-[425px] xs:h-[500px] xs:w-[250px] rounded-lg bg-[#c3c3c3]'
-    >
+    <div className='lg:h-[600px] sm:h-[425px] xs:h-[500px] xs:w-[250px] rounded-lg bg-[#c3c3c3]'>
       <div className='w-[200px] xs:w-[250px]'>
         <img
           src={nft?.meta?.content[0]?.url.replace(

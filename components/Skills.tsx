@@ -27,9 +27,7 @@ interface SkillData {
   logo: StaticImageData
 }
 
-type Props = {}
-
-const Skills: NextPage = ({}: Props) => {
+const Skills: NextPage = () => {
   const topSkillsData: Array<Object> = [
     { logo: JavaScriptLogo, skill: 'JavaScript' },
     { logo: ReactLogo, skill: 'React' },

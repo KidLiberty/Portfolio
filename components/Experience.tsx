@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import { NextPage } from 'next'
 import Image from 'next/image'
 
@@ -18,23 +18,22 @@ import {
 } from '../assets'
 import ExperienceCard from './ExperienceCard'
 
-interface experienceData {
-  jobTitle: string
-  company: string
-  stack: Array<any>
-  startTime: string
-  endTime: string
-  summaryPoints: Array<string>
+interface ExperienceData {
+  experienceObject: {
+    jobTitle: string
+    company: string
+    stack: Array<any>
+    startTime: string
+    endTime: string
+    summaryPoints: Array<string>
+  }
 }
 
-type Props = {}
+const Experience: NextPage = () => {
+  const scrollRef = useRef<HTMLInputElement | null>(null)
+  const parentRef = useRef<HTMLInputElement | null>(null)
 
-const Experience: NextPage = ({}: Props) => {
-  const [hideButton, setHideButton] = useState<boolean>(false)
-  const scrollRef = useRef<any>()
-  const parentRef = useRef<any>()
-
-  const experienceCardData: Array<Object> = [
+  const experienceCardData: Array<ExperienceData['experienceObject']> = [
     {
       jobTitle: 'Front-End Engineer',
       company: 'Right Click Save Ventures LLC',
@@ -71,13 +70,13 @@ const Experience: NextPage = ({}: Props) => {
     }
   ]
 
-  const handleScroll = (direction: any) => {
+  const handleScroll = (direction: string) => {
     const { current } = scrollRef
 
     if (direction === 'left') {
-      current.scrollLeft -= 300
+      current!.scrollLeft -= 300
     } else {
-      current.scrollLeft += 300
+      current!.scrollLeft += 300
     }
   }
 
@@ -119,11 +118,16 @@ const Experience: NextPage = ({}: Props) => {
         className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden'
         ref={scrollRef}
       >
-        {experienceCardData.map((experienceData: any, i: number) => {
-          return (
-            <ExperienceCard key={`experience-card-${i}`} {...experienceData} />
-          )
-        })}
+        {experienceCardData.map(
+          (experienceData: ExperienceData['experienceObject'], i: number) => {
+            return (
+              <ExperienceCard
+                key={`experience-card-${i}`}
+                {...experienceData}
+              />
+            )
+          }
+        )}
       </div>
     </div>
   )

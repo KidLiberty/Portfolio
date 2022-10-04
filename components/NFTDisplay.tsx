@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { NextPage } from 'next'
 import { MetaMaskInpageProvider } from '@metamask/providers'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
@@ -10,12 +11,10 @@ declare global {
   }
 }
 
-interface Props {}
-
-const NFTDisplay = (props: Props) => {
-  const [walletAddress, setWalletAddress] = useState<any>(null)
+const NFTDisplay: NextPage = () => {
+  const [walletAddress, setWalletAddress] = useState<string | null>(null)
+  const [nftData, setNftData] = useState<Object[]>([])
   const [noWallet, setNoWallet] = useState<boolean>(false)
-  const [nftData, setNftData] = useState<any>([])
   const [loading, setLoading] = useState<boolean>(false)
   const [loaded, setLoaded] = useState<boolean>(false)
 

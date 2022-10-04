@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 import { HakiNFT } from '../assets'
 
-type Props = {}
+interface Props {}
 
 const About: NextPage = ({}: Props) => {
   return (
@@ -35,8 +35,8 @@ const About: NextPage = ({}: Props) => {
           </span>
         </div>
         <p className='w-[90%] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
-          Welcome to my page! I'm a developer from the Northeast 🍂🌊 who has
-          worked in financial technology for the past 3 years. I have also had a
+          Hey there! 👋🏻 I'm a developer from the Northeast 🍂🌊 who has worked
+          in financial technology for the past 3 years. I have also had a
           fascination with what I've seen on the web and the language that
           builds it since 2014. This determination has led me to the world of{' '}
           <b>Web3</b>; rapidly building UIs with React/Next.js in harmony with

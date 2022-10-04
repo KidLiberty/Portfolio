@@ -1,22 +1,25 @@
 import React from 'react'
+import { NextPage } from 'next'
 
-type Props = {
-  jobTitle: string
-  company: string
-  stack: Array<any>
-  startTime: string
-  endTime: string
-  summaryPoints: Array<string>
+interface ExperienceData {
+  experienceData: {
+    jobTitle: string
+    company: string
+    stack: Array<any>
+    startTime: string
+    endTime: string
+    summaryPoints: Array<string>
+  }
 }
 
-const ExperienceCard = ({
+const ExperienceCard: NextPage<ExperienceData['experienceData']> = ({
   jobTitle,
   company,
   stack,
   startTime,
   endTime,
   summaryPoints
-}: Props) => {
+}) => {
   return (
     <article className='flex rounded-[10px] flex-col items-center text-[#b8bcc8] xs:w-[300px] space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#2d3945] hover:opacity-100 transition-opacity duration-200 overflow-hidden shadow-sm shadow-[#5292a0] xs:h-[90%] sm:w-[110%]'>
       <div className='px-0 md:px-10 pt-10 '>
@@ -30,13 +33,15 @@ const ExperienceCard = ({
           </p>
 
           <div className='flex space-x-2 my-2 xs:ml-6'>
-            {stack.map((logo: any, i: number) => {
-              return (
-                <div key={`logo-${i}`} className='rounded-full'>
-                  <img src={logo.src} className='w-12 h-12 object-cover' />
-                </div>
-              )
-            })}
+            {stack.map(
+              (logo: React.ImgHTMLAttributes<HTMLImageElement>, i: number) => {
+                return (
+                  <div key={`logo-${i}`} className='rounded-full'>
+                    <img src={logo.src} className='w-12 h-12 object-cover' />
+                  </div>
+                )
+              }
+            )}
           </div>
 
           <p className='uppercase py-5 xs:py-3 xs:ml-6 font-bold'>
