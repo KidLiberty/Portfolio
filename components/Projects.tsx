@@ -133,8 +133,8 @@ const Projects: NextPage = ({}: Props) => {
                   {project.description}
                 </p>
                 <a
-                  target='_blank'
                   href={project?.gitHubLink}
+                  target='_blank'
                   rel='noopener noreferrer'
                 >
                   <p className='flex items-center justify-center pt-2 text-[#56bcc1] hover:text-[#56bcc1]/70 transition-all duration-200'>
