@@ -14,20 +14,14 @@ interface Props {}
 
 const NFTDisplay = (props: Props) => {
   const [walletAddress, setWalletAddress] = useState<any>(null)
+  const [noWallet, setNoWallet] = useState<boolean>(false)
   const [nftData, setNftData] = useState<any>([])
   const [loading, setLoading] = useState<boolean>(false)
   const [loaded, setLoaded] = useState<boolean>(false)
 
   const connectWallet = async () => {
-    if (!window.ethereum)
-      return setWalletAddress(
-        <div className='h-screen flex flex-col justify-center items-center'>
-          {"Please install MetaMask. It's free to join the revolution. :) "}
-          <a href='https://metamask.io/' target='_blank'>
-            <u className='hover:cursor-pointer'>Here.</u>
-          </a>
-        </div>
-      )
+    if (!window.ethereum) return setNoWallet(true)
+
     const addresses: any = await window.ethereum.request({
       method: 'eth_requestAccounts'
     })
@@ -54,6 +48,43 @@ const NFTDisplay = (props: Props) => {
       setLoading(false)
     }, 500)
   }, [walletAddress])
+
+  if (!noWallet)
+    return (
+      <div className='h-screen relative flex flex-col justify-center items-center text-center'>
+        <button
+          className='absolute border top-[125px] border-[#6a6767] text-[#797575] p-3 px-4 xs:px-10 xs:py-4 rounded-md hover:bg-[#6a6767] hover:text-[#141920] active:bg-[#797575]/70 font-semibold transition-all duration-500 cursor-not-allowed'
+          onClick={connectWallet}
+          disabled
+        >
+          Connect Wallet
+        </button>
+        <div className='space-y-0'>
+          <h1 className='text-center font-medium text-gray-500 text-2xl xs:text-lg'>
+            Looks like you don't have MetaMask installed.
+          </h1>
+          <p className='text-center font-medium text-gray-500 text-lg xs:text-sm '>
+            If you'd like a wallet, head on over to{' '}
+            <a
+              href='https://metamask.io/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-flex justify-center items-center text-[#eb8e24] hover:text-[#eb8e24]/70 transition-all duration-300'
+            >
+              <span className='flex items-center justify-center'>
+                MetaMask.io
+                <ArrowTopRightOnSquareIcon
+                  width={20}
+                  height={20}
+                  className='ml-1'
+                />
+              </span>
+            </a>{' '}
+            to get the Chrome Extension and join the revolution!
+          </p>
+        </div>
+      </div>
+    )
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0 xs:pb-24'>
@@ -111,7 +142,7 @@ const NFTDisplay = (props: Props) => {
             href='https://opensea.io/'
             target='_blank'
             rel='noopener noreferrer'
-            className='inline-flex justify-center items-center text-[#4f88dd] hover:text-[#4f88dd]/70 transition-all dura'
+            className='inline-flex justify-center items-center text-[#4f88dd] hover:text-[#4f88dd]/70 transition-all duration-300'
           >
             OpenSea!
             <ArrowTopRightOnSquareIcon
