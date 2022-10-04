@@ -18,7 +18,9 @@ const Hero: NextPage = ({}: Props) => {
       '...turned aspiring Blockchain Engineer.'
     ],
     loop: true,
-    delaySpeed: 1500
+    delaySpeed: 1250,
+    deleteSpeed: 40,
+    typeSpeed: 60
   })
   return (
     <div className='relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
@@ -37,39 +39,44 @@ const Hero: NextPage = ({}: Props) => {
         <h1 className='text-sm uppercase text-gray-500 pb- tracking-[15px] text-center xs:tracking-[12px] pl-4'>
           Front End Engineer
         </h1>
-        <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10 xs:h-[75px]'>
-          <span className='text-4xl mr-3 sm:text-3xl'>{text}</span>
-          <span className='relative right-3'>
+        <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10 xs:h-[75px] ml-2'>
+          <span className='text-4xl mr-3 xs:text-3xl'>{text}</span>
+          <span className='relative right-4'>
             <Cursor cursorColor='#f7ab0a' />
           </span>
         </h1>
 
-        <div className='pt-5 xs:grid xs:grid-rows-2 xs:grid-cols-2 sm:pt-4 xs:pb-10'>
-          <Link href='#about'>
-            <button className='relative heroButton xs:text-xl xs:left-5'>
-              About
-            </button>
-          </Link>
-          <Link href='#experience'>
-            <button className='relative heroButton xs:text-xl xs:right-5'>
-              Experience
-            </button>
-          </Link>
-          <Link href='#skills'>
-            <button className='relative heroButton xs:text-xl xs:left-5'>
-              Skills
-            </button>
-          </Link>
-          <Link href='#projects'>
-            <button className='relative heroButton xs:text-xl xs:right-9'>
-              Projects
-            </button>
-          </Link>
-          <Link href='#NFTDisplay'>
-            <button className='relative heroButton xs:text-xl xs:right-9'>
-              NFTs
-            </button>
-          </Link>
+        <div className='flex xs:flex-col pt-5 sm:pt-4 xs:pb-10'>
+          <div className='flex'>
+            <Link href='#about'>
+              <button className='heroButton text-[14px] xs:text-xl'>
+                About
+              </button>
+            </Link>
+            <Link href='#experience'>
+              <button className='heroButton text-[14px] xs:text-xl'>
+                Experience
+              </button>
+            </Link>
+            <Link href='#skills'>
+              <button className='heroButton text-[14px] xs:text-xl'>
+                Skills
+              </button>
+            </Link>
+          </div>
+
+          <div className='flex justify-center items-center'>
+            <Link href='#projects'>
+              <button className='heroButton text-[14px] xs:text-xl'>
+                Projects
+              </button>
+            </Link>
+            <Link href='#NFTDisplay'>
+              <button className='heroButton text-[14px] xs:text-xl'>
+                NFTs
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

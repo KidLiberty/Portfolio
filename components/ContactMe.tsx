@@ -20,11 +20,11 @@ const ContactMe: NextPage = ({}: Props) => {
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-20 xs:hidden'>
+      <h3 className='absolute top-24 xs:top-26 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-20 xs:hidden'>
         Contact
       </h3>
 
-      <div className='flex flex-col space-y-10'>
+      <div className='flex flex-col space-y-8 xs:relative xs:bottom-6'>
         <div className='flex flex-col items-center xs:h'>
           <h4 className='mt-32 tracking-[2px] text-3xl font-normal text-center text-gray-500 xs:text-2xl'>
             Feel free to reach out!
@@ -76,7 +76,7 @@ const ContactMe: NextPage = ({}: Props) => {
             placeholder='Message...'
           />
           <button
-            className='bg-transparent border-2 border-[#5fddb3] p-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2 active:bg-[#5fddb3]/70'
+            className='bg-transparent border-2 border-[#5fddb3] p-4 xs:py-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2 active:bg-[#5fddb3]/70'
             type='submit'
           >
             Submit

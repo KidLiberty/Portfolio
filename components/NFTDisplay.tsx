@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { MetaMaskInpageProvider } from '@metamask/providers'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
+import NFTCard from './NFTCard'
+
 declare global {
   interface Window {
     ethereum?: MetaMaskInpageProvider
@@ -85,41 +87,9 @@ const NFTDisplay = (props: Props) => {
         </div>
       )}
 
-      <div className='h-3/5 xs:h-4/5 w-full flex justify-left items-center overflow-scroll space-x-10 xs:space-x-28 px-12 mt-[150px] xs:pl-[100px] mr-[50px] scrollbar-none'>
+      <div className='h-3/5 xs:h-4/5 w-full flex justify-left items-center overflow-scroll space-x-10 xs:space-x-28 px-12 mt-[150px] xs:pl-[100px] scrollbar-none'>
         {nftData.map((nft: any, i: number) => {
-          return (
-            <div
-              key={i}
-              className='lg:h-[600px] sm:h-[425px] xs:h-[500px] xs:w-[250px] rounded-lg bg-[#c3c3c3]'
-            >
-              <div className='w-[200px] xs:w-[250px]'>
-                <img
-                  src={nft?.meta?.content[0]?.url.replace(
-                    'ipfs.infura.io',
-                    'infura-ipfs.io'
-                  )}
-                  className='w-[200px] h-[200px] xs:h-[250px] xs:w-[250px] object-cover rounded-tl-lg rounded-tr-lg'
-                />
-              </div>
-
-              <div className='flex flex-col flex-1 overflow-y-scroll w-[200px] h-[225px] xs:h-[250px] xs:w-[250px] p-2'>
-                <p className='text-black font-semibold'>
-                  Blockchain: {nft?.blockchain}
-                </p>
-                <p className='text-black'>NFT: {nft?.meta?.name}</p>
-                <p className='text-black text-sm'> Description:</p>
-                <div className='text-xs overflow-y-scroll border-b-2 border-[#292d2b]'>
-                  <p className='text-black'>{nft?.meta?.description}</p>
-                </div>
-                <div>
-                  <p className='text-black text-sm'>Minting Date:</p>
-                  <p className='text-black text-sm'>
-                    {new Date(nft?.mintedAt).toLocaleString()}
-                  </p>
-                </div>
-              </div>
-            </div>
-          )
+          return <NFTCard key={i} nft={nft} />
         })}
       </div>
 
