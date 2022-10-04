@@ -33,10 +33,6 @@ const Home: NextPage = () => {
         <About />
       </section>
 
-      <section id='about' className='snap-center'>
-        <NFTDisplay />
-      </section>
-
       <section id='experience' className='snap-center'>
         <Experience />
       </section>
@@ -47,6 +43,10 @@ const Home: NextPage = () => {
 
       <section id='projects' className='snap-start'>
         <Projects />
+      </section>
+
+      <section id='NFTDisplay' className='snap-center'>
+        <NFTDisplay />
       </section>
 
       <section id='contact' className='snap-start'>

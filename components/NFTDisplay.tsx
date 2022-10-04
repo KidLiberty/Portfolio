@@ -13,6 +13,7 @@ interface Props {}
 const NFTDisplay = (props: Props) => {
   const [walletAddress, setWalletAddress] = useState<any>(null)
   const [nftData, setNftData] = useState<any>([])
+  const [loading, setLoading] = useState<boolean>(false)
   const [loaded, setLoaded] = useState<boolean>(false)
 
   const connectWallet = async () => {
@@ -45,13 +46,17 @@ const NFTDisplay = (props: Props) => {
   }
 
   useEffect(() => {
+    setLoading(true)
     getNFTData()
+    setTimeout(() => {
+      setLoading(false)
+    }, 500)
   }, [walletAddress])
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0 xs:pb-24'>
       {walletAddress ? (
-        <div className='xs:flex-col mt-10 absolute top-24 xs:top-16 uppercase text-gray-500 text-[22px] xs:text-xl font-medium text-center'>
+        <div className='xs:flex-col mt-10 absolute top-24 xs:top-16 uppercase text-gray-500 text-[22px] xs:text-xl font-sm text-center'>
           Connected Address:{' '}
           <span className='text-[#5fddb3] hover:opacity-50 transition-all duration-500 font-semibold'>
             {`${walletAddress.substring(0, 5)}...${walletAddress.substring(
@@ -71,10 +76,10 @@ const NFTDisplay = (props: Props) => {
 
       {!loaded && (
         <div className='space-y-0'>
-          <h1 className='text-center font-medium mt-[250px] text-2xl text-gray-500'>
+          <h1 className='text-center font-medium text-gray-500 mt-[250px] text-2xl xs:text-lg'>
             Speaking of Web3, NFTs are pretty cool.
           </h1>
-          <p className='text-center font-medium mt-[250px] text-lg text-gray-500'>
+          <p className='text-center font-medium text-gray-500 mt-[250px] text-lg xs:text-sm '>
             Go ahead and connect and let's see yours!
           </p>
         </div>
@@ -98,11 +103,19 @@ const NFTDisplay = (props: Props) => {
               </div>
 
               <div className='flex flex-col flex-1 overflow-y-scroll w-[200px] h-[225px] xs:h-[250px] xs:w-[250px] p-2'>
-                <p className='text-black'>Blockchain: {nft?.blockchain}</p>
-                <p className='text-black'>Name: {nft?.meta?.name}</p>
-                <p className='text-black'> Description:</p>
-                <div className='text-xs overflow-y-scroll'>
+                <p className='text-black font-semibold'>
+                  Blockchain: {nft?.blockchain}
+                </p>
+                <p className='text-black'>NFT: {nft?.meta?.name}</p>
+                <p className='text-black text-sm'> Description:</p>
+                <div className='text-xs overflow-y-scroll border-b-2 border-[#292d2b]'>
                   <p className='text-black'>{nft?.meta?.description}</p>
+                </div>
+                <div>
+                  <p className='text-black text-sm'>Minting Date:</p>
+                  <p className='text-black text-sm'>
+                    {new Date(nft?.mintedAt).toLocaleString()}
+                  </p>
                 </div>
               </div>
             </div>
@@ -110,9 +123,11 @@ const NFTDisplay = (props: Props) => {
         })}
       </div>
 
-      {loaded && nftData.length > 1 ? (
+      {loading ? (
+        <div />
+      ) : loaded && nftData.length > 1 ? (
         <div className='relative xs:bottom-10 text-center text-xl xs:text-lg font-medium text-gray-400 xs:mt-10'>
-          Those are some good looking NFTs 😎💯
+          Those are some <u>good</u> looking NFTs 😎💯
         </div>
       ) : loaded && nftData.length === 1 ? (
         <div className='relative xs:bottom-10 text-center text-xl xs:text-lg font-medium text-gray-400 xs:mt-10'>
@@ -120,8 +135,8 @@ const NFTDisplay = (props: Props) => {
         </div>
       ) : loaded && nftData.length === 0 ? (
         <div className='relative xs:bottom-10 text-center text-xl xs:text-lg font-medium text-gray-400 xs:mt-10 h-full w-[300px]'>
-          Hmm... so I am not sensing any NFTs on this account. 🤔 No worries,
-          you are looking for some, you can join in by checking out{' '}
+          Hmm... so I'm not sensing any NFTs on this account. 🤔 No worries, if
+          you're looking for some, check out collections on{' '}
           <a
             href='https://opensea.io/'
             target='_blank'

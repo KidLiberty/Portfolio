@@ -65,6 +65,11 @@ const Hero: NextPage = ({}: Props) => {
               Projects
             </button>
           </Link>
+          <Link href='#NFTDisplay'>
+            <button className='relative heroButton xs:text-xl xs:right-9'>
+              NFTs
+            </button>
+          </Link>
         </div>
       </div>
     </div>
