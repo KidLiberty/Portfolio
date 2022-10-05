@@ -34,8 +34,8 @@ const Skills: NextPage = () => {
     { logo: NextJSLogo, skill: 'Next.js' },
     { logo: TypeScriptLogo, skill: 'TypeScript' },
     { logo: HTML5Logo, skill: 'HTML5' },
-    { logo: SASSLogo, skill: 'SASS' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
+    { logo: SASSLogo, skill: 'SASS' },
     { logo: NodeJSLogo, skill: 'Node' }
   ]
 

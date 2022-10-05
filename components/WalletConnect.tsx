@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const NFTDisplay: NextPage = () => {
+const WalletConnect: NextPage = () => {
   const [walletAddress, setWalletAddress] = useState<string | null>(null)
   const [nftData, setNftData] = useState<Object[]>([])
   const [noWallet, setNoWallet] = useState<boolean>(false)
@@ -48,7 +48,7 @@ const NFTDisplay: NextPage = () => {
     }, 500)
   }, [walletAddress])
 
-  if (noWallet)
+  if (!noWallet)
     return (
       <div className='h-screen relative flex flex-col justify-center items-center text-center'>
         <button
@@ -59,10 +59,11 @@ const NFTDisplay: NextPage = () => {
           Connect Wallet
         </button>
         <div className='space-y-0'>
-          <h1 className='text-center font-medium text-gray-500 text-2xl xs:text-lg'>
-            Looks like you don't have MetaMask installed.
+          <h1 className='text-center font-medium text-gray-500 text-2xl xs:text-[17.5px] leading-6 px-[8px]'>
+            Looks like MetaMask may not be installed, or this browser may not
+            support it.
           </h1>
-          <p className='text-center font-medium text-gray-500 text-lg xs:text-sm '>
+          <p className='text-center font-medium text-gray-500 text-lg xs:text-[12.5px] pt-2 px-[12px] leading-3'>
             If you'd like a wallet, head on over to{' '}
             <a
               href='https://metamask.io/'
@@ -158,4 +159,4 @@ const NFTDisplay: NextPage = () => {
   )
 }
 
-export default NFTDisplay
+export default WalletConnect

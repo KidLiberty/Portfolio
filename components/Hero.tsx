@@ -71,7 +71,7 @@ const Hero: NextPage = () => {
             </Link>
             <Link href='#NFTDisplay'>
               <button className='heroButton text-[14px] xs:text-xl'>
-                NFTs
+                Wallet
               </button>
             </Link>
           </div>

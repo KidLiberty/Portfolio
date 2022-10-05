@@ -5,13 +5,13 @@ import Head from 'next/head'
 import {
   Header,
   Hero,
+  About,
   Experience,
   Skills,
   Projects,
-  ContactMe
+  ContactMe,
+  WalletConnect
 } from '../components'
-import About from '../components/About'
-import NFTDisplay from '../components/NFTDisplay'
 
 const Home: NextPage = () => {
   return (
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
       </section>
 
       <section id='NFTDisplay' className='snap-center'>
-        <NFTDisplay />
+        <WalletConnect />
       </section>
 
       <section id='contact' className='snap-start'>
