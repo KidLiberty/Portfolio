@@ -2,10 +2,9 @@ import React from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
-import { ReactLogo } from '../assets'
 import { StaticImageData } from 'next/image'
 
-type Props = {
+interface Props {
   directionLeft?: boolean
   logo: StaticImageData
   skill: string

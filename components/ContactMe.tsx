@@ -1,7 +1,8 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
+import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import { SocialIcon } from 'react-social-icons'
 
 interface Props {}
 
@@ -34,15 +35,27 @@ const ContactMe: NextPage = ({}: Props) => {
           </h3>
         </div>
 
-        <div className='xs:flex xs:flex-col xs:justify-center xs:items-center space-y-10 xs:space-y-3 xs:pr-10'>
+        <div className='xs:flex xs:flex-col xs:justify-center xs:items-center space-y-8 xs:space-y-2 xs:pr-10'>
           <div className='flex items-center space-x-5'>
             <EnvelopeIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
             <p className='text-2xl text-gray-500 xs:text-xl'>
               brandonrstone@gmail.com
             </p>
           </div>
+          <div className='flex items-center space-x-[17px]'>
+            <SocialIcon
+              network='discord'
+              fgColor='transparent'
+              bgColor='#7289da'
+              className='animate-pulse duration-700'
+              style={{ width: '30px', height: '30px' }}
+            />
+            <p className='text-2xl text-gray-500 xs:text-xl'>
+              Kid Liberty#3430
+            </p>
+          </div>
           <div className='flex items-center space-x-5 '>
-            <MapPinIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
+            <MapPinIcon className='text-[#6b4787] w-7 h-7 animate-pulse' />
             <p className='text-2xl text-gray-500 xs:text-xl'>Worcester, MA</p>
           </div>
         </div>

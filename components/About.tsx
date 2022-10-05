@@ -3,9 +3,7 @@ import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 import { HakiNFT } from '../assets'
 
-interface Props {}
-
-const About: NextPage = ({}: Props) => {
+const About: NextPage = () => {
   return (
     <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-x-7xl px-10 justify-evenly mx-auto items-center overflow-hidden'>
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-5'>
@@ -38,7 +36,7 @@ const About: NextPage = ({}: Props) => {
           Hey there! 👋🏻 I'm a developer from the Northeast 🍂🌊 who has worked
           in financial technology for the past 3 years. I have also had a
           fascination with what I've seen on the web and the language that
-          builds it since 2014. This determination has led me to the world of{' '}
+          builds it since 2014. Combining the two has led me to the world of{' '}
           <b>Web3</b>; rapidly building UIs with React/Next.js in harmony with
           the Ethereum blockchain to create some pretty cool decentralized
           applications. My current ambitions hone on bridging the gap between
