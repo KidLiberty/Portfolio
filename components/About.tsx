@@ -33,8 +33,8 @@ const About: NextPage = () => {
           </span>
         </div>
         <p className='w-[90%] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
-          Hey there! 👋🏻 I'm a developer from the Northeast 🍂🌊 who has worked
-          in financial technology for the past 3 years. I have also had a
+          Hey there! I'm a developer from the Northeast 🍂🌊 who has worked in
+          financial technology for the past 3 years. I have also had a
           fascination with what I've seen on the web and the language that
           builds it since 2014. Combining the two has led me to the world of{' '}
           <b>Web3</b>; rapidly building UIs with React/Next.js in harmony with
@@ -44,7 +44,7 @@ const About: NextPage = () => {
           creations to a wider array of those who love Cryptocurrency. It's been
           a blast learning Solidity to create Smart Contracts, and with
           Front-End frameworks like ethers.js the process could not be more
-          harmonious. 👏🏻 One day, my dream is to have a hand in building a
+          harmonious. ✨ One day, my dream is to have a hand in building a
           something narrative-shifting in the world of decentralized finance.
         </p>
       </div>

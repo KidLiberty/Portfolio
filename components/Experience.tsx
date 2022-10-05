@@ -54,7 +54,7 @@ const Experience: NextPage = () => {
       endTime: 'Present',
       summaryPoints: [
         'DevOps Automation Engineer building various frameworks within Fidelity’s Next-Gen Mutual Funds and Alternative Investments.',
-        'Currently overseeing automated-on-deploy testing process of AWS Lambda code.'
+        'Overseeing automated-on-deploy testing process of AWS Lambda code.'
       ]
     },
     {

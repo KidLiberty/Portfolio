@@ -17,11 +17,11 @@ const NFTCard = ({ nft }: Props) => {
         />
       </div>
 
-      <div className='flex flex-col flex-1 overflow-y-scroll w-[200px] h-[225px] xs:h-[250px] xs:w-[250px] p-2'>
+      <div className='flex flex-col flex-1 overflow-y-scroll w-[200px] h-[225px] xs:h-[250px] xs:w-[250px] p-2 scrollbar-none'>
         <p className='text-black font-semibold'>NFT: {nft?.meta?.name}</p>
         <p className='text-black font-medium'>Blockchain: {nft?.blockchain}</p>
         <p className='text-black text-sm'> Description:</p>
-        <div className='text-xs overflow-y-scroll border-b-2 border-[#292d2b]'>
+        <div className='text-xs overflow-y-scroll border-b-2 border-[#292d2b] scrollbar-none'>
           <p className='text-black'>{nft?.meta?.description}</p>
         </div>
         <div>
