@@ -34,7 +34,7 @@ const Hero: NextPage = () => {
         />
       </div>
       <div className='relative flex flex-col items-center justify-center text-center top-16 xs:top-14 z-20'>
-        <h1 className='text-sm uppercase text-gray-500 pb- tracking-[15px] text-center xs:tracking-[12px] pl-4'>
+        <h1 className='text-sm uppercase text-transparent bg-clip-text bg-gradient-to-br from-gray-300 to-gray-800 tracking-[15px] text-center xs:tracking-[12px] pl-4'>
           Front End Engineer
         </h1>
         <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10 xs:h-[75px] ml-2'>

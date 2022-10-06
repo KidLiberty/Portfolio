@@ -22,13 +22,13 @@ const About: NextPage = () => {
 
       <div className='relative flex flex-col items-center space-y-10 xs:space-y-8 px-0 md:px-10 mb-6 xs:mb-6'>
         <div className='text-[32px] font-semibold xs:text-xl sm:text-[28px]'>
-          <span className='relative inset-0 top-[28px] text-[#daa1f4]'>
+          <span className='relative inset-0 top-[28px] text-[#daa1f4] text-transparent bg-clip-text bg-gradient-to-br from-blue-300 to-green-500'>
             Here is a <i>little</i> background
           </span>
           <span className='absolute inset-0 top-[30px] left-0.5 text-[#343236]'>
             Here is a <i>little</i> background
           </span>
-          <span className='absolute inset-0 top-[32px] left-1.5 text-[#74e1a9]'>
+          <span className='absolute inset-0 top-[32px] left-1.5 text-[#74e1a9] text-transparent bg-clip-text bg-gradient-to-br from-rose-500 to-blue-300'>
             Here is a <i>little</i> background
           </span>
         </div>
