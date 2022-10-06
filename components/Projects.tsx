@@ -151,8 +151,8 @@ const Projects: NextPage = () => {
       </div>
 
       <div className='w-full absolute top-[30%] bg-[#477ad2]/10 left-0 h-[400px] -skew-y-12 z-5' />
-      <div className='w-3/5 absolute top-[25%] bg-[#92c4ed] -left-10 h-[50px] -skew-y-12 rounded-xl z-5' />
-      <div className='w-4/5 absolute top-[80%] bg-[#161365] -right-10 h-[5px] -skew-y-12 rounded-sm z-1' />
+      <div className='w-3/5 absolute top-[25%] bg-[#92c4ed] xs:bg-[#1c189d] -left-10 h-[50px] -skew-y-12 rounded-xl z-5' />
+      <div className='w-4/5 absolute top-[80%] xs:top-[77.5%] bg-[#161365] xs:bg-[#3e39d7] -right-10 h-[5px] -skew-y-12 rounded-sm z-1' />
     </div>
   )
 }
