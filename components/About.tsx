@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
-import { HakiNFT } from '../assets'
+import { HakiNFT, PortfolioPic } from '../assets'
 
 const About: NextPage = () => {
   return (
@@ -15,8 +15,8 @@ const About: NextPage = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        src={HakiNFT.src}
-        className='mt-32 -mb-20 md:mb-0 flex-shrink-0 w- h-56 md:w-64 md:h-64 xs:w-40 xs:h-40 rounded-full object-cover md:rounded-lg xl:w-[500px] xl:h-[600px] overflow-hidden'
+        src={PortfolioPic.src}
+        className='mt-32 -mb-20 md:mb-0 flex-shrink-0 w-96 h-96 md:w-64 md:h-64 xs:w-48 xs:h-48 rounded-md object-cover md:rounded-lg xl:w-[500px] xl:h-[600px] overflow-hidden'
         alt='About_Pic'
       />
 

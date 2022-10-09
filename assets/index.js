@@ -16,6 +16,7 @@ import NextJSLogo from './nextjs.png'
 import NFTMarketplace from './NFTMarketplace.gif'
 import NodeJSLogo from './nodejs.png'
 import OpenSeaLogo from './opensea.png'
+import PortfolioPic from './portfoliopic.png'
 import PythonLogo from './python.png'
 import ReactLogo from './react.png'
 import ReactNativeLogo from './reactnative.png'
@@ -47,6 +48,7 @@ export {
   NFTMarketplace,
   NodeJSLogo,
   OpenSeaLogo,
+  PortfolioPic,
   PythonLogo,
   ReactLogo,
   ReactNativeLogo,
