@@ -44,7 +44,7 @@ const About: NextPage = () => {
           creations to a wider array of those who love Cryptocurrency. It's been
           a blast learning Solidity to create Smart Contracts, and with
           Front-End frameworks like ethers.js the process could not be more
-          harmonious. ✨ One day, my dream is to have a hand in building a
+          harmonious. ✨ One day, my dream is to have a hand in building
           something narrative-shifting in the world of decentralized finance.
         </p>
       </div>
