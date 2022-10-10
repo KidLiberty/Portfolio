@@ -16,7 +16,7 @@ const About: NextPage = () => {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
         src={PortfolioPic.src}
-        className='mt-32 -mb-20 md:mb-0 flex-shrink-0 w-96 h-96 md:w-64 md:h-64 xs:w-48 xs:h-48 rounded-md object-cover md:rounded-lg xl:w-[500px] xl:h-[600px] overflow-hidden'
+        className='mt-32 -mb-20 xs:-mb-10 md:mb-0 flex-shrink-0 w-96 h-96 md:w-64 md:h-64 xs:w-48 xs:h-48 rounded-md object-cover md:rounded-lg xl:w-[500px] xl:h-[600px] overflow-hidden'
         alt='About_Pic'
       />
 
@@ -32,7 +32,7 @@ const About: NextPage = () => {
             Here is a <i>little</i> background
           </span>
         </div>
-        <p className='w-[90%] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-12 sm:text-[14px] leading-5 xs:leading-4'>
+        <p className='w-[90%] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-14 sm:text-[14px] leading-5 xs:leading-4'>
           Hey there! I'm a developer from the Northeast 🍂🌊 who has worked in
           financial technology for the past 3 years. I have also had a
           fascination with what I've seen on the web and the language that
