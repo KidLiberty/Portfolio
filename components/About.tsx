@@ -16,7 +16,7 @@ const About: NextPage = () => {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
         src={PortfolioPic.src}
-        className='mt-32 -mb-20 xs:-mb-10 md:mb-0 flex-shrink-0 w-96 h-96 md:w-64 md:h-64 xs:w-48 xs:h-48 rounded-md object-cover md:rounded-lg xl:w-[500px] xl:h-[600px] overflow-hidden'
+        className='w-64 h-88 md:w-64 md:h-64 sm:w-56 sm:h-56 xs:w-48 xs:h-48 mt-32 -mb-20 sm:-mb-14 xs:-mb-10 md:mb-0 flex-shrink-0 rounded-md object-cover md:rounded-lg xl:w-[500px] xl:h-[600px] overflow-hidden'
         alt='About_Pic'
       />
 
