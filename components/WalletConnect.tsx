@@ -48,7 +48,7 @@ const WalletConnect: NextPage = () => {
     }, 500)
   }, [walletAddress])
 
-  if (!noWallet)
+  if (noWallet)
     return (
       <div className='h-screen relative flex flex-col justify-center items-center text-center'>
         <button
