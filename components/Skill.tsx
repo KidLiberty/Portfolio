@@ -12,7 +12,7 @@ interface Props {
 
 const Skill = ({ directionLeft, logo, skill }: Props) => {
   return (
-    <div className='group relative flex cursor-pointer'>
+    <div className='group relative flex'>
       <motion.img
         initial={{ x: directionLeft ? -75 : 75, opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
