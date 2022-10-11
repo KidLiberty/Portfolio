@@ -48,7 +48,7 @@ const WalletConnect: NextPage = () => {
     }, 500)
   }, [walletAddress])
 
-  if (noWallet)
+  if (!noWallet)
     return (
       <div className='h-screen relative flex flex-col justify-center items-center text-center'>
         <button
@@ -59,7 +59,7 @@ const WalletConnect: NextPage = () => {
           Connect Wallet
         </button>
         <div className='space-y-0'>
-          <h1 className='text-center font-medium text-gray-500 text-2xl xs:text-[17.5px] leading-6 px-[8px]'>
+          <h1 className='text-center font-medium text-gray-500 text-2xl xs:text-[15.5px] leading-6 px-[8px]'>
             Looks like MetaMask may not be installed, or this browser may not
             support it.
           </h1>

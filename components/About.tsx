@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
-import { HakiNFT, PortfolioPic } from '../assets'
+import { PortfolioPic } from '../assets'
 
 const About: NextPage = () => {
   return (
