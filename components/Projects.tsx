@@ -48,7 +48,15 @@ const Projects: NextPage = () => {
   const handleScroll = (direction: string) => {
     const { current } = scrollRef
 
-    if (direction === 'left' && window.innerWidth > 600) {
+    if (direction === 'left' && window.innerWidth > 3000) {
+      current!.scrollLeft -= 4000
+    } else if (direction === 'right' && window.innerWidth > 3000) {
+      current!.scrollLeft += 4000
+    } else if (direction === 'left' && window.innerWidth > 1500) {
+      current!.scrollLeft -= 2000
+    } else if (direction === 'right' && window.innerWidth > 1500) {
+      current!.scrollLeft += 2000
+    } else if (direction === 'left' && window.innerWidth > 600) {
       current!.scrollLeft -= 1000
     } else if (direction === 'right' && window.innerWidth > 600) {
       current!.scrollLeft += 1000
