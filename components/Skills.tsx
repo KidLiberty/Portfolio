@@ -7,7 +7,9 @@ import Skill from './Skill'
 import {
   AlchemyLogo,
   EthersJSLogo,
+  FirebaseLogo,
   GanacheLogo,
+  GoogleCloudLogo,
   HardHat,
   HTML5Logo,
   JavaScriptLogo,
@@ -15,6 +17,7 @@ import {
   NextJSLogo,
   NodeJSLogo,
   ReactLogo,
+  ReduxLogo,
   SASSLogo,
   SolidityLogo,
   TailwindCSSLogo,
@@ -33,9 +36,12 @@ const Skills: NextPage = () => {
     { logo: ReactLogo, skill: 'React' },
     { logo: NextJSLogo, skill: 'Next.js' },
     { logo: TypeScriptLogo, skill: 'TypeScript' },
+    { logo: ReduxLogo, skill: 'Redux' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
     { logo: SASSLogo, skill: 'SASS' },
     { logo: HTML5Logo, skill: 'HTML5' },
+    { logo: GoogleCloudLogo, skill: 'Google Cloud' },
+    { logo: FirebaseLogo, skill: 'Firebase' },
     { logo: NodeJSLogo, skill: 'Node' }
   ]
 
