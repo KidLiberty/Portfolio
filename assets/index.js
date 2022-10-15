@@ -1,4 +1,5 @@
 import AlchemyLogo from './alchemy.png'
+import AmazonClone from './amazonclone.gif'
 import AWSLogo from './aws.png'
 import CryptoLottery from './cryptolottery.gif'
 import CSS3Logo from './css3.png'
@@ -34,6 +35,7 @@ import Web3JSLogo from './web3js.png'
 
 export {
   AlchemyLogo,
+  AmazonClone,
   AWSLogo,
   CryptoLottery,
   CSS3Logo,
