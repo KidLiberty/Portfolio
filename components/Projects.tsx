@@ -35,14 +35,14 @@ const Projects: NextPage = () => {
       picture: AmazonClone,
       title: 'Amazon Clone',
       description:
-        'A mock Amazon website resembling the user shopping experience. This was a pretty API heavy build; including Next.js with Next Auth (SSR), Google Cloud for OAuth2.0, Firebase with Google Sign-In as well as Firebase database for storing placed orders, Redux for checkout state management, and finally Slide for smooth checkout payments.',
+        'Off the topic of Crypto, this is a mock Amazon website resembling the user shopping experience. This was a pretty API heavy build; including Next.js with Next Auth (SSR), Google Cloud for OAuth2.0, Firebase with Google Sign-In as well as Firebase database for storing placed orders, Redux for checkout state management, and finally Slide for smooth checkout payments.',
       gitHubLink: 'https://github.com/KidLiberty/Amazon-Clone'
     },
     {
       picture: Diablo2StatChecker,
       title: 'Diablo II Stat Check',
       description:
-        'Off the topic of Crypto, this single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.',
+        'A single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.',
       gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker',
       websiteLink: 'test'
     },
