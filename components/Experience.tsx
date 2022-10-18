@@ -41,20 +41,22 @@ const Experience: NextPage = () => {
       startTime: 'July 2022',
       endTime: 'Present',
       summaryPoints: [
-        'Currently founding Engineer for a Web3 Investment Company.',
-        'Developing early stage institutional grade investment tooling for a Web3 digital asset fund.',
-        'Carrying out implementations of UX design with React/Next.js.'
+        'Currently founding UI Developer for a Web3 Investment Company.',
+        'Building early stage institutional grade investment tooling for a Web3 digital asset fund.',
+        'Responsible for rapid & dynamic UX design with JavaScript, React and Next.js.',
+        'Working with Next.js Server-Side Rendering to optimize API call performance from Python Backend.'
       ]
     },
     {
       jobTitle: 'Software Engineer',
       company: 'Fidelity Investments',
-      stack: [JavaLogo, SpringLogo, AWSLogo, JavaScriptLogo, NodeJSLogo],
+      stack: [JavaScriptLogo, NodeJSLogo, JavaLogo, SpringLogo, AWSLogo],
       startTime: 'January 2020',
       endTime: 'Present',
       summaryPoints: [
         'DevOps Automation Engineer building various frameworks within Fidelity’s Next-Gen Mutual Funds and Alternative Investments.',
-        'Overseeing automated-on-deploy testing process of AWS Lambda code.'
+        'Overseeing automated-on-deploy testing process of AWS Lambda code.',
+        'Developing with Node and the Jest Framework to ensure test coverage of APIs.'
       ]
     },
     {
