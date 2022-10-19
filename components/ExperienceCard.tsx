@@ -1,6 +1,13 @@
 import React from 'react'
 import { NextPage } from 'next'
-import { PythonLogo, ReactNativeLogo, SpringLogo } from '../assets'
+import {
+  JavaLogo,
+  JavaScriptLogo,
+  NodeJSLogo,
+  PythonLogo,
+  ReactNativeLogo,
+  SpringLogo
+} from '../assets'
 
 interface ExperienceData {
   experienceData: {
@@ -53,15 +60,21 @@ const ExperienceCard: NextPage<ExperienceData['experienceData']> = ({
                 return (
                   <div
                     key={`logo-${i}`}
-                    className={
+                    className={`${
                       logo !== PythonLogo &&
+                      logo !== NodeJSLogo &&
+                      logo !== SpringLogo &&
                       logo !== ReactNativeLogo &&
-                      logo !== SpringLogo
-                        ? `rounded-full bg-black`
-                        : `rounded-full`
-                    }
+                      'rounded-full bg-black'
+                    } 
+                    ${logo === JavaLogo && 'bg-white'} 
+                    ${logo === ReactNativeLogo && 'bg-[#333333] rounded-md'} 
+                    `}
                   >
-                    <img src={logo.src} className='w-12 h-12 object-cover' />
+                    <img
+                      src={logo.src}
+                      className='w-12 h-12 object-cover rounded-md'
+                    />
                   </div>
                 )
               }
