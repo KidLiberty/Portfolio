@@ -136,8 +136,8 @@ const WalletConnect: NextPage = () => {
         </div>
       ) : loaded && nftData.length === 0 ? (
         <div className='relative xs:bottom-10 text-center text-xl xs:text-lg font-medium text-gray-400 xs:mt-10 h-full w-[300px]'>
-          Hmm... so I'm not sensing any NFTs on this account. 🤔 No worries, if
-          you're looking for some, check out collections on{' '}
+          Hmm... I'm not sensing any NFTs on this account. 🤔 No worries, if
+          you're looking for some then check out collections on{' '}
           <a
             href='https://opensea.io/'
             target='_blank'
