@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { NextPage } from 'next'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
@@ -13,10 +13,18 @@ import {
   RightArrow
 } from '../assets/index'
 
+interface Project {
+  picture: StaticImageData,
+  title: string,
+  description: string,
+  gitHubLink: string
+  websiteLink?: string
+}
+
 const Projects: NextPage = () => {
   const scrollRef = useRef<HTMLInputElement | null>(null)
 
-  const projects: Object[] = [
+  const projects: Project[] = [
     {
       picture: NFTMarketplace,
       title: 'NFT Marketplace',
@@ -111,21 +119,19 @@ const Projects: NextPage = () => {
         ref={scrollRef}
         className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none'
       >
-        {projects.map((project: any, i: number) => (
+        {projects.map((project: Project, i: number) => (
           <div
             key={i}
             className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'
           >
             <div
-              className={`flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-[100px] overflow-hidden ${
-                project.picture === ReactLogo && 'xs:pb-[300px]'
-              }`}
+              className={`flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-[100px] overflow-hidden ${project.picture === ReactLogo && 'xs:pb-[300px]'
+                }`}
             >
               <img
                 src={project.picture.src}
-                className={`object-contain rounded-[5px] ${
-                  project.picture === ReactLogo && 'rotateIcon'
-                }`}
+                className={`object-contain rounded-[5px] ${project.picture === ReactLogo && 'rotateIcon'
+                  }`}
                 alt='Project_Image'
               />
             </div>
@@ -139,11 +145,10 @@ const Projects: NextPage = () => {
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
                 <p
-                  className={`text-md leading-6 md:text-left xs:text-[15px] ${
-                    project.description === '<More to come... />'
-                      ? 'text-center'
-                      : 'text-justify'
-                  } xs:leading-5`}
+                  className={`text-md leading-6 md:text-left xs:text-[15px] ${project.description === '<More to come... />'
+                    ? 'text-center'
+                    : 'text-justify'
+                    } xs:leading-5`}
                 >
                   {project.description}
                 </p>

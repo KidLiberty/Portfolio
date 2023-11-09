@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticImageData } from 'next/image'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
+
 import Skill from './Skill'
 
 import {
@@ -26,12 +27,13 @@ import {
   Web3JSLogo
 } from '../assets'
 
-interface SkillData {
-  logo: StaticImageData
+interface SkillTraits {
+  logo: StaticImageData,
+  skill: string
 }
 
 const Skills: NextPage = () => {
-  const topSkillsData: Array<Object> = [
+  const topSkillsData: SkillTraits[] = [
     { logo: JavaScriptLogo, skill: 'JavaScript' },
     { logo: ReactLogo, skill: 'React' },
     { logo: NextJSLogo, skill: 'Next.js' },
@@ -45,7 +47,7 @@ const Skills: NextPage = () => {
     { logo: NodeJSLogo, skill: 'Node' }
   ]
 
-  const bottomSkillsData: Array<Object> = [
+  const bottomSkillsData: SkillTraits[] = [
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
@@ -73,12 +75,12 @@ const Skills: NextPage = () => {
       </h3>
 
       <div className='grid grid-cols-4 gap-5 mt-40 '>
-        {topSkillsData.map((skillProps: any, i: number) => {
-          return <Skill key={`skill-${i}`} {...skillProps} directionLeft />
-        })}
-        {bottomSkillsData.map((skillProps: any, i: number) => {
-          return <Skill key={`skill-${i}`} {...skillProps} />
-        })}
+        {topSkillsData.map((skillProps: any, i: number) => (
+          <Skill key={`skill-${i}`} {...skillProps} directionLeft />
+        ))}
+        {bottomSkillsData.map((skillProps: any, i: number) => (
+          <Skill key={`skill-${i}`} {...skillProps} />
+        ))}
       </div>
     </motion.div>
   )

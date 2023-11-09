@@ -4,8 +4,6 @@ import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { SocialIcon } from 'react-social-icons'
 
-interface Props {}
-
 interface Inputs {
   name: string
   email: string
@@ -13,7 +11,7 @@ interface Inputs {
   message: string
 }
 
-const ContactMe: NextPage = ({}: Props) => {
+const ContactMe: NextPage = () => {
   const { register, handleSubmit } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = formData => {
     window.location.href = `mailto:brandonrstone@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`

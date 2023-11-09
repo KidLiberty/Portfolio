@@ -1,9 +1,10 @@
-import React, { useRef } from 'react'
+import React, { ReactElement, useRef } from 'react'
 import { NextPage } from 'next'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 import {
   AWSLogo,
+  EthersJSLogo,
   JavaLogo,
   JavaScriptLogo,
   LeftArrow,
@@ -14,26 +15,37 @@ import {
   ReactLogo,
   ReactNativeLogo,
   RightArrow,
-  SpringLogo
+  SpringLogo,
+  TypeScriptLogo
 } from '../assets'
 import ExperienceCard from './ExperienceCard'
 
-interface ExperienceData {
-  experienceObject: {
-    jobTitle: string
-    company: string
-    stack: Array<any>
-    startTime: string
-    endTime: string
-    summaryPoints: Array<string>
-  }
+type ExperienceData = {
+  jobTitle: string
+  company: string
+  stack: StaticImageData[]
+  startTime: string
+  endTime: string
+  summaryPoints: string[]
 }
 
-const Experience: NextPage = () => {
+const Experience: NextPage = (): ReactElement => {
   const scrollRef = useRef<HTMLInputElement | null>(null)
   const parentRef = useRef<HTMLInputElement | null>(null)
 
-  const experienceCardData: Array<ExperienceData['experienceObject']> = [
+  const experienceCardData: ExperienceData[] = [
+    {
+      jobTitle: 'Front-End Engineer',
+      company: 'Lunar Labs LLC',
+      stack: [TypeScriptLogo, ReactLogo, NextJSLogo, EthersJSLogo],
+      startTime: 'May 2023',
+      endTime: 'Sep 2023',
+      summaryPoints: [
+        'Contracted professionally for the building of the Moonwell.fi dApp UI.',
+        'Engineered multiple data structures utilizing aggregated calls from both decentralized on-chain and centralized off-chain infrastructure.',
+        'Contributed heavily to overall component architecture.',
+      ]
+    },
     {
       jobTitle: 'Front-End Engineer',
       company: 'Right Click Save Ventures LLC',
@@ -120,16 +132,12 @@ const Experience: NextPage = () => {
         className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden'
         ref={scrollRef}
       >
-        {experienceCardData.map(
-          (experienceData: ExperienceData['experienceObject'], i: number) => {
-            return (
-              <ExperienceCard
-                key={`experience-card-${i}`}
-                {...experienceData}
-              />
-            )
-          }
-        )}
+        {experienceCardData.map((experienceData: ExperienceData, i: number) => (
+          <ExperienceCard
+            key={`experience-card-${i}`}
+            {...experienceData}
+          />
+        ))}
       </div>
     </div>
   )
