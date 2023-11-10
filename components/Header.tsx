@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { NextPage } from 'next'
 import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
 
-const Header: NextPage = () => {
+const Header: NextPage = (): ReactElement => {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
       <div className='flex flex-row items-center'>

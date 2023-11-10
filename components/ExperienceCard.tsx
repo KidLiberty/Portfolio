@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { NextPage } from 'next'
+import { StaticImageData } from 'next/image'
+
 import {
   JavaLogo,
   JavaScriptLogo,
@@ -9,43 +11,38 @@ import {
   SpringLogo
 } from '../assets'
 
-interface ExperienceData {
-  experienceData: {
-    jobTitle: string
-    company: string
-    stack: Array<any>
-    startTime: string
-    endTime: string
-    summaryPoints: Array<string>
-  }
+type ExperienceData = {
+  jobTitle: string
+  company: string
+  stack: StaticImageData[]
+  startTime: string
+  endTime: string
+  summaryPoints: string[]
 }
 
-const ExperienceCard: NextPage<ExperienceData['experienceData']> = ({
+const ExperienceCard: NextPage<ExperienceData> = ({
   jobTitle,
   company,
   stack,
   startTime,
   endTime,
   summaryPoints
-}) => {
+}): ReactElement => {
   return (
     <article className='w-[400px] md:w-[600px] xl:w-[900px] xs:h-[90%] sm:w-[400px] flex rounded-[10px] flex-col items-center text-[#3f4040] xs:w-[300px] space-y-7 flex-shrink-0 snap-center bg-[#c8c8c8] duration-200 overflow-hidden shadow-sm shadow-[#5292a0]'>
       <div className='px-0 md:px-10 pt-5 '>
         <div className='mb-7 xs:mb-20'>
           <h4
             className={`text-4xl xs:text-[1.75rem] xs:text-md xs:text-center font-light pb-1 bg-clip-text text-transparent 
-            ${
-              jobTitle === 'Front-End Engineer' &&
+            ${jobTitle === 'Front-End Engineer' &&
               'bg-gradient-to-r from-red-600 to-blue-800'
-            } 
-            ${
-              jobTitle === 'Software Engineer' &&
+              } 
+            ${jobTitle === 'Software Engineer' &&
               'bg-gradient-to-r from-blue-800 to-green-600'
-            }
-            ${
-              jobTitle === 'Front-End Intern' &&
+              }
+            ${jobTitle === 'Front-End Intern' &&
               'bg-gradient-to-r from-green-600 to-yellow-600'
-            }`}
+              }`}
           >
             {jobTitle}
           </h4>
@@ -60,13 +57,12 @@ const ExperienceCard: NextPage<ExperienceData['experienceData']> = ({
                 return (
                   <div
                     key={`logo-${i}`}
-                    className={`${
-                      logo !== PythonLogo &&
+                    className={`${logo !== PythonLogo &&
                       logo !== NodeJSLogo &&
                       logo !== SpringLogo &&
                       logo !== ReactNativeLogo &&
                       'rounded-full bg-black'
-                    } 
+                      } 
                     ${logo === JavaLogo && 'bg-white'} 
                     ${logo === ReactNativeLogo && 'bg-[#333333] rounded-md'} 
                     `}

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 import { PortfolioPic } from '../assets'
 
-const About: NextPage = () => {
+const About: NextPage = (): ReactElement => {
   return (
     <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-x-7xl px-10 justify-evenly mx-auto items-center overflow-hidden'>
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-5'>

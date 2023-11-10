@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
-const BackgroundCircles: NextPage = () => {
+const BackgroundCircles: NextPage = (): ReactElement => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
