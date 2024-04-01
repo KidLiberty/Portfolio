@@ -132,12 +132,9 @@ const Experience: NextPage = (): ReactElement => {
         className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden'
         ref={scrollRef}
       >
-        {experienceCardData.map((experienceData: ExperienceData, i: number) => (
-          <ExperienceCard
-            key={`experience-card-${i}`}
-            {...experienceData}
-          />
-        ))}
+        {experienceCardData.map((experienceData: ExperienceData, i: number) =>
+          <ExperienceCard key={`experience-card-${i}`} {...experienceData} />
+        )}
       </div>
     </div>
   )

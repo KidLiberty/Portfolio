@@ -152,18 +152,10 @@ const Projects: NextPage = () => {
                 >
                   {project.description}
                 </p>
-                <a
-                  href={project?.gitHubLink}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href={project?.gitHubLink} target='_blank' rel='noopener noreferrer' >
                   <p className='flex items-center justify-center pt-2 text-[#56bcc1] hover:text-[#56bcc1]/70 transition-all duration-200'>
                     {project.picture === ReactLogo ? 'GitHub' : 'Project Code'}
-                    <ArrowTopRightOnSquareIcon
-                      width={20}
-                      height={20}
-                      className='ml-2'
-                    />
+                    <ArrowTopRightOnSquareIcon width={20} height={20} className='ml-2' />
                   </p>
                 </a>
               </div>
