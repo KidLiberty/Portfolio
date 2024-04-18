@@ -17,7 +17,7 @@ import {
 interface Project {
   picture: StaticImageData,
   title: string,
-  description: string,
+  description: string | JSX.Element,
   gitHubLink: string
   websiteLink?: string
 }
@@ -58,7 +58,9 @@ const Projects: NextPage = () => {
       picture: Diablo2StatChecker,
       title: 'Diablo II Stat Check',
       description:
-        'A single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II.',
+        <span>
+          A single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.
+        </span>,
       gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker',
       websiteLink: 'test'
     },
