@@ -13,7 +13,7 @@ const Hero: NextPage = () => {
       "Hi there, I'm Brandon!",
       'JavaScript nerd :^)',
       '<Web3 Developer />',
-      'Building the future of payments',
+      'Building the future of payments on-chain...',
     ],
     loop: true,
     delaySpeed: 1250,
