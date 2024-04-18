@@ -5,6 +5,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
 import {
   AmazonClone,
+  BoopLogo,
   CryptoLottery,
   Diablo2StatChecker,
   LeftArrow,
@@ -25,6 +26,13 @@ const Projects: NextPage = () => {
   const scrollRef = useRef<HTMLInputElement | null>(null)
 
   const projects: Project[] = [
+    {
+      picture: BoopLogo,
+      title: 'Boop',
+      description:
+        'Boop is the solution to international peer to peer remittances, built on-chain with just the right amount of abstraction. Cick the link below to join the waitlist and get on board; and thanks for supporting the movement!',
+      gitHubLink: 'https://www.tryboop.com/'
+    },
     {
       picture: NFTMarketplace,
       title: 'NFT Marketplace',
@@ -154,7 +162,9 @@ const Projects: NextPage = () => {
                 </p>
                 <a href={project?.gitHubLink} target='_blank' rel='noopener noreferrer' >
                   <p className='flex items-center justify-center pt-2 text-[#56bcc1] hover:text-[#56bcc1]/70 transition-all duration-200'>
-                    {project.picture === ReactLogo ? 'GitHub' : 'Project Code'}
+                    {project.picture === BoopLogo && 'TryBoop.com'}
+                    {project.picture !== BoopLogo && project.picture !== ReactLogo && 'Project Code'}
+                    {project.picture === ReactLogo && 'GitHub'}
                     <ArrowTopRightOnSquareIcon width={20} height={20} className='ml-2' />
                   </p>
                 </a>

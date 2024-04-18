@@ -22,6 +22,7 @@ import {
 } from '../assets'
 
 import ExperienceCard from './ExperienceCard'
+import Link from 'next/link'
 
 type ExperienceData = {
   jobTitle: string
@@ -29,7 +30,7 @@ type ExperienceData = {
   stack: StaticImageData[]
   startTime: string
   endTime: string
-  summaryPoints: string[]
+  summaryPoints: (string | JSX.Element)[]
 }
 
 const Experience: NextPage = (): ReactElement => {
@@ -38,7 +39,7 @@ const Experience: NextPage = (): ReactElement => {
 
   const experienceCardData: ExperienceData[] = [
     {
-      jobTitle: 'Front-End Engineer',
+      jobTitle: 'Front End Engineer',
       company: 'Boop Industries Inc',
       stack: [TypeScriptLogo, ReactNativeLogo, FirebaseLogo, SolanaLogo],
       startTime: 'October 2023',
@@ -50,28 +51,29 @@ const Experience: NextPage = (): ReactElement => {
       ]
     },
     {
-      jobTitle: 'Front-End Engineer',
+      jobTitle: 'Front End Engineer',
       company: 'Lunar Labs LLC',
       stack: [TypeScriptLogo, ReactLogo, NextJSLogo, EthersJSLogo],
       startTime: 'May 2023',
       endTime: 'Oct 2023',
       summaryPoints: [
-        'Contracted professionally for the building of the Moonwell.fi dApp UI.',
-        'Engineered multiple data structures utilizing aggregated calls from both decentralized on-chain and centralized off-chain infrastructure.',
-        'Contributed heavily to overall component architecture.',
+        <span>
+          Contracted for the construction of <a style={{ color: '#007acc', }} href='https://moonwell.fi' target='_blank' rel='noopener noreferrer'>Moonwell.fi</a> front end.
+        </span>,
+        'Created component library to handle Web3 specific user journeys and format on-chain data.',
+        'Contributed to overall component architecture.',
       ]
     },
     {
-      jobTitle: 'Front-End Engineer',
+      jobTitle: 'Front End Engineer',
       company: 'Right Click Save Ventures LLC',
       stack: [JavaScriptLogo, ReactLogo, NextJSLogo, PythonLogo, OpenSeaLogo],
       startTime: 'July 2022',
-      endTime: 'Present',
+      endTime: 'May 2023',
       summaryPoints: [
-        'Currently founding UI Developer for a Web3 Investment Company.',
-        'Building early stage institutional grade investment tooling for a Web3 digital asset fund.',
-        'Responsible for rapid & dynamic UX design with JavaScript, React and Next.js.',
-        'Working with Next.js Server-Side Rendering to optimize API call performance from Python Backend.'
+        'Founding UI Developer for Web3 Investment Company.',
+        'Built early stage institutional grade investment tooling for Web3 digital asset fund.',
+        'Responsible for rapid UX design with JavaScript, React and Next.js.'
       ]
     },
     {
@@ -79,11 +81,10 @@ const Experience: NextPage = (): ReactElement => {
       company: 'Fidelity Investments',
       stack: [JavaScriptLogo, NodeJSLogo, JavaLogo, SpringLogo, AWSLogo],
       startTime: 'January 2020',
-      endTime: 'Present',
+      endTime: 'May 2023',
       summaryPoints: [
-        'DevOps Automation Engineer building various frameworks within Fidelity’s Next-Gen Mutual Funds and Alternative Investments.',
-        'Overseeing automated-on-deploy testing process of AWS Lambda code.',
-        'Developing with Node and the Jest Framework to ensure test coverage of APIs.'
+        'DevOps Automation Engineer migrating legacy Java code using AWS and Node.js.',
+        'Trained junior staff on team processes, tooling and best practices'
       ]
     },
     {

@@ -1,6 +1,7 @@
 import AlchemyLogo from './alchemy.png'
 import AmazonClone from './amazonclone.gif'
 import AWSLogo from './aws.png'
+import BoopLogo from './BoopLogo.png'
 import CryptoLottery from './cryptolottery.gif'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
@@ -38,6 +39,7 @@ export {
   AlchemyLogo,
   AmazonClone,
   AWSLogo,
+  BoopLogo,
   CryptoLottery,
   CSS3Logo,
   Diablo2StatChecker,

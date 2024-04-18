@@ -4,7 +4,6 @@ import { StaticImageData } from 'next/image'
 
 import {
   JavaLogo,
-  JavaScriptLogo,
   NodeJSLogo,
   PythonLogo,
   ReactNativeLogo,
@@ -17,7 +16,7 @@ type ExperienceData = {
   stack: StaticImageData[]
   startTime: string
   endTime: string
-  summaryPoints: string[]
+  summaryPoints: (string | JSX.Element)[]
 }
 
 const ExperienceCard: NextPage<ExperienceData> = ({
@@ -68,7 +67,7 @@ const ExperienceCard: NextPage<ExperienceData> = ({
           </div>
           <p className='uppercase pb-5 pt-2 xs:py-3 xs:ml-6 font-bold'>{startTime} <i>-</i> {endTime}</p>
           <ul className='w-[300px] list-disc space-y-2 xs:space-y-2 ml-5 text-lg xs:px-4 xs:text-[13px]'>
-            {summaryPoints.map((summaryPoint: string, i: number) =>
+            {summaryPoints.map((summaryPoint: string | JSX.Element, i: number) =>
               <li key={`summaryPoint-${i}`} className='xs:text-[13px] leading-5 xs:leading-4'>
                 {summaryPoint}
               </li>
