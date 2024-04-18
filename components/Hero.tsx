@@ -47,32 +47,22 @@ const Hero: NextPage = () => {
         <div className='flex xs:flex-col pt-5 sm:pt-4 xs:pb-10'>
           <div className='flex'>
             <Link href='#about'>
-              <button className='heroButton text-[14px] xs:text-xl'>
-                About
-              </button>
+              <button className='heroButton text-[14px] xs:text-xl'>About</button>
             </Link>
             <Link href='#experience'>
-              <button className='heroButton text-[14px] xs:text-xl'>
-                Experience
-              </button>
+              <button className='heroButton text-[14px] xs:text-xl'>Experience</button>
             </Link>
             <Link href='#skills'>
-              <button className='heroButton text-[14px] xs:text-xl'>
-                Skills
-              </button>
+              <button className='heroButton text-[14px] xs:text-xl'>Skills</button>
             </Link>
           </div>
 
           <div className='flex justify-center items-center'>
             <Link href='#projects'>
-              <button className='heroButton text-[14px] xs:text-xl'>
-                Projects
-              </button>
+              <button className='heroButton text-[14px] xs:text-xl'>Projects</button>
             </Link>
             <Link href='#NFTDisplay'>
-              <button className='heroButton text-[14px] xs:text-xl'>
-                Wallet
-              </button>
+              <button className='heroButton text-[14px] xs:text-xl'> Wallet</button>
             </Link>
           </div>
         </div>

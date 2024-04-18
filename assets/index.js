@@ -26,6 +26,7 @@ import ReactNativeLogo from './reactnative.png'
 import ReduxLogo from './redux.png'
 import RightArrow from './rightArrow.png'
 import SASSLogo from './sass.png'
+import SolanaLogo from './SolanaLogo.png'
 import SolidityLogo from './solidity.png'
 import SpringLogo from './spring.png'
 import TailwindCSSLogo from './tailwindcss.png'
@@ -62,6 +63,7 @@ export {
   ReduxLogo,
   RightArrow,
   SASSLogo,
+  SolanaLogo,
   SolidityLogo,
   SpringLogo,
   TailwindCSSLogo,

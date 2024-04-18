@@ -35,9 +35,11 @@ const ExperienceCard: NextPage<ExperienceData> = ({
           <h4
             className={`
             text-4xl xs:text-[1.75rem] xs:text-md xs:text-center font-light pb-1 bg-clip-text text-transparent 
-            ${jobTitle === 'Front-End Engineer' && 'bg-gradient-to-r from-red-600 to-blue-800'} 
-            ${jobTitle === 'Software Engineer' && 'bg-gradient-to-r from-blue-800 to-green-600'}
-            ${jobTitle === 'Front-End Intern' && 'bg-gradient-to-r from-green-600 to-yellow-600'}
+            ${company === 'Boop Industries Inc' && 'bg-gradient-to-r from-yellow-600 to-orange-500'} 
+            ${company === 'Lunar Labs LLC' && 'bg-gradient-to-r from-orange-600 to-red-500'} 
+            ${company === 'Right Click Save Ventures LLC' && 'bg-gradient-to-r from-red-600 to-blue-800'} 
+            ${company === 'Fidelity Investments' && 'bg-gradient-to-r from-blue-800 to-green-600'}
+            ${company === 'Sensible United LLC' && 'bg-gradient-to-r from-green-600 to-yellow-600'}
             `}
           >
             {jobTitle}

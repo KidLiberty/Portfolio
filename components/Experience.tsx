@@ -5,6 +5,7 @@ import Image, { StaticImageData } from 'next/image'
 import {
   AWSLogo,
   EthersJSLogo,
+  FirebaseLogo,
   JavaLogo,
   JavaScriptLogo,
   LeftArrow,
@@ -15,9 +16,11 @@ import {
   ReactLogo,
   ReactNativeLogo,
   RightArrow,
+  SolanaLogo,
   SpringLogo,
   TypeScriptLogo
 } from '../assets'
+
 import ExperienceCard from './ExperienceCard'
 
 type ExperienceData = {
@@ -36,10 +39,22 @@ const Experience: NextPage = (): ReactElement => {
   const experienceCardData: ExperienceData[] = [
     {
       jobTitle: 'Front-End Engineer',
+      company: 'Boop Industries Inc',
+      stack: [TypeScriptLogo, ReactNativeLogo, FirebaseLogo, SolanaLogo],
+      startTime: 'October 2023',
+      endTime: 'Present',
+      summaryPoints: [
+        'Founding engineer of Web3 payments startup focused on international remittances.',
+        'Built core product using React Native and Firebsase while implementing fiat on-ramp, KYC, and P2P transfers.',
+        'Worked directly with vendors to integrate their solution into mobile product.',
+      ]
+    },
+    {
+      jobTitle: 'Front-End Engineer',
       company: 'Lunar Labs LLC',
       stack: [TypeScriptLogo, ReactLogo, NextJSLogo, EthersJSLogo],
       startTime: 'May 2023',
-      endTime: 'Sep 2023',
+      endTime: 'Oct 2023',
       summaryPoints: [
         'Contracted professionally for the building of the Moonwell.fi dApp UI.',
         'Engineered multiple data structures utilizing aggregated calls from both decentralized on-chain and centralized off-chain infrastructure.',

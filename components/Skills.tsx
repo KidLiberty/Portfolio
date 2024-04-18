@@ -18,6 +18,7 @@ import {
   NextJSLogo,
   NodeJSLogo,
   ReactLogo,
+  ReactNativeLogo,
   ReduxLogo,
   SASSLogo,
   SolidityLogo,
@@ -35,19 +36,20 @@ interface SkillTraits {
 const Skills: NextPage = () => {
   const topSkillsData: SkillTraits[] = [
     { logo: JavaScriptLogo, skill: 'JavaScript' },
-    { logo: ReactLogo, skill: 'React' },
-    { logo: NextJSLogo, skill: 'Next.js' },
     { logo: TypeScriptLogo, skill: 'TypeScript' },
+    { logo: ReactLogo, skill: 'React' },
+    { logo: ReactNativeLogo, skill: 'React Native' },
+    { logo: NextJSLogo, skill: 'Next.js' },
     { logo: ReduxLogo, skill: 'Redux' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
     { logo: SASSLogo, skill: 'SASS' },
     { logo: HTML5Logo, skill: 'HTML5' },
-    { logo: GoogleCloudLogo, skill: 'Google Cloud' },
-    { logo: FirebaseLogo, skill: 'Firebase' },
-    { logo: NodeJSLogo, skill: 'Node' }
+    { logo: GoogleCloudLogo, skill: 'Google Cloud' }
   ]
 
   const bottomSkillsData: SkillTraits[] = [
+    { logo: FirebaseLogo, skill: 'Firebase' },
+    { logo: NodeJSLogo, skill: 'Node' },
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
