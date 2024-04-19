@@ -30,7 +30,7 @@ const Projects: NextPage = () => {
       picture: BoopLogo,
       title: 'Boop',
       description:
-        'Boop is the solution to international peer to peer remittances, built on-chain with just the right amount of abstraction. Cick the link below to join the waitlist and get on board; and thanks for supporting the movement!',
+        'Boop is the solution to international peer to peer remittances, built on-chain with just the right amount of abstraction. Click the link below to join the waitlist and get on board; thanks for supporting the movement!',
       gitHubLink: 'https://www.tryboop.com/'
     },
     {
