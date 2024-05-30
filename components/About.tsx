@@ -36,12 +36,9 @@ const About: NextPage = (): ReactElement => {
           Hey there! I'm a developer from the Northeast 🍂🌊 who has worked in
           financial technology for the past 5 years. I have also had a
           fascination with what I've seen on the web and the language that
-          builds it since 2014. Combining the two has led me to the world of{' '}
-          <b>Web3</b>; rapidly building UIs in harmony with blockchain APIs to
-          create some pretty cool decentralized applications. My current ambitions
-          hone on being immersed in a space that is subject to the frontier
-          of technology. Taking part in the hype, while building something
-          narrative shifting is where you'll (inevitably) find me.
+          builds it since 2014. Combining the two has given me the priveledge
+          to work with talented teams building websites, deployed Web3 dApps, and
+          recently mobile applications on iOS.
         </p>
       </div>
     </div>
