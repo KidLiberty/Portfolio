@@ -46,7 +46,7 @@ const Experience: NextPage = (): ReactElement => {
       endTime: 'Present',
       summaryPoints: [
         'Founding engineer of Web3 payments startup focused on international remittances.',
-        'Built core product using React Native and Firebsase while implementing fiat on-ramp, KYC, and P2P transfers.',
+        'Built core product using React Native and Firebase while implementing fiat on-ramp, KYC, and P2P transfers.',
         'Worked directly with vendors to integrate their solution into mobile product.',
       ]
     },
