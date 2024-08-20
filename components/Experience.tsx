@@ -84,7 +84,7 @@ const Experience: NextPage = (): ReactElement => {
       endTime: 'May 2023',
       summaryPoints: [
         'DevOps Automation Engineer migrating legacy Java code using AWS and Node.js.',
-        'Trained junior staff on team processes, tooling and best practices'
+        'Trained junior staff on team processes, tooling and best practices.'
       ]
     },
     {
