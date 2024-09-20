@@ -32,13 +32,14 @@ const About: NextPage = (): ReactElement => {
             Here is a <i>little</i> background
           </span>
         </div>
-        <p className='w-[90%] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-14 sm:text-[14px] leading-5 xs:leading-4'>
-          Hey there! I'm a developer from the Northeast 🍂🌊 who has worked in
-          financial technology for the past 5 years. I have also had a
+        <p className='max-w-[700px] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-14 sm:text-[14px] leading-5 xs:leading-4'>
+          Hey there! I'm a developer from the Northeast 🍂🌊 who has worked
+          within financial technology for the past 5 years. I have also had a
           fascination with what I've seen on the web and the language that
-          builds it since 2014. Combining the two has given me the priveledge
+          builds it since 2014. Combining the two has given me the priviledge
           to work with talented teams building websites, deployed Web3 dApps, and
-          recently mobile applications on iOS.
+          Native mobile applications on iOS. These days, I'm looking to
+          contribute by doing what I love ⚛️.
         </p>
       </div>
     </div>
