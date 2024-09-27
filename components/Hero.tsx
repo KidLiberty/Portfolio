@@ -12,7 +12,7 @@ const Hero: NextPage = () => {
     words: [
       "Hi there, I'm Brandon!",
       'JavaScript nerd :^)',
-      '<Web3 Developer />',
+      '<Web Developer />',
       'Building the future of global payments...',
     ],
     loop: true,
