@@ -1,4 +1,5 @@
 import AlchemyLogo from './alchemy.png'
+import AngularLogo from './Angular.jpeg'
 import AmazonClone from './amazonclone.gif'
 import AWSLogo from './aws.png'
 import BoopLogo from './BoopLogo.png'
@@ -6,7 +7,7 @@ import CryptoLottery from './cryptolottery.gif'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
 import EthersJSLogo from './ethersjs.png'
-import FirebaseLogo from './firebase.png'
+import FirebaseLogo from './Firebase.png'
 import GanacheLogo from './ganache.png'
 import GoogleCloudLogo from './googlecloud.png'
 import HTML5Logo from './html5.png'
@@ -37,6 +38,7 @@ import Web3JSLogo from './web3js.png'
 
 export {
   AlchemyLogo,
+  AngularLogo,
   AmazonClone,
   AWSLogo,
   BoopLogo,
