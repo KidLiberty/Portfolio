@@ -6,6 +6,7 @@ import BoopLogo from './BoopLogo.png'
 import CryptoLottery from './cryptolottery.gif'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
+import DockerLogo from './Docker.png'
 import EthersJSLogo from './ethersjs.png'
 import FirebaseLogo from './firebase.png'
 import GanacheLogo from './ganache.png'
@@ -45,6 +46,7 @@ export {
   CryptoLottery,
   CSS3Logo,
   Diablo2StatChecker,
+  DockerLogo,
   EthersJSLogo,
   FirebaseLogo,
   GanacheLogo,

@@ -8,6 +8,7 @@ import Skill from './Skill'
 import {
   AlchemyLogo,
   AngularLogo,
+  DockerLogo,
   EthersJSLogo,
   FirebaseLogo,
   GanacheLogo,
@@ -20,8 +21,6 @@ import {
   NodeJSLogo,
   ReactLogo,
   ReactNativeLogo,
-  ReduxLogo,
-  SASSLogo,
   SolidityLogo,
   TailwindCSSLogo,
   ThirdwebLogo,
@@ -50,7 +49,7 @@ const Skills: NextPage = () => {
 
   const bottomSkillsData: SkillTraits[] = [
     { logo: AngularLogo, skill: 'Angular' },
-    { logo: SASSLogo, skill: 'SASS' },
+    { logo: DockerLogo, skill: 'Docker' },
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
