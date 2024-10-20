@@ -40,7 +40,7 @@ const Skills: NextPage = () => {
     { logo: ReactLogo, skill: 'React' },
     { logo: ReactNativeLogo, skill: 'React Native' },
     { logo: NextJSLogo, skill: 'Next.js' },
-    { logo: NodeJSLogo, skill: 'Node' },
+    { logo: NodeJSLogo, skill: 'Node.js' },
     { logo: HTML5Logo, skill: 'HTML5' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
     { logo: FirebaseLogo, skill: 'Firebase' },
@@ -48,8 +48,8 @@ const Skills: NextPage = () => {
   ]
 
   const bottomSkillsData: SkillTraits[] = [
-    { logo: AngularLogo, skill: 'Angular' },
     { logo: DockerLogo, skill: 'Docker' },
+    { logo: AngularLogo, skill: 'Angular' },
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
