@@ -16,6 +16,7 @@ import {
   HardHat,
   HTML5Logo,
   JavaScriptLogo,
+  KubernetesLogo,
   MetaMaskLogo,
   NextJSLogo,
   NodeJSLogo,
@@ -49,6 +50,7 @@ const Skills: NextPage = () => {
 
   const bottomSkillsData: SkillTraits[] = [
     { logo: DockerLogo, skill: 'Docker' },
+    { logo: KubernetesLogo, skill: 'Kubernetes' },
     { logo: AngularLogo, skill: 'Angular' },
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
@@ -56,7 +58,6 @@ const Skills: NextPage = () => {
     { logo: SolidityLogo, skill: 'Solidity' },
     { logo: HardHat, skill: 'HardHat' },
     { logo: AlchemyLogo, skill: 'Alchemy' },
-    { logo: ThirdwebLogo, skill: 'ThirdWeb' },
     { logo: GanacheLogo, skill: 'Ganache' }
   ]
 

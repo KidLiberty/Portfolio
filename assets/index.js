@@ -16,6 +16,7 @@ import HakiNFT from './haki.png'
 import HardHat from './hardhat.png'
 import JavaLogo from './java.png'
 import JavaScriptLogo from './javascript.png'
+import KubernetesLogo from './Kubernetes.png'
 import LeftArrow from './leftArrow.png'
 import MetaMaskLogo from './metamask.png'
 import NextJSLogo from './nextjs-icon.png'
@@ -57,6 +58,7 @@ export {
   JavaLogo,
   JavaScriptLogo,
   LeftArrow,
+  KubernetesLogo,
   MetaMaskLogo,
   NextJSLogo,
   NFTMarketplace,
