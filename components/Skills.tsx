@@ -43,8 +43,8 @@ const Skills: NextPage = () => {
     { logo: NodeJSLogo, skill: 'Node.js' },
     { logo: NextJSLogo, skill: 'Next.js' },
     { logo: DrizzleLogo, skill: 'Drizzle ORM' },
-    { logo: HTML5Logo, skill: 'HTML5' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
+    { logo: HTML5Logo, skill: 'HTML5' },
     { logo: FirebaseLogo, skill: 'Firebase' },
     { logo: GoogleCloudLogo, skill: 'Google Cloud' }
   ]
