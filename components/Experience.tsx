@@ -17,12 +17,10 @@ import {
   ReactNativeLogo,
   RightArrow,
   SolanaLogo,
-  SpringLogo,
   TypeScriptLogo
 } from '../assets'
 
 import ExperienceCard from './ExperienceCard'
-import Link from 'next/link'
 
 type ExperienceData = {
   jobTitle: string
@@ -119,29 +117,11 @@ const Experience: NextPage = (): ReactElement => {
         Experience
       </h3>
 
-      <div
-        className='absolute top-100 left-[0] hover:cursor-pointer opacity-70 hover:opacity-40'
-        onClick={() => handleScroll('left')}
-      >
-        <Image
-          src={LeftArrow}
-          width={35}
-          height={35}
-          objectFit='cover'
-          alt='LeftArrow'
-        />
+      <div className='absolute top-100 left-[0] hover:cursor-pointer opacity-70 hover:opacity-40' onClick={() => handleScroll('left')}>
+        <Image src={LeftArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
       </div>
-      <div
-        className='absolute top-100 right-[0] hover:cursor-pointer opacity-70 hover:opacity-40'
-        onClick={() => handleScroll('right')}
-      >
-        <Image
-          src={RightArrow}
-          width={35}
-          height={35}
-          objectFit='cover'
-          alt='LeftArrow'
-        />
+      <div className='absolute top-100 right-[0] hover:cursor-pointer opacity-70 hover:opacity-40' onClick={() => handleScroll('right')}>
+        <Image src={RightArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
       </div>
 
       <div
