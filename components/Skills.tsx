@@ -8,15 +8,14 @@ import Skill from './Skill'
 import {
   AlchemyLogo,
   AngularLogo,
+  AWSLogo,
   DockerLogo,
   DrizzleLogo,
   EthersJSLogo,
   FirebaseLogo,
-  GanacheLogo,
   GoogleCloudLogo,
   HardHat,
   HTML5Logo,
-  JavaScriptLogo,
   KubernetesLogo,
   MetaMaskLogo,
   NextJSLogo,
@@ -45,7 +44,7 @@ const Skills: NextPage = () => {
     { logo: DrizzleLogo, skill: 'Drizzle ORM' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
     { logo: HTML5Logo, skill: 'HTML5' },
-    { logo: FirebaseLogo, skill: 'Firebase' },
+    { logo: FirebaseLogo, skill: 'Google Firebase' },
     { logo: GoogleCloudLogo, skill: 'Google Cloud' }
   ]
 
@@ -53,13 +52,13 @@ const Skills: NextPage = () => {
     { logo: DockerLogo, skill: 'Docker' },
     { logo: KubernetesLogo, skill: 'Kubernetes' },
     { logo: AngularLogo, skill: 'Angular' },
+    { logo: AWSLogo, skill: 'Amazon Web Services' },
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
     { logo: MetaMaskLogo, skill: 'MetaMask' },
     { logo: SolidityLogo, skill: 'Solidity' },
     { logo: HardHat, skill: 'HardHat' },
-    { logo: AlchemyLogo, skill: 'Alchemy' },
-    { logo: GanacheLogo, skill: 'Ganache' }
+    { logo: AlchemyLogo, skill: 'Alchemy' }
   ]
 
   return (
