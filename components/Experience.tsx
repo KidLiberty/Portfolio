@@ -79,7 +79,7 @@ const Experience: NextPage = (): ReactElement => {
     {
       jobTitle: 'Software Engineer',
       company: 'Fidelity Investments',
-      stack: [JavaScriptLogo, NodeJSLogo, JavaLogo, SpringLogo, AWSLogo],
+      stack: [AWSLogo, JavaScriptLogo, NodeJSLogo, JavaLogo],
       startTime: 'January 2020',
       endTime: 'May 2023',
       summaryPoints: [
