@@ -9,6 +9,7 @@ import {
   AlchemyLogo,
   AngularLogo,
   DockerLogo,
+  DrizzleLogo,
   EthersJSLogo,
   FirebaseLogo,
   GanacheLogo,
@@ -16,6 +17,7 @@ import {
   HardHat,
   HTML5Logo,
   JavaScriptLogo,
+  KubernetesLogo,
   MetaMaskLogo,
   NextJSLogo,
   NodeJSLogo,
@@ -23,32 +25,33 @@ import {
   ReactNativeLogo,
   SolidityLogo,
   TailwindCSSLogo,
-  ThirdwebLogo,
   TypeScriptLogo,
   Web3JSLogo
 } from '../assets'
 
 interface SkillTraits {
-  logo: StaticImageData,
+  className?: string
+  logo: StaticImageData | JSX.Element,
   skill: string
 }
 
 const Skills: NextPage = () => {
   const topSkillsData: SkillTraits[] = [
-    { logo: JavaScriptLogo, skill: 'JavaScript' },
     { logo: TypeScriptLogo, skill: 'TypeScript' },
     { logo: ReactLogo, skill: 'React' },
     { logo: ReactNativeLogo, skill: 'React Native' },
-    { logo: NextJSLogo, skill: 'Next.js' },
     { logo: NodeJSLogo, skill: 'Node.js' },
-    { logo: HTML5Logo, skill: 'HTML5' },
+    { logo: NextJSLogo, skill: 'Next.js' },
+    { logo: DrizzleLogo, skill: 'Drizzle ORM' },
     { logo: TailwindCSSLogo, skill: 'Tailwindcss' },
+    { logo: HTML5Logo, skill: 'HTML5' },
     { logo: FirebaseLogo, skill: 'Firebase' },
     { logo: GoogleCloudLogo, skill: 'Google Cloud' }
   ]
 
   const bottomSkillsData: SkillTraits[] = [
     { logo: DockerLogo, skill: 'Docker' },
+    { logo: KubernetesLogo, skill: 'Kubernetes' },
     { logo: AngularLogo, skill: 'Angular' },
     { logo: EthersJSLogo, skill: 'Ethers.js' },
     { logo: Web3JSLogo, skill: 'Web3.js' },
@@ -56,7 +59,6 @@ const Skills: NextPage = () => {
     { logo: SolidityLogo, skill: 'Solidity' },
     { logo: HardHat, skill: 'HardHat' },
     { logo: AlchemyLogo, skill: 'Alchemy' },
-    { logo: ThirdwebLogo, skill: 'ThirdWeb' },
     { logo: GanacheLogo, skill: 'Ganache' }
   ]
 

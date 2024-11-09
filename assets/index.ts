@@ -7,6 +7,7 @@ import CryptoLottery from './cryptolottery.gif'
 import CSS3Logo from './css3.png'
 import Diablo2StatChecker from './diablo2statchecker.gif'
 import DockerLogo from './Docker.png'
+import DrizzleLogo from './Drizzle.png'
 import EthersJSLogo from './ethersjs.png'
 import FirebaseLogo from './firebase.png'
 import GanacheLogo from './ganache.png'
@@ -16,9 +17,10 @@ import HakiNFT from './haki.png'
 import HardHat from './hardhat.png'
 import JavaLogo from './java.png'
 import JavaScriptLogo from './javascript.png'
+import KubernetesLogo from './Kubernetes.png'
 import LeftArrow from './leftArrow.png'
 import MetaMaskLogo from './metamask.png'
-import NextJSLogo from './nextjs.svg'
+import NextJSLogo from './nextjs-icon.png'
 import NFTMarketplace from './NFTMarketplace.gif'
 import NodeJSLogo from './nodejs.png'
 import OpenSeaLogo from './opensea.png'
@@ -47,6 +49,7 @@ export {
   CSS3Logo,
   Diablo2StatChecker,
   DockerLogo,
+  DrizzleLogo,
   EthersJSLogo,
   FirebaseLogo,
   GanacheLogo,
@@ -57,6 +60,7 @@ export {
   JavaLogo,
   JavaScriptLogo,
   LeftArrow,
+  KubernetesLogo,
   MetaMaskLogo,
   NextJSLogo,
   NFTMarketplace,

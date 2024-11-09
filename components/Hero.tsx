@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
-import { BackgroundCircles } from '../components'
+import { BackgroundCircles } from '.'
 import { HakiNFT } from '../assets'
 import Link from 'next/link'
 
