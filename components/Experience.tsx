@@ -65,7 +65,7 @@ const Experience: NextPage = (): ReactElement => {
     {
       jobTitle: 'Front End Engineer',
       company: 'Right Click Save Ventures LLC',
-      stack: [JavaScriptLogo, ReactLogo, NextJSLogo, PythonLogo, OpenSeaLogo],
+      stack: [TypeScriptLogo, ReactLogo, NextJSLogo, PythonLogo, OpenSeaLogo],
       startTime: 'July 2022',
       endTime: 'May 2023',
       summaryPoints: [
@@ -77,7 +77,7 @@ const Experience: NextPage = (): ReactElement => {
     {
       jobTitle: 'Software Engineer',
       company: 'Fidelity Investments',
-      stack: [AWSLogo, JavaScriptLogo, NodeJSLogo, JavaLogo],
+      stack: [AWSLogo, TypeScriptLogo, NodeJSLogo, JavaLogo],
       startTime: 'January 2020',
       endTime: 'May 2023',
       summaryPoints: [
