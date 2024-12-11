@@ -37,14 +37,14 @@ const Experience: NextPage = (): ReactElement => {
 
   const experienceCardData: ExperienceData[] = [
     {
-      jobTitle: 'Front End Engineer',
+      jobTitle: 'Software Engineer',
       company: 'Boop Industries Inc',
       stack: [TypeScriptLogo, ReactNativeLogo, FirebaseLogo, SolanaLogo],
       startTime: 'October 2023',
       endTime: 'Present',
       summaryPoints: [
         'Founding engineer of Web3 payments startup focused on international remittances.',
-        'Built core product using React Native and Firebase while implementing fiat on-ramp, KYC, and P2P transfers.',
+        'Built core product using TypeScript/React Native and Firebase while implementing fiat on-ramp, KYC, and P2P transfers.',
         'Worked directly with vendors to integrate their solution into mobile product.',
       ]
     },
@@ -58,7 +58,7 @@ const Experience: NextPage = (): ReactElement => {
         <span>
           Contracted for the construction of <a style={{ color: '#007acc', }} href='https://moonwell.fi' target='_blank' rel='noopener noreferrer'>Moonwell.fi</a> front end.
         </span>,
-        'Created component library to handle Web3 specific user journeys and format on-chain data.',
+        'Created component library with TypeScript/React/Next.js to handle Web3 specific user journeys and format on-chain data.',
         'Contributed to overall component architecture.',
       ]
     },
