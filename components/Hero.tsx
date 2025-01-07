@@ -11,12 +11,12 @@ const Hero: NextPage = () => {
   const [text] = useTypewriter({
     words: [
       "Hi there, I'm Brandon!",
-      'JavaScript nerd :^)',
-      '<Web Developer />',
-      'Building the future of global payments...',
+      '<Web Developer /> & JavaScript nerd :^)',
+      'Front-End Focused; Full-Stack Experienced',
+      'Web3 Contributor'
     ],
     loop: true,
-    delaySpeed: 1250,
+    delaySpeed: 1000,
     deleteSpeed: 40,
     typeSpeed: 60
   })

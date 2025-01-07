@@ -43,9 +43,8 @@ const Experience: NextPage = (): ReactElement => {
       startTime: 'October 2023',
       endTime: 'Present',
       summaryPoints: [
-        'Founding engineer of Web3 payments startup focused on international remittances.',
-        'Built core product using TypeScript/React Native and Firebase while implementing fiat on-ramp, KYC, and P2P transfers.',
-        'Worked directly with vendors to integrate their solution into mobile product.',
+        'Built core product with TypeScript, React Native, Node, Plaid and Google Firebase SDK while implementing crypto-to-fiat onramp, user authentication, and P2P transfers on iOS.',
+        'Integrated TypeScript REST APIs into product by communicaOng directly with vendors.'
       ]
     },
     {
@@ -56,10 +55,10 @@ const Experience: NextPage = (): ReactElement => {
       endTime: 'Oct 2023',
       summaryPoints: [
         <span>
-          Contracted for the construction of <a style={{ color: '#007acc', }} href='https://moonwell.fi' target='_blank' rel='noopener noreferrer'>Moonwell.fi</a> front end.
+          Constructed component library with TypeScript and Next.js to handle Web3-specific user journeys for the <a style={{ color: '#007acc', }} href='https://moonwell.fi' target='_blank' rel='noopener noreferrer'>Moonwell.fi</a> dApp.
         </span>,
-        'Created component library with TypeScript/React/Next.js to handle Web3 specific user journeys and format on-chain data.',
-        'Contributed to overall component architecture.',
+        'Built REST APIs to query on-chain specific JSON-RPC data and format data to UI.',
+        'Utilized TypeScript wallet SDKs for Ethereum (ethers.js), Base & Solana (@solana/web3.js).',
       ]
     },
     {
@@ -81,19 +80,21 @@ const Experience: NextPage = (): ReactElement => {
       startTime: 'January 2020',
       endTime: 'May 2023',
       summaryPoints: [
-        'DevOps Automation Engineer migrating legacy Java code using AWS and Node.js.',
-        'Trained junior staff on team processes, tooling and best practices.'
+        'Integrated full-stack AWS services including EC2, DynamoDB, S3, API Gateway, and Lambda with respective TypeScript SDKs.',
+        'Refactored and maintained legacy Java code while performing migrations from Java to TypeScript modules within core DevOps pipeline.',
+        'Experience with Docker, Kubernetes, Jenkins and versioning control within pipeline.'
       ]
     },
     {
       jobTitle: 'Front-End Intern',
       company: 'Sensible United LLC',
-      stack: [JavaScriptLogo, ReactLogo, ReactNativeLogo],
+      stack: [JavaScriptLogo, ReactLogo, ReactNativeLogo, NodeJSLogo],
       startTime: 'August 2018',
       endTime: 'December 2019',
       summaryPoints: [
         'Apprenticed as React Native intern under founding member of small fintech startup.',
-        'Worked on UX design team, contributing several screen mocks to production with basic implementation in React Native.'
+        'Worked on core full-stack pipeline with an emphasis on Front-End architecture.',
+        'Exposure to REST APIs with express and MongoDB.'
       ]
     }
   ]
