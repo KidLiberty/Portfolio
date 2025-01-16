@@ -8,7 +8,6 @@ import Skills from './Skills'
 import Skill from './Skill'
 import Projects from './Projects'
 import ContactMe from './ContactMe'
-import WalletConnect from './WalletConnect'
 
 export {
   Header,
@@ -20,6 +19,5 @@ export {
   Skills,
   Skill,
   Projects,
-  WalletConnect,
   ContactMe
 }

@@ -9,10 +9,6 @@ module.exports = {
     fontFamily: {
       poppins: ['Poppins', 'sans-serif']
     },
-    screens: {
-      sm: { max: '600px' },
-      xs: { max: '480px' }
-    }
   },
 
   plugins: [require('tailwind-scrollbar'), require('tailwind-scrollbar-hide')]

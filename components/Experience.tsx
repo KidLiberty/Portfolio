@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import Image from 'next/image'
 
 import {
@@ -51,7 +51,7 @@ export default function Experience() {
       {/* Experience Cards */}
       <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden' ref={scrollRef}>
         <ExperienceCard
-          headerStyle='text-[28px] bg-gradient-to-r from-yellow-600 to-orange-500'
+          headerStyle='text-[30px] bg-gradient-to-r from-yellow-600 to-orange-500'
           jobTitle='Web3 Mobile Engineer'
           company='Boop Industries Inc.'
           stack={[TypeScriptLogo, ReactNativeLogo, FirebaseLogo, SolanaLogo]}
