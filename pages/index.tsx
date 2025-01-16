@@ -1,23 +1,11 @@
 import React from 'react'
-import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import {
-  Header,
-  Hero,
-  About,
-  Experience,
-  Skills,
-  Projects,
-  ContactMe,
-} from '../components'
+import { Header, Hero, About, Experience, Skills, Projects, ContactMe, } from '../components'
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <div
-      className='bg-[#141920] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll 
-    overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-500 scrollbar-hide font-poppins'
-    >
+    <div className='bg-[#141920] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-gray-500 scrollbar-hide font-poppins'>
       <Head>
         <title>Brandon Stone.dev</title>
       </Head>
@@ -50,5 +38,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home

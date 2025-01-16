@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticImageData } from 'next/image'
-import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
 import Skill from './Skill'
@@ -28,13 +27,13 @@ import {
   Web3JSLogo
 } from '../assets'
 
-interface SkillTraits {
+type SkillTraits = {
   className?: string
   logo: StaticImageData | JSX.Element,
   skill: string
 }
 
-const Skills: NextPage = () => {
+export default function Skills() {
   const topSkillsData: SkillTraits[] = [
     { logo: TypeScriptLogo, skill: 'TypeScript' },
     { logo: ReactLogo, skill: 'React' },
@@ -81,6 +80,7 @@ const Skills: NextPage = () => {
         {topSkillsData.map((skillProps: any, i: number) => (
           <Skill key={`skill-${i}`} {...skillProps} directionLeft />
         ))}
+
         {bottomSkillsData.map((skillProps: any, i: number) => (
           <Skill key={`skill-${i}`} {...skillProps} />
         ))}
@@ -88,5 +88,3 @@ const Skills: NextPage = () => {
     </motion.div>
   )
 }
-
-export default Skills

@@ -1,13 +1,12 @@
 import React from 'react'
-import { NextPage } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 import { BackgroundCircles } from '.'
 import { HakiNFT } from '../assets'
-import Link from 'next/link'
 
-const Hero: NextPage = () => {
+export default function Hero() {
   const [text] = useTypewriter({
     words: [
       "Hi there, I'm Brandon!",
@@ -20,6 +19,7 @@ const Hero: NextPage = () => {
     deleteSpeed: 40,
     typeSpeed: 60
   })
+
   return (
     <div className='relative h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
@@ -70,5 +70,3 @@ const Hero: NextPage = () => {
     </div>
   )
 }
-
-export default Hero

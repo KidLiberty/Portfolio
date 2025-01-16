@@ -1,21 +1,17 @@
-import React, { ReactElement } from 'react'
-import { NextPage } from 'next'
-import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { SocialIcon } from 'react-social-icons'
 
-interface Inputs {
+type Inputs = {
   name: string
   email: string
   subject: string
   message: string
 }
 
-const ContactMe: NextPage = (): ReactElement => {
+export default function ContactMe() {
   const { register, handleSubmit } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = formData => {
-    window.location.href = `mailto:brandonrstone@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
-  }
+  const onSubmit: SubmitHandler<Inputs> = formData => window.location.href = `mailto:brandonrstone@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
 
   return (
     <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
@@ -58,38 +54,14 @@ const ContactMe: NextPage = (): ReactElement => {
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px] sm:pb-[24px] xs:pb-[36px]'
-        >
+        <form className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px] sm:pb-[24px] xs:pb-[36px]' onSubmit={handleSubmit(onSubmit)}>
           <div className='flex xs:flex-col xs:w-full space-x-2 xs:space-x-0 xs:space-y xs:justify-center'>
-            <input
-              {...register('name')}
-              className='contactInput'
-              placeholder='Name'
-              type='text'
-            />
-            <input
-              {...register('email')}
-              className='contactInput xs:mt-2'
-              placeholder='Email'
-              type='email'
-            />
+            <input type='text' className='contactInput' placeholder='Name'{...register('name')} />
+            <input className='contactInput xs:mt-2' type='email' placeholder='Email' {...register('email')} />
           </div>
-          <input
-            {...register('subject')}
-            className='contactInput'
-            placeholder='Subject'
-          />
-          <textarea
-            {...register('message')}
-            className='contactInput'
-            placeholder='Message...'
-          />
-          <button
-            className='bg-transparent border-2 border-[#5fddb3] p-4 xs:py-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2 active:bg-[#5fddb3]/70'
-            type='submit'
-          >
+          <input className='contactInput' placeholder='Subject' {...register('subject')} />
+          <textarea className='contactInput' placeholder='Message...' {...register('message')} />
+          <button className='bg-transparent border-2 border-[#5fddb3] p-4 xs:py-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2 active:bg-[#5fddb3]/70' type='submit'>
             Submit
           </button>
         </form>
@@ -97,5 +69,3 @@ const ContactMe: NextPage = (): ReactElement => {
     </div>
   )
 }
-
-export default ContactMe

@@ -1,9 +1,8 @@
-import React, { ReactElement } from 'react'
-import { NextPage } from 'next'
 import { motion } from 'framer-motion'
+
 import { PortfolioPic } from '../assets'
 
-const About: NextPage = (): ReactElement => {
+export default function About() {
   return (
     <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-x-7xl px-10 justify-evenly mx-auto items-center overflow-hidden'>
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-5'>
@@ -33,8 +32,8 @@ const About: NextPage = (): ReactElement => {
           </span>
         </div>
         <p className='max-w-[700px] text-justify text-gray-300 text-[18px] xs:text-[13px] xs:w-[100%] xs:pb-14 sm:text-[14px] leading-5 xs:leading-4'>
-          Hey there! I'm a developer from the Northeast 🍂🌊 who has worked
-          across web, DevOps, financial, and decentralized technology over the past five years.
+          Hey there! I'm a developer from the Northeast 🍂🌊 who has worked across web,
+          DevOps, financial, and decentralized technology over the past five years.
           I have also had a fascination with what I've seen on the web and the language
           that builds it since 2014. Combining my experience has given me the priviledge
           of working with talented teams building websites, deployed Web3 dApps, core product
@@ -45,5 +44,3 @@ const About: NextPage = (): ReactElement => {
     </div>
   )
 }
-
-export default About

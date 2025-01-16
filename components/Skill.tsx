@@ -1,17 +1,16 @@
 import React from 'react'
-import { NextPage } from 'next'
 import { motion } from 'framer-motion'
 
 import { StaticImageData } from 'next/image'
 
-interface Props {
+type SkillProps = {
   className?: string
   directionLeft?: boolean
   logo: StaticImageData
   skill: string
 }
 
-const Skill = ({ className, directionLeft, logo, skill }: Props) => {
+export default function Skill({ className, directionLeft, logo, skill }: SkillProps) {
   return (
     <div className='group relative flex cursor-default'>
       <motion.img
@@ -39,5 +38,3 @@ const Skill = ({ className, directionLeft, logo, skill }: Props) => {
     </div>
   )
 }
-
-export default Skill
