@@ -1,16 +1,10 @@
-import React, { ReactElement } from 'react'
-import { NextPage } from 'next'
+import type { ComponentPropsWithoutRef } from 'react'
 import { StaticImageData } from 'next/image'
 
-import {
-  JavaLogo,
-  NodeJSLogo,
-  PythonLogo,
-  ReactNativeLogo,
-  SpringLogo
-} from '../assets'
+import { JavaLogo, NodeJSLogo, PythonLogo, ReactNativeLogo, SpringLogo } from '../assets'
 
-type ExperienceData = {
+type ExperienceData = ComponentPropsWithoutRef<'div'> & {
+  headerStyle?: string
   jobTitle: string
   company: string
   stack: StaticImageData[]
@@ -19,28 +13,12 @@ type ExperienceData = {
   summaryPoints: (string | JSX.Element)[]
 }
 
-const ExperienceCard: NextPage<ExperienceData> = ({
-  jobTitle,
-  company,
-  stack,
-  startTime,
-  endTime,
-  summaryPoints
-}): ReactElement => {
+function ExperienceCard({ headerStyle, jobTitle, company, stack, startTime, endTime, summaryPoints }: ExperienceData) {
   return (
     <article className='w-[400px] md:w-[600px] xl:w-[900px] xs:h-[90%] sm:w-[400px] flex rounded-[10px] flex-col items-center text-[#3f4040] xs:w-[300px] space-y-7 flex-shrink-0 snap-center bg-[#c8c8c8] duration-200 overflow-hidden shadow-sm shadow-[#5292a0]'>
-      <div className='px-0 md:px-10 pt-5 '>
+      <div className='px-0 md:px-10 pt-5'>
         <div className='mb-7 xs:mb-20'>
-          <h4
-            className={`
-            text-4xl xs:text-[1.75rem] xs:text-md xs:text-center font-light pb-1 bg-clip-text text-transparent 
-            ${company === 'Boop Industries Inc' && 'bg-gradient-to-r from-yellow-600 to-orange-500'} 
-            ${company === 'Lunar Labs LLC' && 'bg-gradient-to-r from-orange-600 to-red-500'} 
-            ${company === 'Right Click Save Ventures LLC' && 'bg-gradient-to-r from-red-600 to-blue-800'} 
-            ${company === 'Fidelity Investments' && 'bg-gradient-to-r from-blue-800 to-green-600'}
-            ${company === 'Sensible United LLC' && 'bg-gradient-to-r from-green-600 to-yellow-600'}
-            `}
-          >
+          <h4 className={`${headerStyle ?? ''} text-4xl xs:text-md xs:text-center font-light pb-1 bg-clip-text text-transparent`}>
             {jobTitle}
           </h4>
           <p className='text-2xl xs:text-[1rem] xs:text-center font-semibold'>{company}</p>
