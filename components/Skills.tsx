@@ -62,11 +62,11 @@ export default function Skills() {
 
   return (
     <motion.div
+      className='min-h-screen relative flex flex-col justify-center items-center text-center'
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
-      className='h-screen relative flex flex-col justify-center items-center text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto p-100'
     >
       <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-6'>
         Skills
@@ -76,7 +76,7 @@ export default function Skills() {
         What I work with; Always looking to expand
       </h3>
 
-      <div className='grid grid-cols-4 gap-5 mt-40 '>
+      <div className='grid grid-cols-4 gap-6 mt-28 sm:mt-32'>
         {topSkillsData.map((skillProps: any, i: number) => (
           <Skill key={`skill-${i}`} {...skillProps} directionLeft />
         ))}

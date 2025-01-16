@@ -45,7 +45,7 @@ export default function Projects() {
       title: 'Diablo II Stat Check',
       description:
         <span>
-          A single-page application I built for my friends allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.
+          A single-page application I built for my friends that allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.
         </span>,
       gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker',
       websiteLink: 'test'
@@ -81,8 +81,8 @@ export default function Projects() {
   }
 
   return (
-    <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-5 xs:pl-4 z-10'>
+    <div className='max-w-full h-screen relative flex flex-col md:flex-row justify-evenly items-center mx-auto text-left overflow-hidden z-0'>
+      <h3 className='absolute top-24 pl-5 text-2xl tracking-[20px] text-gray-500 uppercase z-10'>
         Projects
       </h3>
 
@@ -99,18 +99,18 @@ export default function Projects() {
         <Image src={RightArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
       </div>
 
-      <div className='w-full flex overflow-x-scroll snap-x snap-mandatory z-20 mt-20 scrollbar-none' ref={scrollRef}>
+      <div className='w-full flex mt-20 snap-x snap-mandatory overflow-x-scroll scrollbar-none z-20' ref={scrollRef}>
         {projects.map((project: Project, i) => (
-          <div key={i} className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 md:w-[600px] xl:w-[900px] snap-center'>
-            <div className={`flex flex-col items-center mt-20 w-[95%] h-[95%] max-w-[800px] max-h-[800px] xs:w-[300px] xs:h-[300px] xs:mt-[100px] overflow-hidden ${project.picture === ReactLogo && 'xs:pb-[300px]'}`}>
+          <div key={i} className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 snap-center'>
+            <div className={`max-w-[800px] max-h-[800px] w-[90%] h-[90%] sm:w-[95%] sm:h-[95%]  flex flex-col items-center mt-20 overflow-hidden ${project.picture === ReactLogo && 'xs:pb-[300px]'}`}>
               <img
-                src={project.picture.src}
                 className={`object-contain rounded-[5px] ${project.picture === ReactLogo && 'rotateIcon'}`}
+                src={project.picture.src}
                 alt='Project_Image'
               />
             </div>
 
-            <div className='relative space-y-8 px-10 md:px-10 w-max-6xl xs:w-[360px] bottom-10'>
+            <div className='relative space-y-8 px-10 bottom-10'>
               <h4 className='text-2xl font-semibold text-center sm:mt-2'>
                 {projects.indexOf(project) !== projects.length - 1
                   ? `Project ${i + 1} of ${projects.length}: ${project.title}`
@@ -118,7 +118,7 @@ export default function Projects() {
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>
-                <p className={`text-md leading-6 md:text-left xs:text-[15px] ${project.description === '<More to come... />' ? 'text-center' : 'text-justify'} xs:leading-5`}>
+                <p className={`text-md leading-6 ${project.description === '<More to come... />' ? 'text-center' : 'text-justify'} xs:leading-5`}>
                   {project.description}
                 </p>
                 <a href={project?.gitHubLink} target='_blank' rel='noopener noreferrer' >
