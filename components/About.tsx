@@ -13,7 +13,7 @@ export default function About() {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
         src={PortfolioPic.src}
-        className='w-64 h-88 md:w-72 md:h-96 mt-48 sm:mt-32 -mb-20 rounded-lg overflow-hidden object-cover'
+        className='w-64 h-88 md:w-72 md:h-96 mt-40 sm:mt-32 -mb-20 rounded-lg overflow-hidden object-cover'
         alt='About_Pic'
       />
 
