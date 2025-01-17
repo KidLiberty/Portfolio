@@ -154,7 +154,7 @@ function ExperienceCard({ headerStyle, jobTitle, company, stack, startTime, endT
           })}
         </div>
         <p className='pt-2  pb-4 font-bold uppercase'>{startTime} <i>-</i> {endTime}</p>
-        <ul className='ml-5 space-y-2 text-lg list-disc'>
+        <ul className='ml-5 space-y-2 text-md sm:text-lg list-disc'>
           {summaryPoints.map((summaryPoint: string | JSX.Element, i: number) => (
             <li key={`summaryPoint-${i}`} className='leading-5'>{summaryPoint}</li>
           ))}

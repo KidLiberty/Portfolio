@@ -26,7 +26,7 @@ export default function ContactMe() {
         <div className='flex flex-col justify-center items-center space-y-4 text-gray-500'>
           <div className='flex items-center space-x-4'>
             <EnvelopeIcon className='w-7 h-7 text-[#fdf3f3] animate-pulse' />
-            <p className='text-xl sm:text-2xl'>brandonrstone@gmail.com</p>
+            <p className='text-lg sm:text-2xl'>brandonrstone@gmail.com</p>
           </div>
           <div className='flex items-center space-x-4'>
             <SocialIcon
@@ -36,7 +36,7 @@ export default function ContactMe() {
               className='animate-pulse duration-700'
               style={{ width: '30px', height: '30px' }}
             />
-            <p className='text-xl sm:text-2xl'>brandonrstone</p>
+            <p className='text-lg sm:text-2xl'>brandonrstone</p>
           </div>
           <div className='flex items-center space-x-4'>
             <SocialIcon
@@ -46,11 +46,11 @@ export default function ContactMe() {
               className='animate-pulse duration-700'
               style={{ width: '30px', height: '30px' }}
             />
-            <p className='text-xl sm:text-2xl'>Kid Liberty#3430</p>
+            <p className='text-lg sm:text-2xl'>Kid Liberty#3430</p>
           </div>
           <div className='flex items-center space-x-4'>
             <MapPinIcon className='w-8 h-8 text-[#d7608c] animate-pulse' />
-            <p className='text-xl sm:text-2xl'>Worcester, MA</p>
+            <p className='text-lg sm:text-2xl'>Worcester, MA</p>
           </div>
         </div>
 
