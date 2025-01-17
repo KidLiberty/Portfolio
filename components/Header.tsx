@@ -7,7 +7,7 @@ export default function Header() {
   const [linkedInHoverActive, setLinkedInHoverActive] = useState(false)
 
   return (
-    <header className='max-w-7xl sticky top-0 flex items-start xl:items-center justify-between mx-auto p-5 z-20 '>
+    <header className='w-full max-w-7xl sticky top-0 flex items-center justify-between mx-auto p-6 z-20'>
       <div className='flex flex-row items-center'>
         <SocialIcon
           className='hover:opacity-40 transition-all duration-200'
