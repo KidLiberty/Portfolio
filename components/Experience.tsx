@@ -56,7 +56,7 @@ export default function Experience() {
           startTime='October 2023'
           endTime='Present'
           summaryPoints={[
-            'Built core peer-to-peer payments product with TypeScript, React Native, Node, Plaid and Google Firebase SDK while implementing crypto-to-fiat onramp, user authentication, and P2P transfers on iOS.',
+            'Built core product focused on international remittances with TypeScript, React Native, Node, Plaid and Google Firebase SDK while implementing crypto-to-fiat onramp, user authentication, and P2P transfers on iOS.',
             'Integrated TypeScript REST APIs into product by communicating directly with vendors.',
             'Organized React Context architecture in conjunction with Solana/web3.js.'
           ]}
