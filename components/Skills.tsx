@@ -73,7 +73,7 @@ export default function Skills() {
         Always looking to expand
       </h3>
 
-      <div className='grid grid-cols-4 gap-6 mt-28 sm:mt-36'>
+      <div className='grid grid-cols-4 gap-6 mt-36'>
         {topSkillsData.map((skillProps: any, i: number) => (
           <Skill key={`skill-${i}`} {...skillProps} directionLeft />
         ))}

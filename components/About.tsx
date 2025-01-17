@@ -18,7 +18,7 @@ export default function About() {
       />
 
       <div className='relative flex flex-col items-center space-y-10'>
-        <div className='text-[32px] font-semibold'>
+        <div className='text-[24px] sm:text-[32px] font-semibold'>
           <span className='relative inset-0 top-[28px] text-transparent bg-clip-text bg-gradient-to-br from-blue-800 to-green-500'>
             Here is a <i>little</i> background
           </span>
