@@ -49,7 +49,7 @@ export default function Experience() {
       {/* Experience Cards */}
       <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden' ref={scrollRef}>
         <ExperienceCard
-          headerStyle='text-[22px] sm:text-[30px] bg-gradient-to-r from-yellow-600 to-orange-500'
+          headerStyle='text-[22px] sm:text-[32px] bg-gradient-to-r from-yellow-600 to-orange-500'
           jobTitle='Web3 Mobile Engineer'
           company='Boop Industries Inc.'
           stack={[TypeScriptLogo, ReactNativeLogo, FirebaseLogo, SolanaLogo]}
@@ -62,7 +62,7 @@ export default function Experience() {
           ]}
         />
         <ExperienceCard
-          headerStyle='text-[28px] sm:text-[30px] bg-gradient-to-r from-orange-600 to-red-500'
+          headerStyle='text-[28px] sm:text-[32px] bg-gradient-to-r from-orange-600 to-red-500'
           jobTitle='Software Engineer'
           company='Lunar Labs LLC'
           stack={[TypeScriptLogo, ReactLogo, NextJSLogo, EthersJSLogo]}
@@ -75,7 +75,7 @@ export default function Experience() {
           ]}
         />
         <ExperienceCard
-          headerStyle='text-[26px] sm:text-[30px] bg-gradient-to-r from-red-600 to-blue-800'
+          headerStyle='text-[26px] sm:text-[32px] bg-gradient-to-r from-red-600 to-blue-800'
           jobTitle='Front End Engineer'
           company='Right Click Save Ventures LLC'
           stack={[TypeScriptLogo, ReactLogo, NextJSLogo, PythonLogo, OpenSeaLogo]}
@@ -88,7 +88,7 @@ export default function Experience() {
           ]}
         />
         <ExperienceCard
-          headerStyle='text-[28px] sm:text-[30px] bg-gradient-to-r from-blue-800 to-green-600'
+          headerStyle='text-[28px] sm:text-[32px] bg-gradient-to-r from-blue-800 to-green-600'
           jobTitle='Software Engineer'
           company='Fidelity Investments'
           stack={[AWSLogo, TypeScriptLogo, NodeJSLogo, JavaLogo]}
@@ -101,7 +101,7 @@ export default function Experience() {
           ]}
         />
         <ExperienceCard
-          headerStyle='bg-gradient-to-r from-green-600 to-yellow-600'
+          headerStyle='text-[28px] sm:text-[32px] bg-gradient-to-r from-green-600 to-yellow-600'
           jobTitle='Front-End Intern'
           company='Sensible United LLC'
           stack={[JavaScriptLogo, ReactLogo, ReactNativeLogo, NodeJSLogo]}
@@ -132,7 +132,7 @@ function ExperienceCard({ headerStyle, jobTitle, company, stack, startTime, endT
   return (
     <div className='w-[300px] sm:w-[400px] flex flex-col flex-shrink-0 items-center rounded-xl text-[#3f4040] bg-[#c8c8c8] overflow-hidden snap-center shadow-md duration-200'>
       <div className='p-6'>
-        <h4 className={`${headerStyle ?? ''} text-3xl font-light bg-clip-text text-transparent`}>{jobTitle}</h4>
+        <h4 className={`${headerStyle ?? ''} font-light bg-clip-text text-transparent`}>{jobTitle}</h4>
         <p className='text-2xl font-semibold'>{company}</p>
         <div className='flex space-x-2 my-2'>
           {stack.map((logo: React.ImgHTMLAttributes<HTMLImageElement>, i) => {
