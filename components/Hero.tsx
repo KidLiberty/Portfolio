@@ -12,7 +12,7 @@ export default function Hero() {
       "Hi there, I'm Brandon!",
       '<Web Developer /> & JavaScript nerd :^)',
       'Front End Focused; Full-Stack Experienced',
-      'Web3 Contributor'
+      'Benevolent Contributer to Web3'
     ],
     loop: true,
     delaySpeed: 1000,
