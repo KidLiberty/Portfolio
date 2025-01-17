@@ -2,7 +2,7 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { SocialIcon } from 'react-social-icons'
 
-type Inputs = {
+type FormInputs = {
   name: string
   email: string
   subject: string
@@ -10,8 +10,8 @@ type Inputs = {
 }
 
 export default function ContactMe() {
-  const { register, handleSubmit } = useForm<Inputs>()
-  const onSubmit: SubmitHandler<Inputs> = formData => window.location.href = `mailto:brandonrstone@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
+  const { register, handleSubmit } = useForm<FormInputs>()
+  const onSubmit: SubmitHandler<FormInputs> = formData => window.location.href = `mailto:brandonrstone@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
 
   return (
     <div className='max-w-full h-screen relative flex flex-col items-center justify-evenly mx-auto overflow-hidden z-0'>
