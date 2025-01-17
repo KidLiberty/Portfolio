@@ -68,12 +68,11 @@ export default function Skills() {
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-6'>
-        Skills
-      </h3>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-6'>Skills</h3>
 
-      <h3 className='absolute top-36 text-md tracking-[3px] text-gray-500 mr-4 sm:text-[15px] pl-4 xs:pl-5'>
-        What I work with; Always looking to expand
+      <h3 className='absolute top-40 text-sm sm:text-lg text-center tracking-[3px] text-gray-500 sm:whitespace-nowrap'>
+        What I work with<b>;</b> <br className='block sm:hidden' />
+        Always looking to expand
       </h3>
 
       <div className='grid grid-cols-4 gap-6 mt-28 sm:mt-32'>

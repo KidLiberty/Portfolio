@@ -14,29 +14,31 @@ export default function ContactMe() {
   const onSubmit: SubmitHandler<Inputs> = formData => window.location.href = `mailto:brandonrstone@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`
 
   return (
-    <div className='h-screen relative flex flex-col items-center justify-evenly overflow-hidden text-left md:flex-row max-w-full mx-auto z-0'>
-      <h3 className='absolute top-24 xs:top-26 uppercase tracking-[20px] text-gray-500 text-2xl xs:left-20 xs:hidden'>
-        Contact
-      </h3>
+    <div className='max-w-full h-screen relative flex flex-col items-center justify-evenly mx-auto overflow-hidden z-0'>
+      <h3 className='absolute top-24 text-center text-2xl tracking-[20px] text-gray-500 uppercase'>Contact</h3>
 
-      <div className='flex flex-col space-y-8 xs:relative xs:bottom-6'>
-        <div className='flex flex-col items-center xs:h'>
-          <h4 className='mt-32 tracking-[2px] text-3xl font-normal text-center text-gray-500 xs:text-2xl'>
-            Feel free to reach out!
-          </h4>
-          <h3 className='text-lg tracking-[4px] text-[#5fddb3] xs:text-md'>
-            {"(Let's build something)"}
-          </h3>
+      <div className='flex flex-col space-y-6 mt-24 sm:mt-36'>
+        <div className='flex flex-col items-center sm:mb-16'>
+          <h4 className='text-2xl sm:text-4xl text-center text-gray-500 tracking-[2px] font-normal'>Feel free to reach out!</h4>
+          <h3 className='text-md sm:text-xl mt-2 tracking-[4px] text-[#5fddb3]'>(Let's build something)</h3>
         </div>
 
-        <div className='xs:flex xs:flex-col xs:justify-center xs:items-center space-y-8 xs:space-y-2 xs:pr-10'>
-          <div className='flex items-center space-x-5'>
-            <EnvelopeIcon className='text-[#4290a1] w-7 h-7 animate-pulse' />
-            <p className='text-2xl text-gray-500 xs:text-xl'>
-              brandonrstone@gmail.com
-            </p>
+        <div className='flex flex-col justify-center items-center space-y-4 sm:space-y-8 text-gray-500'>
+          <div className='flex items-center space-x-4'>
+            <EnvelopeIcon className='w-7 h-7 text-[#e1b274] animate-pulse' />
+            <p className='text-xl sm:text-2xl'> brandonrstone@gmail.com</p>
           </div>
-          <div className='flex items-center space-x-[17px]'>
+          <div className='flex items-center space-x-4'>
+            <SocialIcon
+              network='telegram'
+              fgColor='transparent'
+              bgColor='#24A1DE'
+              className='animate-pulse duration-700'
+              style={{ width: '30px', height: '30px' }}
+            />
+            <p className='text-xl sm:text-2xl'>brandonrstone</p>
+          </div>
+          <div className='flex items-center space-x-4'>
             <SocialIcon
               network='discord'
               fgColor='transparent'
@@ -44,26 +46,24 @@ export default function ContactMe() {
               className='animate-pulse duration-700'
               style={{ width: '30px', height: '30px' }}
             />
-            <p className='text-2xl text-gray-500 xs:text-xl'>
-              Kid Liberty#3430
-            </p>
+            <p className='text-xl sm:text-2xl'>Kid Liberty#3430</p>
           </div>
-          <div className='flex items-center space-x-5 '>
-            <MapPinIcon className='text-[#6b4787] w-7 h-7 animate-pulse' />
-            <p className='text-2xl text-gray-500 xs:text-xl'>Worcester, MA</p>
+          <div className='flex items-center space-x-4'>
+            <MapPinIcon className='w-8 h-8 text-[#6b4787] animate-pulse' />
+            <p className='text-xl sm:text-2xl'>Worcester, MA</p>
           </div>
         </div>
 
-        <form className='flex flex-col space-y-2 w-fit mx-auto xs:w-[350px] sm:pb-[24px] xs:pb-[36px]' onSubmit={handleSubmit(onSubmit)}>
-          <div className='flex xs:flex-col xs:w-full space-x-2 xs:space-x-0 xs:space-y xs:justify-center'>
-            <input type='text' className='contactInput' placeholder='Name'{...register('name')} />
-            <input className='contactInput xs:mt-2' type='email' placeholder='Email' {...register('email')} />
+        <form className='flex flex-col space-y-2' onSubmit={handleSubmit(onSubmit)}>
+          <div className='flex justify-center space-x-2 sm:mt-12'>
+            <input className='hidden sm:block contactInput mt-2' type='text' placeholder='Name'{...register('name')} />
+            <input className='hidden sm:block contactInput mt-2' type='email' placeholder='Email' {...register('email')} />
           </div>
+          <input className='sm:hidden contactInput' type='text' placeholder='Name'{...register('name')} />
+          <input className='sm:hidden contactInput mt-2' type='email' placeholder='Email' {...register('email')} />
           <input className='contactInput' placeholder='Subject' {...register('subject')} />
           <textarea className='contactInput' placeholder='Message...' {...register('message')} />
-          <button className='bg-transparent border-2 border-[#5fddb3] p-4 xs:py-4 rounded-[7px] text-[#5fddb3] text-lg font-bold hover:bg-[#5fddb3] hover:border-black hover:text-gray-800 transition-all duration-200 xs:p-2 active:bg-[#5fddb3]/70' type='submit'>
-            Submit
-          </button>
+          <button className='contactButton' type='submit'>Submit</button>
         </form>
       </div>
     </div>

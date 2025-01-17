@@ -36,10 +36,8 @@ export default function Experience() {
   }
 
   return (
-    <div className='h-screen flex relative overflow-hidden flex-col justify-evenly text-left md:flex-row max-w-full px-10 mx-auto items-center pt-32' ref={parentRef}>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-6'>
-        Experience
-      </h3>
+    <div className='max-w-full h-screen relative flex flex-col justify-evenly items-center mx-auto pt-32 px-10 overflow-hidden' ref={parentRef}>
+      <h3 className='absolute top-24 pl-4 text-2xl tracking-[20px] uppercase text-gray-500'>Experience</h3>
 
       <div className='absolute top-100 left-[0] hover:cursor-pointer opacity-70 hover:opacity-40' onClick={() => handleScroll('left')}>
         <Image src={LeftArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
@@ -51,7 +49,7 @@ export default function Experience() {
       {/* Experience Cards */}
       <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden' ref={scrollRef}>
         <ExperienceCard
-          headerStyle='text-[30px] bg-gradient-to-r from-yellow-600 to-orange-500'
+          headerStyle='text-[22px] sm:text-[30px] bg-gradient-to-r from-yellow-600 to-orange-500'
           jobTitle='Web3 Mobile Engineer'
           company='Boop Industries Inc.'
           stack={[TypeScriptLogo, ReactNativeLogo, FirebaseLogo, SolanaLogo]}
@@ -64,22 +62,20 @@ export default function Experience() {
           ]}
         />
         <ExperienceCard
-          headerStyle='bg-gradient-to-r from-orange-600 to-red-500'
+          headerStyle='text-[28px] sm:text-[30px] bg-gradient-to-r from-orange-600 to-red-500'
           jobTitle='Software Engineer'
           company='Lunar Labs LLC'
           stack={[TypeScriptLogo, ReactLogo, NextJSLogo, EthersJSLogo]}
           startTime='May 2023'
           endTime='Oct 2023'
           summaryPoints={[
-            <span>
-              Constructed component library with TypeScript and Next.js to handle Web3-specific user journeys for the <a style={{ color: '#007acc', }} href='https://moonwell.fi' target='_blank' rel='noopener noreferrer'>Moonwell.fi</a> dApp.
-            </span>,
+            <span>Constructed component library with TypeScript and Next.js to handle Web3-specific user journeys for the <a style={{ color: '#007acc', }} href='https://moonwell.fi' target='_blank' rel='noopener noreferrer'>Moonwell.fi</a> dApp.</span>,
             'Built REST APIs to query on-chain specific JSON-RPC data and format data to UI.',
             'Utilized TypeScript wallet SDKs for Ethereum (ethers.js), Base & Solana (@solana/web3.js).',
           ]}
         />
         <ExperienceCard
-          headerStyle='bg-gradient-to-r from-red-600 to-blue-800'
+          headerStyle='text-[26px] sm:text-[30px] bg-gradient-to-r from-red-600 to-blue-800'
           jobTitle='Front End Engineer'
           company='Right Click Save Ventures LLC'
           stack={[TypeScriptLogo, ReactLogo, NextJSLogo, PythonLogo, OpenSeaLogo]}
@@ -92,7 +88,7 @@ export default function Experience() {
           ]}
         />
         <ExperienceCard
-          headerStyle='bg-gradient-to-r from-blue-800 to-green-600'
+          headerStyle='text-[28px] sm:text-[30px] bg-gradient-to-r from-blue-800 to-green-600'
           jobTitle='Software Engineer'
           company='Fidelity Investments'
           stack={[AWSLogo, TypeScriptLogo, NodeJSLogo, JavaLogo]}

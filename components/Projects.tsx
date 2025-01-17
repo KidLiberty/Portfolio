@@ -43,10 +43,7 @@ export default function Projects() {
     {
       picture: Diablo2StatChecker,
       title: 'Diablo II Stat Check',
-      description:
-        <span>
-          A single-page application I built for my friends that allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.
-        </span>,
+      description: <span>A single-page application I built for my friends that allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.</span>,
       gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker',
       websiteLink: 'test'
     },
@@ -82,20 +79,12 @@ export default function Projects() {
 
   return (
     <div className='max-w-full h-screen relative flex flex-col md:flex-row justify-evenly items-center mx-auto text-left overflow-hidden z-0'>
-      <h3 className='absolute top-24 pl-5 text-2xl tracking-[20px] text-gray-500 uppercase z-10'>
-        Projects
-      </h3>
+      <h3 className='absolute top-24 pl-5 text-2xl tracking-[20px] text-gray-500 uppercase z-10'>Projects</h3>
 
-      <div
-        className='absolute top-100 left-[0] hover:cursor-pointer opacity-70 hover:opacity-40 z-30'
-        onClick={() => handleScroll('left')}
-      >
+      <div className='absolute top-100 left-[0] hover:cursor-pointer opacity-70 hover:opacity-40 z-30' onClick={() => handleScroll('left')}>
         <Image src={LeftArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
       </div>
-      <div
-        className='absolute top-100 right-[0] hover:cursor-pointer opacity-70 hover:opacity-40 z-30'
-        onClick={() => handleScroll('right')}
-      >
+      <div className='absolute top-100 right-[0] hover:cursor-pointer opacity-70 hover:opacity-40 z-30' onClick={() => handleScroll('right')}>
         <Image src={RightArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
       </div>
 
@@ -112,9 +101,7 @@ export default function Projects() {
 
             <div className='relative space-y-8 px-10 bottom-10'>
               <h4 className='text-2xl font-semibold text-center sm:mt-2'>
-                {projects.indexOf(project) !== projects.length - 1
-                  ? `Project ${i + 1} of ${projects.length}: ${project.title}`
-                  : `Project ${i + 1} on the way!`}
+                {projects.indexOf(project) !== projects.length - 1 ? `Project ${i + 1} of ${projects.length}: ${project.title}` : `Project ${i + 1} on the way!`}
               </h4>
 
               <div className='xs:h-[300px] pb-4 scrollbar-none max-w-[600px] text-center items-center'>

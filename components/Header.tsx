@@ -24,9 +24,7 @@ export default function Header() {
       <Link href='#contact'>
         <div className='flex flex-row items-center text-gray-300 cursor-pointer hover:opacity-40 transition-all duration-200'>
           <SocialIcon network='email' fgColor='grey' bgColor='transparent' />
-          <p className='uppercase xs:hidden md:inline-flex trext-sm text-gray-400'>
-            Get in touch
-          </p>
+          <p className='uppercase xs:hidden md:inline-flex trext-sm text-gray-400'>Get in touch</p>
         </div>
       </Link>
     </header>

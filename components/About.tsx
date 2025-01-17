@@ -5,9 +5,7 @@ import { PortfolioPic } from '../assets'
 export default function About() {
   return (
     <div className='h-screen relative flex flex-col justify-evenly items-center text-center px-10 overflow-hidden'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pl-4 xs:pl-5'>
-        About
-      </h3>
+      <h3 className='absolute top-24 pl-4 xs:pl-5 text-2xl  uppercase tracking-[20px] text-gray-500'>About</h3>
 
       <motion.img
         initial={{ opacity: 0 }}
@@ -15,7 +13,7 @@ export default function About() {
         transition={{ duration: 2 }}
         viewport={{ once: true }}
         src={PortfolioPic.src}
-        className='w-64 h-88 mt-32 -mb-20 rounded-lg overflow-hidden'
+        className='w-64 h-88 md:w-72 md:h-96 mt-32 -mb-20 rounded-lg overflow-hidden object-cover'
         alt='About_Pic'
       />
 
@@ -31,11 +29,11 @@ export default function About() {
             Here is a <i>little</i> background
           </span>
         </div>
-        <p className='max-w-[700px] text-justify text-[14px] pb-14 sm:text-[16px] text-gray-300 leading-5 sm:leading-5'>
+        <p className='max-w-[700px] pb-14 text-[14px] sm:text-[16px] md:text-[22px] text-justify text-gray-300 leading-5 sm:leading-6'>
           Hey there! I'm a developer from the Northeast 🍂🌊 who has worked across web,
           DevOps, financial, and decentralized technology over the past five years.
           I have also had a fascination with what I've seen on the web and the language
-          that builds it since 2014. Combining my experience has given me the privilege
+          that builds it since 2014. Combining my experiences has given me the privilege
           of working with talented teams building websites, deployed Web3 dApps, core product
           functionality and Native mobile applications on iOS. These days, I'm looking to
           contribute by doing what I love ⚛️.
