@@ -88,7 +88,7 @@ export default function Projects() {
         <Image src={RightArrow} width={35} height={35} objectFit='cover' alt='LeftArrow' />
       </div>
 
-      <div className='w-full flex mt-20 snap-x snap-mandatory overflow-x-scroll scrollbar-none z-20' ref={scrollRef}>
+      <div className='w-full flex mt-20 snap-x snap-mandatory overflow-x-scroll scrollbar-none scroll-smooth z-20' ref={scrollRef}>
         {projects.map((project: Project, i) => (
           <div key={i} className='w-screen flex flex-col items-center space-y-10 flex-shrink-0 snap-center'>
             <div className={`max-w-[800px] max-h-[800px] w-[90%] h-[90%] sm:w-[95%] sm:h-[95%]  flex flex-col items-center mt-20 overflow-hidden ${project.picture === ReactLogo && 'xs:pb-[300px]'}`}>
