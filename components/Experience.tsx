@@ -47,7 +47,7 @@ export default function Experience() {
       </div>
 
       {/* Experience Cards */}
-      <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-none overflow-hidden' ref={scrollRef}>
+      <div className='w-full flex space-x-5 overflow-x-scroll p-10 overflow-hidden scrollbar-none snap-x snap-mandatory scroll-smooth' ref={scrollRef}>
         <ExperienceCard
           headerStyle='text-[22px] sm:text-[32px] bg-gradient-to-r from-yellow-600 to-orange-500'
           jobTitle='Web3 Mobile Engineer'

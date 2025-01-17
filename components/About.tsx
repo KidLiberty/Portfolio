@@ -29,7 +29,7 @@ export default function About() {
             Here is a <i>little</i> background
           </span>
         </div>
-        <p className='max-w-[700px] pb-14 text-[14px] sm:text-[16px] md:text-[22px] text-justify text-gray-300 leading-5 sm:leading-6'>
+        <p className='max-w-[700px] pb-14 text-[14px] sm:text-[16px] 2xl:text-[22px] text-justify text-gray-300 leading-5 sm:leading-6'>
           Hey there! I'm a developer from the Northeast 🍂🌊 who has worked across web,
           DevOps, financial, and decentralized technology over the past five years.
           I have also had a fascination with what I've seen on the web and the language
