@@ -1,23 +1,31 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons'
 
 export default function Header() {
+  const [gitHubHoverActive, setGitHubHoverActive] = useState(false)
+  const [linkedInHoverActive, setLinkedInHoverActive] = useState(false)
+
   return (
-    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+    <header className='max-w-7xl sticky top-0 flex items-start xl:items-center justify-between mx-auto p-5 z-20 '>
       <div className='flex flex-row items-center'>
         <SocialIcon
-          url='https://github.com/brandonrstone'
-          target='_blank'
-          fgColor='grey'
-          bgColor='transparent'
           className='hover:opacity-40 transition-all duration-200'
+          url='https://github.com/brandonrstone'
+          onMouseEnter={() => setGitHubHoverActive(true)}
+          onMouseLeave={() => setGitHubHoverActive(false)}
+          target='_blank'
+          fgColor={gitHubHoverActive ? '#6e5494' : 'grey'}
+          bgColor='transparent'
         />
         <SocialIcon
+          className='hover:opacity-40 transition-all duration-200'
           url='https://www.linkedin.com/in/brandon-stone-8a319b163/'
           target='_blank'
-          fgColor='grey'
+          onMouseEnter={() => setLinkedInHoverActive(true)}
+          onMouseLeave={() => setLinkedInHoverActive(false)}
+          fgColor={linkedInHoverActive ? '#0072b1' : 'grey'}
           bgColor='transparent'
-          className='hover:opacity-40 transition-all duration-200'
         />
       </div>
 
