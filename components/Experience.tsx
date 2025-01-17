@@ -1,5 +1,5 @@
-import { useRef } from 'react'
-import Image from 'next/image'
+import { type ComponentPropsWithoutRef, useRef } from 'react'
+import Image, { StaticImageData } from 'next/image'
 
 import {
   AWSLogo,
@@ -15,11 +15,11 @@ import {
   ReactLogo,
   ReactNativeLogo,
   RightArrow,
+  SpringLogo,
   SolanaLogo,
   TypeScriptLogo
 } from '../assets'
 
-import ExperienceCard from './ExperienceCard'
 
 export default function Experience() {
   const scrollRef = useRef<HTMLInputElement | null>(null)
@@ -113,6 +113,52 @@ export default function Experience() {
             'Exposure to REST APIs with express and MongoDB.'
           ]}
         />
+      </div>
+    </div>
+  )
+}
+
+type ExperienceCardData = ComponentPropsWithoutRef<'div'> & {
+  headerStyle?: string
+  jobTitle: string
+  company: string
+  stack: StaticImageData[]
+  startTime: string
+  endTime: string
+  summaryPoints: (string | JSX.Element)[]
+}
+
+function ExperienceCard({ headerStyle, jobTitle, company, stack, startTime, endTime, summaryPoints }: ExperienceCardData) {
+  return (
+    <div className='w-[300px] sm:w-[400px] flex flex-col flex-shrink-0 items-center rounded-xl text-[#3f4040] bg-[#c8c8c8] overflow-hidden snap-center shadow-md duration-200'>
+      <div className='p-6'>
+        <h4 className={`${headerStyle ?? ''} text-3xl font-light bg-clip-text text-transparent`}>{jobTitle}</h4>
+        <p className='text-2xl font-semibold'>{company}</p>
+        <div className='flex space-x-2 my-2'>
+          {stack.map((logo: React.ImgHTMLAttributes<HTMLImageElement>, i) => {
+            return (
+              <div
+                key={`logo-${i}`}
+                className={`${logo !== PythonLogo &&
+                  logo !== NodeJSLogo &&
+                  logo !== SpringLogo &&
+                  logo !== ReactNativeLogo &&
+                  'rounded-full bg-black'} 
+                    ${logo === JavaLogo && 'bg-white'} 
+                    ${logo === ReactNativeLogo && 'bg-[#333333] rounded-md'} 
+                    `}
+              >
+                <img src={logo.src} className='w-12 h-12 object-cover rounded-md' />
+              </div>
+            )
+          })}
+        </div>
+        <p className='pt-2  pb-4 font-bold uppercase'>{startTime} <i>-</i> {endTime}</p>
+        <ul className='ml-5 space-y-2 text-lg list-disc'>
+          {summaryPoints.map((summaryPoint: string | JSX.Element, i: number) => (
+            <li key={`summaryPoint-${i}`} className='leading-5'>{summaryPoint}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
