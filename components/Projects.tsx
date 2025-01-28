@@ -4,6 +4,46 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 
 import { AmazonClone, BoopLogo, CryptoLottery, Diablo2StatChecker, LeftArrow, NFTMarketplace, ReactLogo, RightArrow } from '../assets/index'
 
+const projects: Project[] = [
+  {
+    picture: BoopLogo,
+    title: 'Boop',
+    description: 'Boop is the solution to international peer to peer remittances, built on-chain with just the right amount of abstraction. Click the link below to join the waitlist and get on board; thanks for supporting the movement!',
+    gitHubLink: 'https://www.tryboop.com/'
+  },
+  {
+    picture: Diablo2StatChecker,
+    title: 'Diablo II Stat Check',
+    description: <span>A single-page application I built for my friends that allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.</span>,
+    gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker',
+    websiteLink: 'test'
+  },
+  {
+    picture: NFTMarketplace,
+    title: 'NFT Marketplace',
+    description: 'A decentralized Web3 NFT Marketplace that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.',
+    gitHubLink: 'https://github.com/KidLiberty/NFT-Marketplace-dApp'
+  },
+  {
+    picture: CryptoLottery,
+    title: 'Crypto Lottery',
+    description: "I found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network.",
+    gitHubLink: 'https://github.com/KidLiberty/Crypto-Lottery-dApp'
+  },
+  {
+    picture: AmazonClone,
+    title: 'Amazon Clone',
+    description: 'Off the topic of Crypto, this is a mock Amazon website resembling the user shopping experience. This was a pretty API heavy build; including Next.js with Next Auth (SSR), Google Cloud for OAuth2.0, Firebase with Google Sign-In as well as Firebase database for storing placed orders, Redux for checkout state management, and finally Slide for smooth checkout payments.',
+    gitHubLink: 'https://github.com/KidLiberty/Amazon-Clone'
+  },
+  {
+    picture: ReactLogo,
+    title: '',
+    description: '<More to come... />',
+    gitHubLink: 'https://github.com/KidLiberty/'
+  }
+]
+
 type Project = {
   picture: StaticImageData,
   title: string,
@@ -14,46 +54,6 @@ type Project = {
 
 export default function Projects() {
   const scrollRef = useRef<HTMLInputElement | null>(null)
-
-  const projects: Project[] = [
-    {
-      picture: BoopLogo,
-      title: 'Boop',
-      description: 'Boop is the solution to international peer to peer remittances, built on-chain with just the right amount of abstraction. Click the link below to join the waitlist and get on board; thanks for supporting the movement!',
-      gitHubLink: 'https://www.tryboop.com/'
-    },
-    {
-      picture: NFTMarketplace,
-      title: 'NFT Marketplace',
-      description: 'A decentralized Web3 NFT Marketplace that allows the interactivity of MetaMask through the implementation of ethers.js. It uses the Hard Hat Ethereum development environment in harmony with Solidity smart contracts to allow the creation, storage, and trading of NFTs between public addresses on the Ethereum blockchain.',
-      gitHubLink: 'https://github.com/KidLiberty/NFT-Marketplace-dApp'
-    },
-    {
-      picture: CryptoLottery,
-      title: 'Crypto Lottery',
-      description: "I found this idea from one of my favorite React content creators. It's a decentralized lottery application that allows MetaMask wallet users to connect and buy draws. At the end of the draw timer, a randomly selected address will win the pot. I used the ThirdWeb JavaScript SDK to streamline the process of interacting with Solidity Smart Contract code on the Polygon Network.",
-      gitHubLink: 'https://github.com/KidLiberty/Crypto-Lottery-dApp'
-    },
-    {
-      picture: AmazonClone,
-      title: 'Amazon Clone',
-      description: 'Off the topic of Crypto, this is a mock Amazon website resembling the user shopping experience. This was a pretty API heavy build; including Next.js with Next Auth (SSR), Google Cloud for OAuth2.0, Firebase with Google Sign-In as well as Firebase database for storing placed orders, Redux for checkout state management, and finally Slide for smooth checkout payments.',
-      gitHubLink: 'https://github.com/KidLiberty/Amazon-Clone'
-    },
-    {
-      picture: Diablo2StatChecker,
-      title: 'Diablo II Stat Check',
-      description: <span>A single-page application I built for my friends that allows for quick and efficient searching of individual statistics and percentages on items in the PC game Diablo II; check it out: <a style={{ color: '#007acc' }} href='https://diablo-2-rolled-stack-checker.netlify.app/'>Diablo II Rolled Stat Checker</a>.</span>,
-      gitHubLink: 'https://github.com/KidLiberty/diablo2-rolled-stat-checker',
-      websiteLink: 'test'
-    },
-    {
-      picture: ReactLogo,
-      title: '',
-      description: '<More to come... />',
-      gitHubLink: 'https://github.com/KidLiberty/'
-    }
-  ]
 
   const handleScroll = (direction: string) => {
     const { current } = scrollRef
